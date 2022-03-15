@@ -4,19 +4,19 @@
 		<name>XENBuilder index</name>
 		<description>DnD 5e Homebrew, custom made or found .xml's for Aurora Builder, by Xenirath.</description>
 		<update version="0.0.1">
-			<file name="xenbuilder.index" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/master/xenbuilder.index"/>
+			<file name="xenbuilder.index" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/xenbuilder.index"/>
 		</update>
 	</info>
 	<files>
-		<file name="Mega Options Aurora.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/master/XENBuilder/Mega Options Aurora.xml"/>
-		<file name="my-backgrounds.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/master/XENBuilder/my-backgrounds.xml"/>
-    <file name="my-cantrips.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/master/XENBuilder/my-cantrips.xml"/>
-		<file name="my-companions.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/master/XENBuilder/my-companions.xml"/>
-    <file name="my-feats.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/master/XENBuilder/my-feats.xml"/>
-		<file name="my-features.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/master/XENBuilder/my-features.xml"/>
-		<file name="my-magic-objects.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/master/XENBuilder/my-magic-objects.xml"/>
-		<file name="my-objects.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/master/XENBuilder/my-objects.xml"/>
-		<file name="my-spells.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/master/XENBuilder/my-spells.xml"/>
-    <file name="my-weapons.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/master/XENBuilder/my-weapons.xml"/>
+		<file name="Mega Options Aurora.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/Mega Options Aurora.xml"/>
+		<file name="my-backgrounds.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/my-backgrounds.xml"/>
+    <file name="my-cantrips.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/my-cantrips.xml"/>
+		<file name="my-companions.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/my-companions.xml"/>
+    <file name="my-feats.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/my-feats.xml"/>
+		<file name="my-features.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/my-features.xml"/>
+		<file name="my-magic-objects.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/my-magic-objects.xml"/>
+		<file name="my-objects.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/my-objects.xml"/>
+		<file name="my-spells.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/my-spells.xml"/>
+    <file name="my-weapons.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/my-weapons.xml"/>
 	</files>
 </index>
