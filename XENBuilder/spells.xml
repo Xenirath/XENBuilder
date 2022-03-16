@@ -71,4 +71,30 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+	<element name="Xen's Temporal Rush" type="Spell" source="XENBuilder" id="ID_XENBUILDER_XENS_TEMPORAL_RUSH">
+   		<supports>Wizard, Warlock, Sorcerer</supports>
+   		<description>
+     			<p>Your body quickens and phases, slightly superimposing itself over the fabric of time itself, and you gain the following effects:</p>
+     			<p class="indent"> Your movement speed is doubled.</p>
+			<p class="indent"> You get an extra Action on each of your turns.</p>
+			<p class="indent"> You have advantage on all of your attacks, and everyone has disadvantage on all attacks targeting you.</p>
+			<p> When this spell ends, your body suffers the consequences of the acceleration, as the fabric of time violently latches onto it again:</p>
+     			<p class="indent"> You gain one level of Exhaustion, and you are Paralyzed until the end of your next turn, as your body's mass gets accustomed to the natural flow of time.</p>
+			<p class="indent"> Additionally, make a Constitution saving throw (DC 20). On a failure, you take 4d8 force damage.</p>
+  	 	</description>
+  		<setters>
+    			<set name="keywords"></set>
+   			<set name="level">5</set>
+    			<set name="school">Transmutation</set>
+    			<set name="time">1 action</set>
+    			<set name="duration">1 minute</set>
+    			<set name="range">self</set>
+    			<set name="hasVerbalComponent">true</set>
+   			<set name="hasSomaticComponent">true</set>
+   			<set name="hasMaterialComponent">true</set>
+   			<set name="materialComponent">Two hands of a clock, a minute hand and an hour hand, one made of mithril and one of adamantine, tied together with string.</set>
+   			<set name="isConcentration">false</set>
+   			<set name="isRitual">false</set>
+  		</setters>
+ 	</element>  
 </elements>
