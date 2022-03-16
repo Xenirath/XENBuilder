@@ -2,7 +2,7 @@
 <elements>
 	<info>
         <name>spells</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/spells.xml" />
 		</update>
 	</info>
