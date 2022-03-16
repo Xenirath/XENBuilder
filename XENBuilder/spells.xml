@@ -77,10 +77,13 @@
      			<p>Your body quickens and phases, slightly superimposing itself over the fabric of time itself, and you gain the following effects:</p>
      			<p class="indent"> Your movement speed is doubled.</p>
 			<p class="indent"> You get an extra Action on each of your turns.</p>
-			<p class="indent"> You have advantage on all of your attacks, and everyone has disadvantage on all attacks targeting you.</p>
+			<p class="indent"> You have advantage on all of your attacks, and everyone has disadvantage on all </p>
+			<p class="indent"> attacks targeting you.</p>
 			<p> When this spell ends, your body suffers the consequences of the acceleration, as the fabric of time violently latches onto it again:</p>
-     			<p class="indent"> You gain one level of Exhaustion, and you are Paralyzed until the end of your next turn, as your body's mass gets accustomed to the natural flow of time.</p>
-			<p class="indent"> Additionally, make a Constitution saving throw (DC 20). On a failure, you take 4d8 force damage.</p>
+     			<p class="indent"> You gain one level of Exhaustion, and you are Paralyzed until the end of your next </p>
+			<p class="indent"> turn, as your body's mass gets accustomed to the natural flow of time. </p>
+			<p class="indent"> Additionally, make a Constitution saving throw (DC 20). On a failure, you take 4d8 </p>
+			<p class="indent"> force damage.</p>
   	 	</description>
   		<setters>
     			<set name="keywords"></set>
