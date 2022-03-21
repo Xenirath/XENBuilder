@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>magic items</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="magic-items.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/magic-items.xml" />
 		</update>
 	</info>
@@ -19,4 +19,115 @@
             <set name="rarity">Uncommon</set>
         </setters>
     </element>
+	<element name="Kingmaker (Dormant)" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_KINGMAKER_DORMANT">
+		<compendium display="false" />
+		<description>
+			<p>A weapon forged by kings, for kings, this greatsword has a silver blade, with ebony black hilt and guards, and with a leather wrap on its second hilt. It's roughly 8ft from point to end, and has incredibly balanced weight.</p>
+			<p class="indent"><strong><em>Bane of all Evil.</em></strong> Kingmaker battles against evil constantly, even while sheathed. If an Evil creature, a Monstrosity, or an Aberration tries to touch Kingmaker, they must make a DC 20 Charisma saving throw or take 8d8 force damage and be forced back 15ft from the blade, as a burst of power blasts out of Kingmaker.</p>
+			<p class="indent"><strong><em>Boon of Kings.</em></strong> If the wielder of Kingmaker is part of nobility or has a status or title of enough importance (up to DM's discretion), the blade gives them advantage of Charisma (Persuation) and Charisma (Intimidation) checks the wielder makes, as long as they show their status while doing so.</p>
+			<p class="indent"><strong><em>Unbreakable Destiny.</em></strong> This greatsword is part of a universal force that drives kings and leaders to take their place as rulers and do good by their people. Kingmaker cannot be destroyed by any means, as even the most powerful of spells, Wish, only cast it out of the plane, only for it to be back to it's true wielder's hand a few days after.</p>
+			<p class="indent"><strong><em>Dormant.</em></strong> Kingmaker grants the following benefits in its dormant state:</p>
+			<ul>
+				<li>You can speak, read, and write Celestial, Draconic and Sylvan.</li>
+				<li>You gain a +1 bonus to attack and damage rolls made with this magic weapon and, on a hit, deals an extra 1d6 force damage.</li>
+				<li>If the creature hit is Evil, a Monstrosity, or an Aberration, it takes an additional 2d4 force damage on a hit.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="weapon">Greatsword</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement" addition="by a lawful or good creature">true</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+            <grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+		</rules>
+	</element>
+	<element name="Kingmaker (Awakened)" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_KINGMAKER_AWAKENED">
+		<compendium display="false" />
+		<description>
+			<p>A weapon forged by kings, for kings, this greatsword has a silver blade, with ebony black hilt and guards, and with a leather wrap on its second hilt. It's roughly 8ft from point to end, and has incredibly balanced weight.</p>
+			<p class="indent"><strong><em>Bane of all Evil.</em></strong> Kingmaker battles against evil constantly, even while sheathed. If an Evil creature, a Monstrosity, or an Aberration tries to touch Kingmaker, they must make a DC 20 Charisma saving throw or take 8d8 force damage and be forced back 15ft from the blade, as a burst of power blasts out of Kingmaker.</p>
+			<p class="indent"><strong><em>Boon of Kings.</em></strong> If the wielder of Kingmaker is part of nobility or has a status or title of enough importance (up to DM's discretion), the blade gives them advantage of Charisma (Persuation) and Charisma (Intimidation) checks the wielder makes, as long as they show their status while doing so.</p>
+			<p class="indent"><strong><em>Unbreakable Destiny.</em></strong> This greatsword is part of a universal force that drives kings and leaders to take their place as rulers and do good by their people. Kingmaker cannot be destroyed by any means, as even the most powerful of spells, Wish, only cast it out of the plane, only for it to be back to it's true wielder's hand a few days after.</p>
+			<p class="indent"><strong><em>Dormant.</em></strong> Kingmaker grants the following benefits in its dormant state:</p>
+			<ul>
+				<li>You can speak, read, and write Celestial, Draconic and Sylvan.</li>
+				<li>You gain a +1 bonus to attack and damage rolls made with this magic weapon and, on a hit, deals an extra 1d6 force damage.</li>
+				<li>If the creature hit is Evil, a Monstrosity, or an Aberration, it takes an additional 2d4 force damage on a hit.</li>
+			</ul>
+			<p class="indent"><strong><em>Awakened.</em></strong> When Kingmaker reaches an awakened state, it gains the following properties:</p>
+			<ul>
+				<li>The weapon’s bonus to attack and damage rolls increases to +2 and the on hit damage increases to 2d6 force damage.</li>
+                <li>The extra damage to specific creatures increases to 3d4.</li>
+				<li>While holding the blade, you can use an action to cast one of the following spells from it (save DC 15): hold person, daylight, revivify, mass healing word, geas, and hallow. Once a spell has been cast using the Kignmaker, that spell can’t be cast from the blade again until the next dawn.</li>
+                <li>You can use a bonus action to gain temporary hit points equal to 1d6 + your Constitution modifier.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="weapon">Greatsword</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement" addition="by a lawful or good creature">true</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+            <grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+		</rules>
+	</element>
+	<element name="Kingmaker (Exalted)" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_KINGMAKER_EXALTED">
+		<description>
+			<p>A weapon forged by kings, for kings, this greatsword has a silver blade, with ebony black hilt and guards, and with a leather wrap on its second hilt. It's roughly 8ft from point to end, and has incredibly balanced weight.</p>
+			<p class="indent"><strong><em>Bane of all Evil.</em></strong> Kingmaker battles against evil constantly, even while sheathed. If an Evil creature, a Monstrosity, or an Aberration tries to touch Kingmaker, they must make a DC 20 Charisma saving throw or take 8d8 force damage and be forced back 15ft from the blade, as a burst of power blasts out of Kingmaker.</p>
+			<p class="indent"><strong><em>Boon of Kings.</em></strong> If the wielder of Kingmaker is part of nobility or has a status or title of enough importance (up to DM's discretion), the blade gives them advantage of Charisma (Persuation) and Charisma (Intimidation) checks the wielder makes, as long as they show their status while doing so.</p>
+			<p class="indent"><strong><em>Unbreakable Destiny.</em></strong> This greatsword is part of a universal force that drives kings and leaders to take their place as rulers and do good by their people. Kingmaker cannot be destroyed by any means, as even the most powerful of spells, Wish, only cast it out of the plane, only for it to be back to it's true wielder's hand a few days after.</p>
+			<p class="indent"><strong><em>Dormant.</em></strong> Kingmaker grants the following benefits in its dormant state:</p>
+			<ul>
+				<li>You can speak, read, and write Celestial, Draconic and Sylvan.</li>
+				<li>You gain a +1 bonus to attack and damage rolls made with this magic weapon and, on a hit, deals an extra 1d6 force damage.</li>
+				<li>If the creature hit is Evil, a Monstrosity, or an Aberration, it takes an additional 2d4 force damage on a hit.</li>
+			</ul>
+			<p class="indent"><strong><em>Awakened.</em></strong> When Kingmaker reaches an awakened state, it gains the following properties:</p>
+			<ul>
+				<li>The weapon’s bonus to attack and damage rolls increases to +2 and the on hit damage increases to 2d6 force damage.</li>
+                <li>The extra damage to specific creatures increases to 3d4.</li>
+				<li>While holding the blade, you can use an action to cast one of the following spells from it (save DC 15): hold person, daylight, revivify, mass healing word, geas, and hallow. Once a spell has been cast using the Kignmaker, that spell can’t be cast from the blade again until the next dawn.</li>
+                <li>You can use a bonus action to gain temporary hit points equal to 1d6 + your Constitution modifier.</li>
+			</ul>
+			<p class="indent"><strong><em>Exalted.</em></strong> When Kingmaker reaches an exalted state, it gains the following properties:</p>
+			<ul>
+				<li>The weapon’s bonus to attack and damage rolls increases to +3 and the on hit damage increases to 3d6 force damage.</li>
+                <li>The extra damage to specific creatures increases to 4d4.</li>
+				<li>The saving throw DC for spells cast from the dagger increases to 18.</li>
+                <li>The temporary hit points gained increases to 2d6 + your Constitution modifier.</li>
+				<li>Whenever you gain temporary hit points, you gain additional points equal to your proficiency bonus. While you have temporary hit points from any source, any force damage dealt by Kingmaker increases by 1 damage die. (This applies to both it's normal damage and it's specific creature damage).</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="greatsword">Weapon</set>
+			<set name="weapon">Greatsword</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement" addition="by a lawful or good creature">true</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_CELESTIAL" />
+            <grant type="Language" id="ID_LANGUAGE_DRACONIC" />
+            <grant type="Language" id="ID_LANGUAGE_SYLVAN" />
+		</rules>
+	</element>
 </elements>
