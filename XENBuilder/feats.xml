@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>feats</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/feats.xml" />
 		</update>
   	</info>
@@ -371,7 +371,7 @@
 		<description>
 			<p>Your charm or quirkiness has called a curious spirit, which is now bonded to you, granting you the following benefits:</p>
 			<ul>
-				<li>You learn the Find Familiar spell, which can cast without expending a spell slot. You must finish a long rest before you can cast it in this way again.</li>
+				<li>You learn the Find Familiar spell, which you can cast once without expending a spell slot. You must finish a long rest before you can cast it in this way again.</li>
 				<li>When choosing your familiar’s form, you can choose any beast or monstrosity up to CR 1/4. </li>
 				<li>While you are touching your familiar, you can change its form as an action, without needing to cast the spell.</li>
 				<li>While touching your familiar, you can also change it's type, as an action, from another type on the list, without needing to cast the spell. The list of types is also expanded to the following: aberration, celestial, elemental, fey, fiend, undead.</li>
