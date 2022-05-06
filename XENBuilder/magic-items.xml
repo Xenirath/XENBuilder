@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>magic items</name>
-		<update version="0.0.7">
+		<update version="0.0.8">
 			<file name="magic-items.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/magic-items.xml" />
 		</update>
 	</info>
@@ -215,6 +215,45 @@
 		<rules>
 			<stat name="spellcasting:attack" value="3" />
 			<stat name="spellcasting:dc" value="3" />
+		</rules>
+	</element>
+	<element name="Iron Maiden" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_IRON_MAIDEN">
+		<description>
+			<p>The interior of this suit of iron armor is lined with brutal spikes. Donning the armor is an excruciating procedure that binds it to your body by piercing your flesh. Your hit point maximum is reduced by a number equal to your character level.</p>
+			<p class="indent">Roll a d100. If the number rolled is greater than your new hit point maximum, you immediately die and the attunement fails.</p>
+			<p> The armor suspends your lifeforce while you are imprisoned within it, and grows in power as your blood is spilled, feeding off of your agony to fuel its magic. </p>
+			<p class="indent">While wearing the armor you gain the following benefits:</p>
+			<ul>
+				<li>You have a +1 bonus to AC.</li>
+				<li>You are immune to exhaustion and the frightened condition.</li>
+				<li><strong><em>Death Howl.</em></strong> When damage drops you to 0 hit points, you can emanate a psychic wail of agony and drop to 1 hit point instead. Each creature of your choice within 60 feet of you that can hear you must succeed on a DC 17 Wisdom saving throw or take psychic damage equal to the damage you took. Once this property has been used, it can’t be used again until the next dawn.</li>
+			</ul>
+			<p class="indent"> If you drop below half of your maximum hit points (rounded down), you gain the following benefits: </p>
+			<ul>
+				<li>Your bonus to AC is incresed to +2.</li>
+				<li><strong><em>Bloody Vigor.</em></strong> Once on each of your turns, when you hit with an attack or deal damage with a spell, you can deal an extra 2d8 damage to one of the targets. If the target is a creature, you gain temporary hit points equal to the extra damage dealt.</li>
+			</ul>
+			<p class="indent"> If you drop below a quarter of your maximum hit points (rounded down), you gain the following benefits: </p>
+			<ul>
+				<li>Your bonus to AC is increased to +3. </li>
+				<li>The extra damage from Bloody Vigor increases to 4d8. </li>
+			</ul>
+			<p class="indent"><strong><em> Curse.</em></strong> The armor cannot be removed unless this curse is broken via the remove curse or wish spell. If the armor is removed, the magic that sustained your mangled body ends. You immediately drop to 0 hit points and you have disadvantage on death saving throws for the next 1d6 days.</p>
+			<p class="flavor"> For the Knights of The Crimson Tears, being elected Warden is no privilege. It is a duty-bound service on their honor that, one day, they may be called upon to don the Iron Maiden. If duty calls for the Warden to fulfill their agonizing promise, no evil may escape once the armor weeps for its wielder.</p>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="plate">Armor</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">1</set>
+			<set name="armor">Plate</set>
+			<set name="name-format">Iron Maiden {{parent}} +{{enhancement}}</set>
+		</setters>
+		<rules>
+			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
 		</rules>
 	</element>
 </elements>
