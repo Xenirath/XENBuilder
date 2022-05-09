@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>magic items</name>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="magic-items.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/magic-items.xml" />
 		</update>
 	</info>
@@ -254,6 +254,110 @@
 		</setters>
 		<rules>
 			<stat name="ac:armored:enhancement" value="1" bonus="enhancement" />
+		</rules>
+	</element>
+	<element name="Scourge of Torment (Dormant)" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_SCOURGE_OF_TORMENT_DORMANT">
+		<compendium display="false" />
+		<description>
+			<p class="flavor"> Pain must be brought, willingly or not.</p>
+			<p class="indent"><strong><em>Suffering.</em></strong> The Knout of Torment can only be used by an evil creature, who's main mission is to deal pain to others. For this cause, the whip deals 3d4 necrotic or radiant damage (your choice).</p>
+			<p class="indent"><strong><em>Willing Whip's Will.</em></strong> While attuned to the weapon, you have a certain link of communication to the Maiden of Pain. This channel goes both ways. If the wielder tries to do something that would be considered selfless or good-hearted (DM's discretion), they have to make a Charisma saving throw (DC 12) or take 1d10 damage.</p>
+			<p class="indent"><strong><em>Dormant.</em></strong> The whip grants the following benefits in its dormant state:</p>
+			<ul>
+				<li>You can speak, read, and write Abyssal and Infernal.</li>
+				<li>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</li>
+				<li>You can call upon The Scourge Mistress to bring pain and misery to your enemies. As an action, choose a creature within 30ft that you can see, and they have to make a Dexterity saving throw. They take 6d6 necrotic or radiant damage (your choice) and are restrained by the whip, as 9 bloody hooks cleave into their bodies. They stay restrained until you release them (as a free action), they force themselves out, or a creature uses an action to remove the hooks from their body. On a successful save, they take half damage and are not restrained. You can do this once per long rest.</li>
+			</ul>
+			<p class="indent"><strong><em>Banehold's Aura.</em></strong> While attuned to this weapon, you have advantage on Charisma (Intimidation) checks.</p>
+		</description>
+		<setters>
+			<set name="keywords">whip</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="whip">Weapon</set>
+			<set name="weapon">Whip</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_ABYSSAL" />
+			<grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+		</rules>
+	</element>
+	<element name="Scourge of Torment (Awakened)" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_SCOURGE_OF_TORMENT_AWAKENED">
+		<compendium display="false" />
+		<description>
+			<p class="flavor"> Pain must be brought, willingly or not.</p>
+			<p class="indent"><strong><em>Suffering.</em></strong> The Knout of Torment can only be used by an evil creature, who's main mission is to deal pain to others. For this cause, the whip deals 3d4 necrotic or radiant damage (your choice).</p>
+			<p class="indent"><strong><em>Willing Whip's Will.</em></strong> While attuned to the weapon, you have a certain link of communication to the Maiden of Pain. This channel goes both ways. If the wielder tries to do something that would be considered selfless or good-hearted (DM's discretion), they have to make a Charisma saving throw (DC 12) or take 1d10 damage.</p>
+			<p class="indent"><strong><em>Dormant.</em></strong> The whip grants the following benefits in its dormant state:</p>
+			<ul>
+				<li>You can speak, read, and write Abyssal and Infernal.</li>
+				<li>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</li>
+				<li>You can call upon The Scourge Mistress to bring pain and misery to your enemies. As an action, choose a creature within 30ft that you can see, and they have to make a Dexterity saving throw (DC 13). They take 6d6 necrotic or radiant damage (your choice) and are restrained by the whip, as 9 bloody hooks cleave into their bodies. They stay restrained until you release them (as a free action), they force themselves out, or a creature uses an action to remove the hooks from their body. On a successful save, they take half damage and are not restrained. You can do this once per long rest.</li>
+			</ul>
+			<p class="indent"><strong><em>Banehold's Aura.</em></strong> While attuned to this weapon, you have advantage on Charisma (Intimidation) checks.</p>
+			<p class="indent"><strong><em>Awakened.</em></strong> When the whip reaches an awakened state, it gains the following properties:</p>
+			<ul>
+				<li>The weapon’s bonus to attack and damage rolls increases to +2.</li>
+				<li>The damage from the Mistress Call becomes 8d6, and the DC increases to 15 and you can use it 2 times per long rest now.</li>
+				<li>As an action, you can look into a creatures eyes and strike pure fear into their souls. That creature has to make a Wisdom saving throw (DC 15) or be paralyzed for 1d4 turns. The creature can try to save and the end of each of their turns.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">whip</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="whip">Weapon</set>
+			<set name="weapon">Whip</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">2</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_ABYSSAL" />
+			<grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+		</rules>
+	</element>
+	<element name="Scourge of Torment (Exalted)" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_SCOURGE_OF_TORMENT_EXALTED">
+		<description>
+			<p class="flavor"> Pain must be brought, willingly or not.</p>
+			<p class="indent"><strong><em>Suffering.</em></strong> The Knout of Torment can only be used by an evil creature, who's main mission is to deal pain to others. For this cause, the whip deals 3d4 necrotic or radiant damage (your choice).</p>
+			<p class="indent"><strong><em>Willing Whip's Will.</em></strong> While attuned to the weapon, you have a certain link of communication to the Maiden of Pain. This channel goes both ways. If the wielder tries to do something that would be considered selfless or good-hearted (DM's discretion), they have to make a Charisma saving throw (DC 12) or take 1d10 damage.</p>
+			<p class="indent"><strong><em>Dormant.</em></strong> The whip grants the following benefits in its dormant state:</p>
+			<ul>
+				<li>You can speak, read, and write Abyssal and Infernal.</li>
+				<li>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</li>
+				<li>You can call upon The Scourge Mistress to bring pain and misery to your enemies. As an action, choose a creature within 30ft that you can see, and they have to make a Dexterity saving throw (DC 13). They take 6d6 necrotic or radiant damage (your choice) and are restrained by the whip, as 9 bloody hooks cleave into their bodies. They stay restrained until you release them (as a free action), they force themselves out, or a creature uses an action to remove the hooks from their body. On a successful save, they take half damage and are not restrained. You can do this once per long rest.</li>
+			</ul>
+			<p class="indent"><strong><em>Banehold's Aura.</em></strong> While attuned to this weapon, you have advantage on Charisma (Intimidation) checks.</p>
+			<p class="indent"><strong><em>Awakened.</em></strong> When the whip reaches an awakened state, it gains the following properties:</p>
+			<ul>
+				<li>The weapon’s bonus to attack and damage rolls increases to +2.</li>
+				<li>The damage from the Mistress Call becomes 8d6, and the DC increases to 15.</li>
+				<li>As an action, you can look into a creatures eyes and strike pure fear into their souls. That creature has to make a Wisdom saving throw (DC 15) or be paralyzed for 1d4 turns. The creature can try to save and the end of each of their turns.</li>
+			</ul>
+			<p class="indent"><strong><em>Exalted.</em></strong> When the whip reaches an exalted state, it gains the following additional properties:</p>
+			<ul>
+				<li>The weapon’s bonus to attack and damage rolls increases to +3.</li>
+				<li>The damage from the Mistress Call becomes 10d6, and the DC increases to 17 and you can use it 3 times per long rest now.</li>
+				<li>While holding the weapon, you can use an action to cast one of the following spells from it (save DC 17): metallic spears, cauterize, lilliander's hellspear, power word pain, bloodcurse, harm. Once a spell is cast using the whip, that spell can't be cast from the whip again until the next dawn. </li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">whip</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="whip">Weapon</set>
+			<set name="weapon">Whip</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">3</set>
+		</setters>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_ABYSSAL" />
+			<grant type="Language" id="ID_LANGUAGE_INFERNAL" />
 		</rules>
 	</element>
 </elements>
