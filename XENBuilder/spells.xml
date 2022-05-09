@@ -2,7 +2,7 @@
 <elements>
 	<info>
         <name>spells</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/spells.xml" />
 		</update>
 	</info>
@@ -100,4 +100,27 @@
    			<set name="isRitual">false</set>
   		</setters>
  	</element>  
+	<element name="Xen's Transmogrification" type="Spell" source="XENBuilder" id="ID_XENBUILDER_SPELL_XENS_TRANSMOGRIFICATION">
+		<supports>Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<p class="flavor"> Even knowing how flawed they all are, you still want to play god.</p>
+			<p> To do this, you encase a humanoid in clay, and start conducting a rigorous, one-hour-long ritual that manipulates (or makes) the flesh and function of the target's body into that of another humanoid race. They lose their previous racial traits and instetad gain the racial traits of another humanoid race of the target's choice, aside from their languages known (which remain unchanged).</p>
+			<p> The age and lifespan of the previous race carries over as well, regardless of the longevity of the new race acquired. Should the target wish to alter their gender along with or instead of their race, they can choose to do so as part of the spell.</p>
+			<p> When the ritual is completed, both the caster and the target gain one level of exhaustion. Once a creature's race or gender has been changed via this spell, they cannot be affected by this spell again for 1 year.</p>
+		</description>
+		<setters>
+			<set name="keywords"></set>
+			<set name="level">6</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 hour</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">Damp clay equal to the weight of the target and 150 gp worth of crushed gem dust, both of which the spell consumes.</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
 </elements>
