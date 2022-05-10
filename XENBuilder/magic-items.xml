@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>magic items</name>
-		<update version="0.0.9">
+		<update version="0.1.0">
 			<file name="magic-items.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/magic-items.xml" />
 		</update>
 	</info>
@@ -358,6 +358,30 @@
 		<rules>
 			<grant type="Language" id="ID_LANGUAGE_ABYSSAL" />
 			<grant type="Language" id="ID_LANGUAGE_INFERNAL" />
+		</rules>
+	</element>
+	<element name="Ring of Ideal Perfection" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_RING_OF_IDEAL_PERFECTION">
+		<description>
+			<p> This beautifully engraved platinum ring is enchanted to make the wearer as perfect of an experience as they can be. While wearing it, you know the following cantrips and can cast them at will:</p>
+			<p class="flavor"> Prestidigitation, Druidcraft, Thaumaturgy, Hocuspocus, Mage Hand, Mending. </p>
+			<p> Additionally, you can automatically set those cantrips to cast indefinetely with set effects that are maintained until you remove the ring or decide to change or stop the effects. </p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">false</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" spellcasting="RoIP" />
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" spellcasting="RoIP" />
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" spellcasting="RoIP" />
+			<grant type="Spell" id="ID_MHP_VSOS_SPELL_HOCUSPOCUS" spellcasting="RoIP" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" spellcasting="RoIP" />
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" spellcasting="RoIP" />
 		</rules>
 	</element>
 </elements>
