@@ -364,7 +364,7 @@
 		<description>
 			<p> This beautifully engraved platinum ring is enchanted to make the wearer as perfect of an experience as they can be. While wearing it, you know the following cantrips and can cast them at will:</p>
 			<p class="flavor"> Prestidigitation, Druidcraft, Thaumaturgy, Hocuspocus, Mage Hand, Mending. </p>
-			<p> Additionally, you can automatically set those cantrips to cast indefinetely with set effects that are maintained until you remove the ring or decide to change or stop the effects. </p>
+			<p> Additionally, you can automatically set those cantrips to cast under certain conditions or indefinetely, with set effects, in an 10ft aura around you. The conditions or effects are maintained until you remove the ring or decide to change or stop the them. </p>
 		</description>
 		<setters>
 			<set name="category">Rings</set>
