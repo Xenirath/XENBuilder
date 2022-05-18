@@ -123,4 +123,22 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+	<element name="Blessed Blade" type="Spell" source="XENBuilder" id="ID_XENBUILDER_SPELL_BLESSED_BLADE">
+		<supports>Cleric, Druid, Ranger, Warlock</supports>
+		<description>
+			<p>As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell’s range, otherwise the spell fails. On a hit, the target suffers the weapon attack’s normal effects, and you can channel divine magic into the target. Choose necrotic or radiant damage. The attack deals an additional damage of the chosen type equal to your spellcasting modifier on a hit, plus an additional effect based on the type of damage. If necrotic, the next time target takes damage within the next minute, they take an additional 1d8 necrotic damage, and the effect ends. If radiant, you can choose and additional creature within 15ft of the target, and divine light splashes towards them, dealing 1d8 radiant damage to them.</p>
+			<p class="indent">This spell’s damage increases when you reach certain levels. At 5th level, the melee attack deals an additional 1d8 necrotic or radiant damage to the target on a hit, and the damage dealt by the effects increases to 2d8. Both damage rolls increase by one die at 11th level (2d8 and 3d8) and 17th level (3d8 and 4d8).</p>
+		</description>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">Self (5-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a melee weapon</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
 </elements>
