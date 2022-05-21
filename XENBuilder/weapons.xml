@@ -43,7 +43,7 @@
 		<description>
 			<p>You gain a +1 bonus to attack and damage rolls made with this magic weapon.</p>
 			<p class="indent"><strong><em>Versatile Form </em></strong> This special pistol can be transformed into a bigger gun. As a bonus action, you can quickly assemble the full version of Whisper, which turns it into a 1d12 rifle (from AAGNG) or back into it's 1d8 pistol form.</p>
-			<p class="indent"><strong><em>4 time's the charm </em></strong> This weapon has a Reload of 4 in both forms, and it's loading time can't be ignored by any feature. Every 4th shot in each reload, the gun overcharges, that attack has advantage and the shot deals an extra 1d8 damage, increased to 2d8 if it was a critical hit.</p>
+			<p class="indent"><strong><em>4 time's the charm </em></strong> This weapon has a Reload of 4 in both forms, and it's loading time can't be ignored by any feature. Every 4th shot in each reload, the gun overcharges, that attack has advantage and the shot deals an extra die of damage, increased to 2 dice if it was a critical hit.</p>
 		</description>
 		<setters>
 			<set name="keywords">heavy pistol, rifle</set>
