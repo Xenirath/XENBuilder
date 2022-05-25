@@ -395,6 +395,8 @@
 			</ul>
 			<p><strong><em>Dracula:</em></strong> Your natural vampirism is elevated to the peak of its power as it is suffused with the legendary strength of the Dracula. In addition, to the benefits granted by your vampire spawn and true vampire traits, with the exception of the vampire spawn's Spawn trait, you gain the following benefits: </p>
 			<ul>
+				<li><strong><em>Enhanced Fangs.</em></strong> Your Bite now reduces the hit point maximum of the creature by an amount equal to the necrotic damage taken, and you regain hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0.</li>
+				<li><strong><em>Enhanced Talons.</em></strong> Your Claws / Talons now deal 2d8 slashing damage and on a successful attack, you can grapple the creature as a bonus action.</li>
 				<li><strong><em>Vampiric Resistance.</em></strong> You are resistant to non-magical bludgeoning, piercing and slashing damage (non-silvered). If you were, you are now immune. </li>
 				<li><strong><em>Vampiric Regeneration.</em></strong> You gain 10 temporary hit points at the start of your turn if you have at least 1 hit point.</li>
 				<li><strong><em>Enhanced Vampirism.</em></strong> All vampires feats you possess are enhanced, as seen in the Enhanced Vampirism Table.</li>
