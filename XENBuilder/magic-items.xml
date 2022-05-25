@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>magic items</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="magic-items.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/magic-items.xml" />
 		</update>
 	</info>
@@ -382,6 +382,50 @@
 			<grant type="Spell" id="ID_MHP_VSOS_SPELL_HOCUSPOCUS" spellcasting="RoIP" />
 			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" spellcasting="RoIP" />
 			<grant type="Spell" id="ID_PHB_SPELL_MENDING" spellcasting="RoIP" />
+		</rules>
+	</element>
+	<element name="Ring of Dracula" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_RING_OF_DRACULA">
+		<description>
+			<p class="flavor"> This magical ring is covered in a layer of gold, its black obsidian material becoming evident in the engravings that adorn it. At its crown, sits a crimson gem that radiates status and nobility.</p>
+			<p><strong><em>The Ring:</em></strong> This magnificent ring was said to have been worn by the famed Dracula himself and in the eons he wore it, it took on magical properties as it was warped by his powerful unnatural presence. While wearing this ring you gain the following benefits: </p>
+			<ul>
+				<li> You no longer possess any of the weakness a vampires has and are immune to the effects of sunlight. </li>
+				<li> If your coffinic structure is further then 2 hours away but on the same plane of existence you reach it within two hours and regain all lost hit points once you've rested there for an hour. </li>
+				<li> You can go for a month without needing to consume blood. </li>
+			</ul>
+			<p><strong><em>Dracula:</em></strong> Your natural vampirism is elevated to the peak of its power as it is suffused with the legendary strength of the Dracula. In addition, to the benefits granted by your vampire spawn and true vampire traits, with the exception of the vampire spawn's Spawn trait, you gain the following benefits: </p>
+			<ul>
+				<li><strong><em>Vampiric Resistance.</em></strong> You are resistant to non-magical bludgeoning, piercing and slashing damage (non-silvered). If you were, you are now immune. </li>
+				<li><strong><em>Vampiric Regeneration.</em></strong> You gain 10 temporary hit points at the start of your turn if you have at least 1 hit point.</li>
+				<li><strong><em>Enhanced Vampirism.</em></strong> All vampires feats you possess are enhanced, as seen in the Enhanced Vampirism Table.</li>
+			</ul>
+			<p><strong><em>Legendary Actions (3):</em></strong> You can take 3 legendary actions (the amount doesn't add up to other legendary actions the creature might have, but they get additional options to choose from), choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. You regain spent legendary actions at the start of your turn. </p>
+			<ul>
+				<li><strong><em>Endure.</em></strong> The next time you receive damage, the damage received is halved as if you were resistant to it, unless its radiant or fire damage, or it comes from sunlight or running water.</li>
+				<li><strong><em>Death Grip</em></strong>. You move up to your movement speed towards an enemy and try to grapple them by grabbing their neck or another vulnerable part. If you succeed the check, their are restrained by an invisible dark force until you let them go or they succeed on the check.</li>
+				<li><strong><em>Dominate Person (Costs 2 Actions; Recharges on a 5-6).</em></strong> You cast the "Dominate Person" spell. The enemy has to make the save against your spellcasting DC (From your Int/Wis/Cha, depending on you) or suffer the effects of the spell as normal.</li>
+			</ul>
+			<p><strong><em>Legendary Resistance (3):</em></strong> While you may not be of legendary status like the great Dracula, his ring elevates you to such a position. If you fail a saving throw, you can choose to succeed instead. You can use this three times before the next dawn. If the creature already had Legendary Resistances of their own, add +1 to their max, not 3. </p>
+			<p><strong><em>Curse:</em></strong> Once attuned to the Ring of Dracula you cannot unattune to it and the only way to remove it from your person is to destroy you. </p>
+			<p><strong><em>Destroying the Ring of Dracula:</em></strong> The Ring of Dracula is indestructible like most artifacts, however, it can be destroyed by being swallowed by a good-aligned solar or some of the other more powerful good entities of the upper planes. </p>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="cost" currency="pp">69420</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">ring</set>
+			<set name="type">Ring</set>
+			<set name="rarity">Artifact</set>
+			<set name="attunement" addition="by an true vampire">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" requirements="!ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_SLASHING" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_BLUDGEONING" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PIERCING" requirements="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
 		</rules>
 	</element>
 </elements>
