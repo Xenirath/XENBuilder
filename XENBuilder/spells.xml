@@ -2,7 +2,7 @@
 <elements>
 	<info>
         <name>spells</name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/spells.xml" />
 		</update>
 	</info>
@@ -138,6 +138,33 @@
 			<set name="hasSomaticComponent">false</set>
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a melee weapon</set>
+			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<element name="Elemental Burst" type="Spell" source="XENBuilder" id="ID_XENBUILDER_SPELL_ELEMENTAL_BURST">
+		<supports>Sorcerer</supports>
+		<description>
+			<p>You hurl a burst of elemental energy at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 2d4 damage. </p>
+			<p>Choose one of the d4s, or roll again (your choice). The number rolled on the die determines the damage type, as shown below.</p>
+			<table>
+				<thead>
+					<tr><td>d4</td><td>Damage Type</td></tr>
+				</thead>
+				<tr><td>1</td><td>Cold</td></tr>
+				<tr><td>2</td><td>Fire</td></tr>
+				<tr><td>3</td><td>Lightning</td></tr>
+				<tr><td>4</td><td>Thunder</td></tr>
+			</table>
+			<p class="indent">This spell's damage increases by 2d4 when you reach 5th level (4d4), and again at 11th level (6d4) and 17th level (8d4).</p>
+		</description>
+		<setters>
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
 			<set name="duration">Instantaneous</set>
 		</setters>
 	</element>
