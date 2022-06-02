@@ -18,7 +18,7 @@
 		<file name="objects.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/objects.xml"/>
 		<file name="races.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/races.xml"/>
 		<file name="special-armors.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/special-armors.xml"/>
-		<file name="special-weapons.xml" url="hhttps://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/special-weapons.xml" />
+		<file name="special-weapons.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/special-weapons.xml" />
 		<file name="spells.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/spells.xml"/>
    		<file name="weapons.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/weapons.xml"/>
 	</files>
