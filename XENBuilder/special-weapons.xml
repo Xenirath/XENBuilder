@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>SpWeapons</name>
-		<update version="0.0.2">
-			<file name="spweapons.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/spweapons.xml" />
+		<name>special-weapons</name>
+		<update version="0.0.3">
+			<file name="special-weapons.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/special-weapons.xml" />
 		</update>
 	</info>
 	<element name="Shillelagh Club" type="Weapon" source="XENBuilder" id="ID_XENBUILDER_WEAPON_SHILLELAGH_CLUB">
