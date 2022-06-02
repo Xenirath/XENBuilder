@@ -3,7 +3,7 @@
 	<info>
 		<name>XENBuilder index</name>
 		<description>DnD 5e Homebrew, custom made or found .xml's for Aurora Builder, by Xenirath.</description>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="xenbuilder.index" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/xenbuilder.index"/>
 		</update>
 	</info>
@@ -20,6 +20,7 @@
 		<file name="special-armors.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/special-armors.xml"/>
 		<file name="special-weapons.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/special-weapons.xml" />
 		<file name="spells.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/spells.xml"/>
+		<file name="subclasses.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/subclasses.xml"/>
    		<file name="weapons.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/weapons.xml"/>
 	</files>
 </index>
