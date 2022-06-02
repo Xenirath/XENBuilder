@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>feats</name>
+		<update version="0.0.1">
+			<file name="subclasses.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/subclasses.xml" />
+		</update>
+  	</info>
+
+    <element name="College of Puppetry" type="Archetype" source="XENBuilder" id="ID_XENBUILDER_ARCHETYPE_COLLEGE_OF_PUPPETRY">
+		<supports>Bard College</supports>
+		<description>
+			<p> While most bards utilize their voices and instrumental prowess, bards of the College of Puppetry prefer to use their puppets as entertainment. Still proficient in their musical talents, bards of this college often appear to be like most other bards: supplementing their songs and stories with the visual effects of their puppets. However, the College of Puppetry teaches its students to be the masters of their own fate and to control those around them as a means to their ends. These bards utilize their magic and natural talents to get what they want through any means necessary. </p>
+            <p class="indent"> Most other bards view the College of Puppetry with disdain, if not outright hatred and violence. They believe practitioners of this artform taint the name of bards everywhere with their malignant magics and despicable, underhanded tactics. As such, members of this college often hide their puppetry prowess until necessary. Others blatantly use their skills in puppetry, laughting at the notion they would be a part of the ne'er-do-wells aligned with the College of Puppetry. </p>
+			<div element="ID_XENBUILDER_ARCHETYPE_PUPPETRY_BONUS_PROFICIENCIES" />
+			<div element="ID_XENBUILDER_ARCHETYPE_PUPPETRY_CAPTIVE_AUDIENCE" />
+			<div element="ID_XENBUILDER_ARCHETYPE_PUPPETRY_MALIGN_PUPPET" />
+			<div element="ID_XENBUILDER_ARCHETYPE_PUPPETRY_PUPPET_MASTER" />
+		</description>
+		<sheet display="false">
+			<description>Bards of the College of Puppetry are disciples of the Storm Lord.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_XENBUILDER_ARCHETYPE_PUPPETRY_BONUS_PROFICIENCIES" level="3" />
+			<grant type="Archetype Feature" id="ID_XENBUILDER_ARCHETYPE_PUPPETRY_CAPTIVE_AUDIENCE" level="3" />
+			<grant type="Archetype Feature" id="ID_XENBUILDER_ARCHETYPE_PUPPETRY_MALIGN_PUPPET" level="6" />
+			<grant type="Archetype Feature" id="ID_XENBUILDER_ARCHETYPE_PUPPETRY_PUPPET_MASTER" level="14" />
+		</rules>
+	</element>	
+    <element name="Bonus Proficiencies" type="Archetype Feature" source="XENBuilder" id="ID_XENBUILDER_ARCHETYPE_PUPPETRY_BONUS_PROFICIENCIES">
+		<description>
+			<p> When you join the College of Puppetry at 3rd level, you gain proficiency in the following skills: Performance and Sleight of Hand. You also gain proficiency in Woodcarver's Tools.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency in Performance, Sleight of Hand, and with Woodvarver's Tools.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+		</rules>
+	</element>	
+	<element name="Captive Audience" type="Archetype Feature" source="XENBuilder" id="ID_XENBUILDER_ARCHETYPE_PUPPETRY_CAPTIVE_AUDIENCE">
+		<description>
+			<p> Also at 3rd level, you gain the ability to force others to watch your performances. As an action, you can expend one use of your Bardic Inspiration to enthrall those around you. Every creature of your choice within 15 feet that can see you must succeed on a Wisdom saving throw against your spell save DC of be charmed by you. Creatures charmed in this manner cannot take their eyes off of you and have disadvantage on attack rolls. Additionally, affected targets cannot willingly move farther away from you. </p>
+            <p class="indent"> On subsequent turns, you must use a bonus action to maintain the performance and this effect on your targets. A target remains charmed in this way for 10 minutes, until it is attacked or damaged, or if you do not continue the performance. </p>
+            <p class="indent"> Targets who succeed on their saving throw do not know you attempted to charm them. </p>
+		</description>
+		<sheet action="Action">
+			<description> You can expend a use of your Bardic Inspiration to enthrall every creature of your choice within 15 feet for 10 minutes, unless they pass a Wisdom saving throw against your bard spell save DC. You must maintain this performance with a bonus action every turn. The charm is broken if they get attacked or damaged, or you stop the performance, or after 10 minutes. Targets who succeed don't know you attempted to charm them. </description>
+		</sheet>
+		<rules />
+	</element>	
+	<element name="Malign Puppet" type="Archetype Feature" source="XENBuilder" id="ID_XENBUILDER_ARCHETYPE_PUPPETRY_MALIGN_PUPPET">
+		<description>
+			<p> At 6th level, you are able to channel your magic into a creature to make it into a grisly puppet for your own machinations. As an action, you can force a creature to make a Wisdom saving throw against your spell save DC. On a failure, the creature's body is at your whim. On its turns, you can use your reaction to control the creature's movement and cause it to make one weapon attack against a creature of your choice within range. At the end of each of its turns or any time the creature takes damage, it can make a Wisdom saving throw. On a success, the effects of this feature end. You must concentrate on this ability as though concentrating on a spell; losing concentration ends the effects. </p>
+            <p class="indent"> A creature who successfully saves against the effect, or if the effect on it ends, is immune to the effects of this feature for the next 24 hours. </p>
+            <p class="indent"> Once you use this feature, you can't use it again until you have finished a short or long rest. </p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description> You can control others to attack as if they were your puppets. They have to make a Wisdom saving throw against your bard spell save DC or use their movement and action to attack once. You must concentrate on this ability as if it was a spell. Creatures that save against this are immune for 24 hours.</description>
+		</sheet>
+	</element>
+	<element name="Puppet Master" type="Archetype Feature" source="XENBuilder" id="ID_XENBUILDER_ARCHETYPE_PUPPETRY_PUPPET_MASTER">
+		<description>
+			<p> At 14th level, you have gained the ability to create and utilize your puppets more effectively. A creature affected by your Malign Puppet feature does not begin to make additional saving throws at the end of its turns until 1 minute has passed. When you force your puppet creature to attack, it can now make two weapon attacks instead of one. Additionally, you can cast spells as if you were in your puppet's space. </p>
+			<p class="indent"> As a bonus action, you can see through your puppet's eyes, hear what it hears, and cause your voice to emanate from it. While using your puppet's senses, you are blind and deaf with regard to your own senses. </p>
+		</description>
+		<sheet action= "Bonus Action">
+			<description> Your Malign Puppet can now make two attacks instead of one, and can't start saving at the end of their turns until 1 minute has passed. You can also cast spells as if you were in your puppet's space. As a bonus action you can sense through your puppet's senses, and you are blind and deaf with regard to your own senses. </description>
+		</sheet>
+	</element>
+	
+</elements>
