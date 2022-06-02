@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>special armors</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="special-armors.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/special-armors.xml" />
 		</update>
 	</info>
