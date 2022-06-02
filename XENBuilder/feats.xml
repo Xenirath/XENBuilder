@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>feats</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/feats.xml" />
 		</update>
   	</info>
@@ -388,7 +388,7 @@
 	<!-- VAMPIRE KINDRED FEATS BELOW -->
 	<element name="Superior Body" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_SUPERIOR_BODY">
 		<prerequisite>Vampire Kindred (True Vampire)</prerequisite>
-		<requirements>ID_XENBUILDER_RACE_VAMPIRE_KINDRED_TRUE_VAMPIRE</requirements>
+		<requirements>ID_XENBUILDER_SUB_RACE_VAMPIRE_KINDRED_TRUE_VAMPIRE</requirements>
 		<description>
 			<p>You can use your vampiric reflexes to dodge attacks and move with an unearthly grace and ease, gaining the following benefits:</p>
 			<ul>
@@ -416,7 +416,7 @@
 	</element>
 	<element name="Shapechanger" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_SHAPECHANGER">
 		<prerequisite>Vampire Kindred (True Vampire)</prerequisite>
-		<requirements>ID_XENBUILDER_RACE_VAMPIRE_KINDRED_TRUE_VAMPIRE</requirements>
+		<requirements>ID_XENBUILDER_SUB_RACE_VAMPIRE_KINDRED_TRUE_VAMPIRE</requirements>
 		<description>
 			<p> Vampires are known for their ability to shift from form to form. You gain the shapechanger tag and if you are not in sunlight or running water, you can use your action to polymorph into a Tiny bat or a Medium cloud of mist for 1 minute, or back into your true form.</p>
 			<ul>
@@ -436,7 +436,7 @@
 	</element>
 	<element name="Animating Bite" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_ANIMATING_BITE">
 		<prerequisite>Vampire Kindred (True Vampire)</prerequisite>
-		<requirements>ID_XENBUILDER_RACE_VAMPIRE_KINDRED_TRUE_VAMPIRE</requirements>
+		<requirements>ID_XENBUILDER_SUB_RACE_VAMPIRE_KINDRED_TRUE_VAMPIRE</requirements>
 		<description>
 			<p>You can suffuse your unholy lifeforce into creatures you drain. When you reduce a creature to 0 hit points you can choose to animate it, causing it to rise at the next midnight as a zombie under your control. This zombie can take simple commands from you and you may have a number of zombies equal to your proficiency bonus under your control through this method at a time.</p>
 			<p>If you already have your maximum number of zombies under your control other corpses which rise due to your bite are not under your control are hostile towards you and others.</p>
@@ -450,7 +450,7 @@
 	</element>
 	<element name="Children of the Night" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_CHILDREN_OF_THE_NIGHT">
 		<prerequisite>Vampire Kindred (True Vampire)</prerequisite>
-		<requirements>ID_XENBUILDER_RACE_VAMPIRE_KINDRED_TRUE_VAMPIRE</requirements>
+		<requirements>ID_XENBUILDER_SUB_RACE_VAMPIRE_KINDRED_TRUE_VAMPIRE</requirements>
 		<description>
 			<p>As an action, you may magically call 2d4 swarms of bats or rats, provided the sun isn't up. While outdoors, you can call 2d6 wolves instead. The called creatures arrive in 1d4 rounds, acting as your allies and obeying your spoken commands. The beasts remain for 1 hour, and can be dismissed as a bonus action. You may not call on more than one swarm at any time, and you may not summon creatures with this feat more than once every hour.</p>
 			<p class="indent"> If you are wearing the Ring of Dracula, you also gain the following benefits from this feat:</p>
@@ -462,7 +462,7 @@
 	</element>
 	<element name="Unnatural Charm" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_UNNATURAL_CHARM">
 		<prerequisite>Vampire Kindred (True Vampire)</prerequisite>
-		<requirements>ID_XENBUILDER_RACE_VAMPIRE_KINDRED_TRUE_VAMPIRE</requirements>
+		<requirements>ID_XENBUILDER_SUB_RACE_VAMPIRE_KINDRED_TRUE_VAMPIRE</requirements>
 		<description>
 			<p> As an action, you can target one humanoid you can see within 30 feet. If the target can see you, it must succeed a Wisdom saving throw, or be charmed. The DC for the save is equal to 8 + your proficiency bonus + your Charisma modifier. The charmed target regards you as a trusted friend to be heeded and protected. Although the target isn't under your direct control, it takes your requests or actions in the most favorable way it can, and it is a willing target for your Vampiric Bite/Draining Fangs.</p>
 			<p> Each time you or one of your companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts for 24 hours, until you are destroyed, until you on a different plane of existence than the target, or if you take a bonus action to end the effect. You can only have one creature charmed this way at once and you can use this trait a number of times equal to your Charisma modifier before you must complete a long rest before using it again.</p>
