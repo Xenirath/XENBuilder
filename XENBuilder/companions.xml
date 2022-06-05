@@ -2,10 +2,11 @@
 <elements>
 	<info>
 		<name>My Companions</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="companions.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/companions.xml" />
 		</update>
 	</info>
+	<!-- TRESSYM -->
 	<element name="Tressym" type="Companion" source="XENBuilder" id="ID_XENBUILDER_COMPANION_TRESSYM">
 		<supports>Familiar</supports>
 		<description />
@@ -28,8 +29,8 @@
 			<set name="size">Tiny</set>
 			<set name="alignment">chaotic neutral</set>
 			<set name="challenge">0</set>
-			<set name="traits">ID_WOTC_PHB_COMPANION_TRAIT_CAT_KEEN_SMELL,ID_XENBUILDER_COMPANION_TRAIT_TRESSYM_DETECT_INVISIBILITY,ID_XENBUILDER_COMPANION_TRAIT_TRESSYM_POISON_SENSE</set>
-			<set name="actions">ID_WOTC_PHB_COMPANION_ACTION_CAT_CLAWS</set>
+			<set name="traits">ID_XENBUILDER_COMPANION_TRAIT_TRESSYM_KEEN_SMELL,ID_XENBUILDER_COMPANION_TRAIT_TRESSYM_DETECT_INVISIBILITY,ID_XENBUILDER_COMPANION_TRAIT_TRESSYM_POISON_SENSE</set>
+			<set name="actions">ID_XENBUILDER_COMPANION_ACTION_TRESSYM_CLAWS</set>
 		</setters>
 		<rules>
 			<stat name="companion:ac" value="12" />
@@ -41,7 +42,7 @@
 			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
 		</rules>
 	</element>
-	<element name="Keen Smell" type="Companion Trait" source="Player’s Handbook" id="ID_WOTC_PHB_COMPANION_TRAIT_CAT_KEEN_SMELL">
+	<element name="Keen Smell" type="Companion Trait" source="XENBuilder" id="ID_XENBUILDER_COMPANION_TRAIT_TRESSYM_KEEN_SMELL">
 		<description>
 			<p>The cat has advantage on Wisdom (Perception) checks that rely on smell.</p>
 		</description>
@@ -65,12 +66,165 @@
 			<description>The tressym can detect whether a substance is poisonous by taste, touch, or smell. Can't become poisoned (condition).</description>
 		</sheet>
 	</element>
-	<element name="Claws" type="Companion Action" source="Player’s Handbook" id="ID_WOTC_PHB_COMPANION_ACTION_CAT_CLAWS">
+	<element name="Claws" type="Companion Action" source="XENBuilder" id="ID_XENBUILDER_COMPANION_ACTION_TRESSYM_CLAWS">
 		<description>
-			<p>Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 slashing damage.</p>
+			<p>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 slashing damage.</p>
 		</description>
 		<sheet>
-			<description>Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 slashing damage.</description>
+			<description>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 slashing damage.</description>
+		</sheet>
+	</element>
+	<!-- GAZER -->
+	<element name="Gazer" type="Companion" source="XENBuilder" id="ID_XENBUILDER_COMPANION_GAZER">
+		<supports>Familiar</supports>
+		<description />
+		<setters>
+			<set name="strength">3</set>
+			<set name="dexterity">17</set>
+			<set name="constitution">14</set>
+			<set name="intelligence">3</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">7</set>
+			<set name="ac">13</set>
+			<set name="hp">13 (3d4+6)</set>
+			<set name="speed">0 ft., fly 30ft. (hover)</set>
+			<set name="senses">darkvision 60 ft., passive Perception 14</set>
+			<set name="languages">—</set>
+			<set name="saves">Wis +2</set>
+			<set name="skills">Perception +4, Stealth +5</set>
+			<set name="conditionImmunities">prone</set>
+			<set name="type">Aberration (Beholder)</set>
+			<set name="size">Tiny</set>
+			<set name="alignment">neutral evil</set>
+			<set name="challenge">1/2</set>
+			<set name="traits">ID_XENBUILDER_COMPANION_TRAIT_GAZER_MIMICRY</set>
+			<set name="actions">ID_XENBUILDER_COMPANION_ACTION_GAZER_BITE,ID_XENBUILDER_COMPANION_ACTION_GAZER_EYE_RAYS,ID_XENBUILDER_COMPANION_ACTION_GAZER_AGGRESSIVE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="13" />
+			<stat name="companion:hp:max" value="18" bonus="base" />
+			<stat name="companion:speed" value="0" bonus="base" />
+			<stat name="companion:speed:fly" value="30" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Mimicry" type="Companion Trait" source="XENBuilder" id="ID_XENBUILDER_COMPANION_TRAIT_GAZER_MIMICRY">
+		<description>
+			<p>The gazer can mimic simple sounds of speech it has heard, in any language. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check.</p>
+		</description>
+		<sheet>
+			<description>The gazer can mimic simple sounds of speech it has heard, in any language. A creature that hears the sounds can tell they are imitations with a successful DC 10 Wisdom (Insight) check.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="XENBuilder" id="ID_XENBUILDER_COMPANION_ACTION_GAZER_BITE">
+		<description>
+			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Eye Rays" type="Companion Action" source="XENBuilder" id="ID_XENBUILDER_COMPANION_ACTION_GAZER_EYE_RAYS">
+		<description>
+			<p>The gazer shoots two of the following magical eye rays at random (roll two d4s, and reroll duplicates), choosing one or two targets it can see within 60 feet of it:</p>
+			<ul>
+				<li><strong><em>1: Dazing Ray.</em></strong> The targeted creature must succeed on a DC 12 Wisdom saving throw or be charmed until the start of the gazer's next turn. While the target is charmed in this way, its speed is halved, and it has disadvantage on attack rolls.</li>
+				<li><strong><em>2: Fear Ray.</em></strong> The targeted creature must succeed on a DC 12 Wisdom saving throw or be frightened until the start of the gazer's next turn.</li>
+				<li><strong><em>3: Frost Ray.</em></strong> The target must succeed on a DC 12 Dexterity saving throw or take 10 (3d6) cold damage.</li>
+				<li><strong><em>4: Telekinetic Ray.</em></strong> If the target is a creature that is Medium or smaller, it must succeed on a DC 12 Strength saving throw or be moved up to 30 feet directly away from the gazer. If the target is a Tiny object that isn't being worn or carried, the gazer moves it up to 30 feet in any direction. The gazer can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a container.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>The gazer shoots two of the following magical eye rays at random, between dazing, fear, frost or telekinetic rays. Choose one or two targets it can see withing 60 feet of it to be hit.
+			1: Dazing Ray.The targeted creature must succeed on a DC 12 Wisdom saving throw or be charmed until the start of the gazer's next turn. While the target is charmed in this way, its speed is halved, and it has disadvantage on attack rolls.
+			2: Fear Ray. The targeted creature must succeed on a DC 12 Wisdom saving throw or be frightened until the start of the gazer's next turn.
+			3: Frost Ray. The target must succeed on a DC 12 Dexterity saving throw or take 10 (3d6) cold damage.
+			4: Telekinetic Ray. If the target is a creature that is Medium or smaller, it must succeed on a DC 12 Strength saving throw or be moved up to 30 feet directly away from the gazer. If the target is a Tiny object that isn't being worn or carried, the gazer moves it up to 30 feet in any direction. The gazer can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a container.</description>
+		</sheet>
+	</element>
+	<element name="Aggressive (Bonus Action)" type="Companion Action" source="XENBuilder" id="ID_XENBUILDER_COMPANION_ACTION_GAZER_AGGRESSIVE">
+		<description>
+			<p>The gazer moves up to its speed toward a hostile creature that it can see.</p>
+		</description>
+		<sheet>
+			<description>The gazer moves up to its speed toward a hostile creature that it can see.</description>
+		</sheet>
+	</element>
+	<!-- FLUMPH -->
+	<element name="Flumph" type="Companion" source="XENBuilder" id="ID_XENBUILDER_COMPANION_FLUMPH">
+		<supports>Familiar</supports>
+		<description />
+		<setters>
+			<set name="strength">6</set>
+			<set name="dexterity">15</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">14</set>
+			<set name="wisdom">14</set>
+			<set name="charisma">11</set>
+			<set name="ac">12</set>
+			<set name="hp">7 (2d6)</set>
+			<set name="speed">5 ft., fly 30ft.</set>
+			<set name="senses">darkvision 60 ft., passive Perception 12</set>
+			<set name="languages">understands Undercommon but can't speak, telepathy 60 ft.</set>
+			<set name="saves">Wis +2</set>
+			<set name="skills">Arcana +4, History +4, Religion +4</set>
+			<set name="vulnerabilities">psychic</set>
+			<set name="type">Aberration</set>
+			<set name="size">Small</set>
+			<set name="alignment">lawful good</set>
+			<set name="challenge">1/8</set>
+			<set name="traits">ID_XENBUILDER_COMPANION_TRAIT_FLUMPH_ADVANCED_TELEPATHY,ID_XENBUILDER_COMPANION_TRAIT_FLUMPH_PRONE_DEFICIENCY,ID_XENBUILDER_COMPANION_TRAIT_FLUMPH_TELEPATHIC_SHROUD</set>
+			<set name="actions">ID_XENBUILDER_COMPANION_ACTION_FLUMPH_TENDRILS,ID_XENBUILDER_COMPANION_ACTION_FLUMPH_STENCH_SPRAY</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="12" bonus="base" />
+			<stat name="companion:speed" value="5" bonus="base" />
+			<stat name="companion:speed:fly" value="30" bonus="base" />
+			<stat name="companion:arcana:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:history:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:religion:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Advanced Telepathy" type="Companion Trait" source="XENBuilder" id="ID_XENBUILDER_COMPANION_TRAIT_FLUMPH_ADVANCED_TELEPATHY">
+		<description>
+			<p>The flumph can perceive the content of any telepathic communication used within 60 feet of it, and it can't be surprised by creatures with any form of telepathy.</p>
+		</description>
+		<sheet>
+			<description>The flumph can perceive the content of any telepathic communication used within 60 feet of it, and it can't be surprised by creatures with any form of telepathy.</description>
+		</sheet>
+	</element>
+	<element name="Prone Deficiency" type="Companion Trait" source="XENBuilder" id="ID_XENBUILDER_COMPANION_TRAIT_FLUMPH_PRONE_DEFICIENCY">
+		<description>
+			<p>If the flumph is knocked prone, roll a die. On an odd result, the flumph lands upside-down and is incapacitated. At the end of each of its turns, the flumph can make a DC 10 Dexterity saving throw, righting itself and ending the incapacitated condition if it succeeds.</p>
+		</description>
+		<sheet>
+			<description>If the flumph is knocked prone, roll a die. On an odd result, the flumph lands upside-down and is incapacitated. At the end of each of its turns, the flumph can make a DC 10 Dexterity saving throw, righting itself and ending the incapacitated condition if it succeeds.</description>
+		</sheet>
+	</element>
+	<element name="Telepathic Shroud" type="Companion Trait" source="XENBuilder" id="ID_XENBUILDER_COMPANION_TRAIT_FLUMPH_TELEPATHIC_SHROUD">
+		<description>
+			<p>The flumph is immune to any effect that would sense its emotions or read its thoughts, as well as all divination spells.</p>
+		</description>
+		<sheet>
+			<description>The flumph is immune to any effect that would sense its emotions or read its thoughts, as well as all divination spells.</description>
+		</sheet>
+	</element>
+	<element name="Tendrils" type="Companion Action" source="XENBuilder" id="ID_XENBUILDER_COMPANION_ACTION_FLUMPH_TENDRILS">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage plus 2 (1d4) acid damage. At the end of each of its turns, the target must make a DC 10 Constitution saving throw, taking 2 (1d4) acid damage on a failure or ending the recurring acid damage on a success. A lesser restoration spell cast on the target also ends the recurring acid damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage plus 2 (1d4) acid damage. At the end of each of its turns, the target must make a DC 10 Constitution saving throw, taking 2 (1d4) acid damage on a failure or ending the recurring acid damage on a success. A lesser restoration spell cast on the target also ends the recurring acid damage.</description>
+		</sheet>
+	</element>
+	<element name="Stench Spray (1/Day)" type="Companion Action" source="XENBuilder" id="ID_XENBUILDER_COMPANION_ACTION_FLUMPH_STENCH_SPRAY">
+		<description>
+			<p>Each creature in a 15-foot cone originating from the flumph must succeed on a DC 10 Dexterity saving throw or be coated in a foul-smelling liquid. A coated creature exudes a horrible stench for 1d4 hours. The coated creature is poisoned as long as the stench lasts, and other creatures are poisoned while with in 5 feet of the coated creature. A creature can remove the stench on itself by using a short rest to bathe in water, alcohol, or vinegar.</p>
+		</description>
+		<sheet>
+			<description>Each creature in a 15-foot cone originating from the flumph must succeed on a DC 10 Dexterity saving throw or be coated in a foul-smelling liquid. A coated creature exudes a horrible stench for 1d4 hours. The coated creature is poisoned as long as the stench lasts, and other creatures are poisoned while with in 5 feet of the coated creature. A creature can remove the stench on itself by using a short rest to bathe in water, alcohol, or vinegar.</description>
 		</sheet>
 	</element>
 </elements>
