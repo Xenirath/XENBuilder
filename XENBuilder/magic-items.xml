@@ -133,7 +133,7 @@
             <grant type="Language" id="ID_LANGUAGE_SYLVAN" />
 		</rules>
 	</element>
-	<element name="Deck of Many Futures" type="Magic Item" source="XENBuild" id="ID_XENBUILDER_MAGIC_ITEM_DECK_OF_MANY_FUTURES">
+	<element name="Deck of Many Futures" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_DECK_OF_MANY_FUTURES">
 		<description>
 			<p>This deck made of old wooden cards resembles the 7 Mayor Arcanas, and you can use it to channel divination magic and get information about what the future holds for this day.</p>
 			<p>Once each dawn, you can make a 1 minute ritual to get a glimpse of the future. When you do, roll two d20s and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the result of the roll is known, and you can replace a roll in this way only once per turn. Each foretelling roll can be used only once. When you finish a long rest, you lose any unused foretelling rolls.</p>
@@ -161,7 +161,7 @@
 			<stat name="spellcasting:dc" value="1" />
 		</rules>
 	</element>
-	<element name="Deck of Foreseeable Futures" type="Magic Item" source="XENBuild" id="ID_XENBUILDER_MAGIC_ITEM_DECK_OF_FORESEEABLE_FUTURES">
+	<element name="Deck of Foreseeable Futures" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_DECK_OF_FORESEEABLE_FUTURES">
 		<description>
 			<p>This deck made of ancient wooden cards resembles the 7 Mayor Arcanas, and you can use it to channel divination magic and get information about what the future holds for this day.</p>
 			<p>Once each dawn, you can make a 1 minute ritual to get a glimpse of the future. When you do, roll two d20s and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the result of the roll is known, and you can replace a roll in this way only once per turn. Each foretelling roll can be used only once. When you finish a long rest, you lose any unused foretelling rolls.</p>
@@ -189,7 +189,7 @@
 			<stat name="spellcasting:dc" value="2" />
 		</rules>
 	</element>
-	<element name="Deck of Foresight" type="Magic Item" source="XENBuild" id="ID_XENBUILDER_MAGIC_ITEM_DECK_OF_FORESIGHT">
+	<element name="Deck of Foresight" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_DECK_OF_FORESIGHT">
 		<description>
 			<p>This deck made of archaic wooden cards resembles the 7 Mayor Arcanas, and you can use it to channel divination magic and get information about what the future holds for this day.</p>
 			<p>Once each dawn, you can make a 1 minute ritual to get a glimpse of the future. When you do, roll two d20s and record the numbers rolled. You can replace any attack roll, saving throw, or ability check made by you or a creature that you can see with one of these foretelling rolls. You must choose to do so before the result of the roll is known, and you can replace a roll in this way only once per turn. Each foretelling roll can be used only once. When you finish a long rest, you lose any unused foretelling rolls.</p>
