@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>weapons</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="weapons.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/weapons.xml" />
 		</update>
 	</info>
@@ -10,7 +10,7 @@
     <element name="Yo-Yo" type="Weapon" source="XENBuilder" id="ID_XENBUILDER_WEAPON_YOYO">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_HIDDEN, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_YOYO</supports>
 		<description>
-			<p>This odd contraption consists of two metallic disks connected to an axle with a ball-bearing.</p>
+			<p> This odd contraption consists of two metallic disks connected to an axle with a ball-bearing.</p>
             <div element="ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_YOYO" />
 		</description>
 		<setters>
@@ -26,7 +26,7 @@
 	<element name="Knuckledusters" type="Weapon" source="XENBuilder" id="ID_XENBUILDER_WEAPON_KNUCKLEDUSTERS">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_KNUCKLEDUSTERS </supports>
 		<description>
-			<p>A usually metallic brace that goes between your fingers and in front of your knuckles, to do more damage while protecting the hand.</p>
+			<p> A usually metallic brace that goes between your fingers and in front of your knuckles, to do more damage while protecting the hand.</p>
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -38,6 +38,43 @@
 			<set name="proficiency">ID_XENBUILDER_PROFICIENCY_WEAPON_PROFICIENCY_KNUCKLEDUSTERS</set>
 		</setters>
 	</element>
+	<element name="Gunshield" type="Weapon" source="XENBuilder" id="ID_XENBUILDER_WEAPON_GUNSHIELD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_CATEGORY_FIREARM, ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_XENBUILDER_WEAPON_PROPERTY_SPECIAL_GUNSHIELD, ID_INTERNAL_XENBUILDER_WEAPON_PROPERTY_SHELL_LOADING_12, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_GROUP_LONGARMS, ID_INTERNAL_AAGNG_WEAPON_PROPERTY_BURST_FIRE </supports>
+		<description>
+			<p> A gunshield is a tall bulletproof shield with a transparent viewport made of ballistic glass. Just underneath the viewport, the barrel of a stubby, compact automatic firearm juts out. The rest of the rifle is hidden behind the shield.</p><br></br>
+			<p class="indent"><strong><em>Proficiency.</em></strong> To wield a gunshield properly, you must have proficiency with shields. </p>
+			<p>Ammunition (range 90/270), Two-Handed, Shell Loading 12, Burst Fire (6d6), Heavy, Shield, Special.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">6000</set>
+			<set name="weight" lb="11">11 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">90/270</set>
+			<set name="reload">12</set>
+			<set name="damage" type="piercing">2d6</set>
+			<set name="proficiency">ID_XENBUILDER_PROFICIENCY_GUNSHIELD</set>
+		</setters>
+	</element>
+
+	<element name="Shieldbow" type="Weapon" source="XENBuilder" id="ID_XENBUILDER_WEAPON_SHIELDBOW">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_RANGED, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_XENBUILDER_WEAPON_PROPERTY_SPECIAL_SHIELDBOW, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_GROUP_BOWS </supports>
+		<description>
+			<p> A shieldbow is a rhombus-shaped bulletproof shield that splits in the middle, where the limbs of the bow hide. The center has a fixed nock where the arrows rest. </p><br></br>
+			<p class="indent"><strong><em>Proficiency.</em></strong> To wield a shieldbow properly, you must have proficiency with shields. </p>
+			<p>Ammunition (range 150/600), Two-Handed, Heavy, Shield, Special.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">4000</set>
+			<set name="weight" lb="9">9 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="range">150/600</set>
+			<set name="damage" type="piercing">2d4</set>
+			<set name="proficiency">ID_XENBUILDER_PROFICIENCY_SHIELDBOW</set>
+		</setters>
+	</element>
+
 	<!-- magical weapons -->
 	<element name="Whisper" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_WHISPER">
 		<description>
@@ -68,11 +105,41 @@
 			<p>Special. Using Knuckledusters doesn't counts as using a weapon, but as unarmed strikes instead. "Martial Arts", "Fisticuffs" or any other feature that modifies unarmed strikes work in addition to Knuckledusters. If your unarmed strike is modified by a feature like the ones mentioned, you instead add the weapons damage to your unarmed strikes damage, along with any special or magical properties of the Knuckledusters. </p>
 		</description>
     </element>
+	<element name="Shieldbow Special Rules" type="Weapon Property" source="XENBuilder" id="ID_INTERNAL_XENBUILDER_WEAPON_PROPERTY_SPECIAL_SHIELDBOW">
+		<description>
+			<p> Wielding a gunshield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>
+		</description>
+		<sheet>
+			<description> You AC increases by 2.</description>
+		</sheet>
+	</element>
+	<element name="Gunshield Special Rules" type="Weapon Property" source="XENBuilder" id="ID_INTERNAL_XENBUILDER_WEAPON_PROPERTY_SPECIAL_GUNSHIELD">
+		<description>
+			<p> Wielding a gunshield increases your Armor Class by 3. You can benefit from only one shield at a time. Normally, you have disadvantage on attack rolls that you make with a gunshield. However, while you are wielding a gunshield, you can spend an amount of movement equal to half your speed to gain half cover until the start of your next turn. When you do so, you also stabilize your aim, allowing you to attack without disadvantage.</p>
+		</description>
+		<sheet>
+			<description> You AC increases by 3. You have disadvantage on attack rolls that you make with a gunshield, unless you can spend half your movement speed to brace the shield, gaining half cover until the start of your next turn and stabilizing the gun, allowing you to attack without disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Shell Loading 12" type="Weapon Property" source="XENBuilder" id="ID_INTERNAL_XENBUILDER_WEAPON_PROPERTY_SHELL_LOADING_12">
+		<description>
+			<p>This weapon needs to be reloaded after 12 shots.</p>
+			<div element="ID_INTERNAL_AAGNG_WEAPON_PROPERTY_SHELL_LOADING" />
+		</description>
+	</element>
     <!-- weapon proficiencies -->
     <element name="Weapon Proficiency (Yo-Yos)" type="Proficiency" source="XENBuilder" id="ID_XENBUILDER_PROFICIENCY_WEAPON_PROFICIENCY_YOYO">
 	    <supports>Weapon, Melee, ID_XENBUILDER_WEAPON_GROUP_YOYOS</supports>
 	</element>
 	<element name="Weapon Proficiency (Knuckledusters)" type="Proficiency" source="XENBuilder" id="ID_XENBUILDER_PROFICIENCY_WEAPON_PROFICIENCY_KNUCKLEDUSTERS">
 	    <supports>Weapon, Melee, ID_XENBUILDER_WEAPON_GROUP_KNUCKLEDUSTERS</supports>
+	</element>
+	<element name="Weapon Proficiency (Shieldbow)" type="Proficiency" source="XENBuilder" id="ID_XENBUILDER_PROFICIENCY_SHIELDBOW">
+		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
+		<sheet alt="Shieldbow" />
+	</element>
+	<element name="Weapon Proficiency (Gunshield)" type="Proficiency" source="XENBuilder" id="ID_XENBUILDER_PROFICIENCY_GUNSHIELD">
+		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
+		<sheet alt="Gunshield" />
 	</element>
 </elements>
