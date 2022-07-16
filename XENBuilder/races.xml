@@ -471,7 +471,35 @@
 			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
 			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
 			<grant type="Spell" id="ID_XENBUILDER_SPELL_ELEMENTAL_BURST" />
+			<select type="Racial Trait" name="Spellcasting Ability (Primal Magiks)" supports="ID_XENBUILDER_RACIAL_TRAIT_HARKACINE_PRIMAL_MAGIKS_SPELLCASTING_INTELLIGENCE|ID_XENBUILDER_RACIAL_TRAIT_HARKACINE_PRIMAL_MAGIKS_SPELLCASTING_WISDOM|ID_XENBUILDER_RACIAL_TRAIT_HARKACINE_PRIMAL_MAGIKS_SPELLCASTING_CHARISMA" />
 		</rules>
+	</element>
+	<element name="Intelligence" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_HARKACINE_PRIMAL_MAGIKS_SPELLCASTING_INTELLIGENCE">
+		<compendium display="false" />
+		<description>
+			<p> Your spellcasting ability for these spells is Intelligence.</p>
+		</description>
+		<sheet alt="Spellcasting">
+			<description> Your spellcasting ability for this spell is Intelligence.</description>
+		</sheet>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_HARKACINE_PRIMAL_MAGIKS_SPELLCASTING_WISDOM">
+		<compendium display="false" />
+		<description>
+			<p> Your spellcasting ability for these spells is Wisdom.</p>
+		</description>
+		<sheet alt="Spellcasting">
+			<description> Your spellcasting ability for this spell is Wisdom.</description>
+		</sheet>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_HARKACINE_PRIMAL_MAGIKS_SPELLCASTING_CHARISMA">
+		<compendium display="false" />
+		<description>
+			<p> Your spellcasting ability for these spells is Charisma.</p>
+		</description>
+		<sheet alt="Spellcasting">
+			<description> Your spellcasting ability for this spell is Charisma.</description>
+		</sheet>
 	</element>
 	<element name="Fortress Framed" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_FORTRESS_FRAMED">
 		<description>
