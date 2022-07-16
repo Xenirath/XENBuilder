@@ -2,21 +2,21 @@
 <elements>
 	<info>
 		<name>Races</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="races.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/races.xml" />
 		</update>
 	</info>
     <!-- VAMPIRE KINDRED -->
     <element name="Vampire Kindred" type="Race" source="XENBuilder" id="ID_XENBUILDER_RACE_VAMPIRE_KINDRED">
 		<description>
-			<p>A creature long devoid of life, vampires are undeath and evil manifest. A creature of inversed good and paradox, a thing of white and black mixed in unholy conjunction. It is dead, yet seeks life, and it hungers. Their pale, gaunt presence and sharp features can make some terrifying, while others become gorgeous.</p>
-			<p class="indent">While unlife as a vampire is tedious and maddening to some, many vampires become adventurers and monster hunters to get the money or reputation they need to secure their sustenance, but also for their own machinations. Their reasons are often deeply personal and secret. Some seek normality or control, imagining having a family of monsters that follow them loyally. Others pursue revenge against whatever turned them into a monster. And still others embrace the power and thirst, and give themselves fully to the beast within.</p>
+			<p> A creature long devoid of life, vampires are undeath and evil manifest. A creature of inversed good and paradox, a thing of white and black mixed in unholy conjunction. It is dead, yet seeks life, and it hungers. Their pale, gaunt presence and sharp features can make some terrifying, while others become gorgeous.</p>
+			<p class="indent"> While unlife as a vampire is tedious and maddening to some, many vampires become adventurers and monster hunters to get the money or reputation they need to secure their sustenance, but also for their own machinations. Their reasons are often deeply personal and secret. Some seek normality or control, imagining having a family of monsters that follow them loyally. Others pursue revenge against whatever turned them into a monster. And still others embrace the power and thirst, and give themselves fully to the beast within.</p>
             <h4>A Deal Or A Curse</h4>
-            <p>Undead are not born, and vampires are no exception to this. When a creature dies and rises as a vampire or vampire spawn their race becomes this one, losing their previous traits, ability score increases, etc. Only retaining parts of their physical appearance as their personality is warped into a mockery of their former self. Vampires are usually the result of a mortal making a dark pact, or being the victims of powerful beings of evil such as malevolent gods afflicting them with vampirism.</p>
-            <p class="indent">It is a common misconception that being bitten by a vampire can turn you into one. When in practice it only, kills you, warping your body and mind into a creature of evil, a vampire spawn and as such a slave to the true vampire that killed you. It is only by drinking the blood of the vampire that turned you can a vampire spawn then become a vampires. Though, few vampires are willing to relinquish their control in this manner.</p>
+            <p> Undead are not born, and vampires are no exception to this. When a creature dies and rises as a vampire or vampire spawn their race becomes this one, losing their previous traits, ability score increases, etc. Only retaining parts of their physical appearance as their personality is warped into a mockery of their former self. Vampires are usually the result of a mortal making a dark pact, or being the victims of powerful beings of evil such as malevolent gods afflicting them with vampirism.</p>
+            <p class="indent"> It is a common misconception that being bitten by a vampire can turn you into one. When in practice it only, kills you, warping your body and mind into a creature of evil, a vampire spawn and as such a slave to the true vampire that killed you. It is only by drinking the blood of the vampire that turned you can a vampire spawn then become a vampires. Though, few vampires are willing to relinquish their control in this manner.</p>
 			<h4>Vampiric Hungers</h4>
-			<p>Every vampire knows a thirst slaked only by the living. Those who overindulge their thirst risk losing control and forever viewing others as prey. Those who resist might find exceptional ways of controlling their urges or suppress them through constant, molar-grinding restraint. In any case, temptation haunts them always, and circumstances conspire to give them endless reasons to indulge.</p>
-			<p class="indent">While many vampires thirst for blood, your character might otherwise gain sustenance from the living. Roll on or choose an option from the Vampiric Hungers table to determine what tempts your character to feed.</p>
+			<p> Every vampire knows a thirst slaked only by the living. Those who overindulge their thirst risk losing control and forever viewing others as prey. Those who resist might find exceptional ways of controlling their urges or suppress them through constant, molar-grinding restraint. In any case, temptation haunts them always, and circumstances conspire to give them endless reasons to indulge.</p>
+			<p class="indent"> While many vampires thirst for blood, your character might otherwise gain sustenance from the living. Roll on or choose an option from the Vampiric Hungers table to determine what tempts your character to feed.</p>
 			<h5>Vampiric Hungers</h5>
 			<table>
 				<thead>
@@ -30,69 +30,70 @@
 				<tr><td>6</td><td>Life energy</td></tr>
 			</table>
 			<h4>Vampiric Origins</h4>
-			<p>Vampires often arise from encounters with other vampires, but all manner of macabre bargains, necromantic influences, and encounters with mysterious immortals might have transformed your character. The Vampiric Origins table provides suggestions for how your character gained their lineage.</p>
+			<p> Vampires often arise from encounters with other vampires, but all manner of macabre bargains, necromantic influences, and encounters with mysterious immortals might have transformed your character. The Vampiric Origins table provides suggestions for how your character gained their lineage.</p>
 			<h5>Vampiric Origins</h5>
         	<table>
 				<thead>
 					<tr><td>d8</td><td>Origin</td></tr>
 				</thead>
-				<tr><td>1</td><td>You are the reincarnation of an ancestor who was a vampiric tyrant.</td></tr>
-				<tr><td>2</td><td>Your pact with a predatory deity, fiend, fey, or spirit causes you to share their hunger.</td></tr>
-				<tr><td>3</td><td>You survived being attacked by a vampire but were forever changed.</td></tr>
-				<tr><td>4</td><td>A parasite lives inside you. You indulge its hunger.</td></tr>
-				<tr><td>5</td><td>Tragedy interrupted your transformation into an immortal.</td></tr>
-				<tr><td>6</td><td>You are a diminished form of an otherworldly being. Slaking your hunger hastens your renewal.</td></tr>
-				<tr><td>7</td><td>You were cursed by an entity before you died, and woke up the next day, hungry.</td></tr>
-				<tr><td>8</td><td>A radical experiment changed your body, making you reliant on others for vital fluids.</td></tr>
+				<tr><td>1</td><td> You are the reincarnation of an ancestor who was a vampiric tyrant.</td></tr>
+				<tr><td>2</td><td> Your pact with a predatory deity, fiend, fey, or spirit causes you to share their hunger.</td></tr>
+				<tr><td>3</td><td> You survived being attacked by a vampire but were forever changed.</td></tr>
+				<tr><td>4</td><td> A parasite lives inside you. You indulge its hunger.</td></tr>
+				<tr><td>5</td><td> Tragedy interrupted your transformation into an immortal.</td></tr>
+				<tr><td>6</td><td> You are a diminished form of an otherworldly being. Slaking your hunger hastens your renewal.</td></tr>
+				<tr><td>7</td><td> You were cursed by an entity before you died, and woke up the next day, hungry.</td></tr>
+				<tr><td>8</td><td> A radical experiment changed your body, making you reliant on others for vital fluids.</td></tr>
 			</table>
             <h4>Dark Desires</h4>
-			<p>Whether or not a vampire retains any memories from its former life, its emotional attachments wither as once-pure feelings become twisted by undeath. Love turns into a hungry obsession, while friendship becomes bitter jealousy. In place of emotion, vampires pursue physical symbols of what they crave, so that a vampire seeking love might fixate on a young beauty. A child might become an object of fascination for a vampire obsessed with youth and potential. Others surround themselves with art, books, or sinister items such as torture devices or trophies from creatures they have killed.</p>
+			<p> Whether or not a vampire retains any memories from its former life, its emotional attachments wither as once-pure feelings become twisted by undeath. Love turns into a hungry obsession, while friendship becomes bitter jealousy. In place of emotion, vampires pursue physical symbols of what they crave, so that a vampire seeking love might fixate on a young beauty. A child might become an object of fascination for a vampire obsessed with youth and potential. Others surround themselves with art, books, or sinister items such as torture devices or trophies from creatures they have killed.</p>
             <h5>Dark Desire</h5>
             <table>
 				<thead>
 					<tr><td>d8</td><td>Dark Desire</td><td>Effect</td></tr>
 				</thead>
-				<tr><td>1</td><td>Greed</td><td>Greed is an inordinate desire to acquire or possess more than one needs, especially with respect to material wealth. This is twisted Charity.</td></tr>
-				<tr><td>2</td><td>Lust</td><td>Lust is characterized as an intense longing. It is usually thought of as unbridled sexual desire, which leads to fraudulent sexual acts. However, lust can also mean simply desire in general. This is twisted Chastity.</td></tr>
-				<tr><td>3</td><td>Gluttony</td><td>Gluttony is overindulgence and overconsumption of anything to the point of waste. This is twisted Temperance.</td></tr>
-				<tr><td>4</td><td>Sloth</td><td>Sloth is affectectionless, a lack of any feeling about self or other, a mind-state that gives rise to boredom, rancor, apathy, and a passive inert or sluggish mentation. This is twisted Diligence.</td></tr>
-				<tr><td>5</td><td>Wrath</td><td>It is important to understand that anger isn't evil nor good, it is a neutral act on the scale of good and evil, however, anger becomes wrath when it is directed against an innocent, when it is unduly, unbending or long-lasting, or when it desires excessive punishment. This is twisted Patience.</td></tr>
-				<tr><td>6</td><td>Envy</td><td>Envy is the need to have better or be better than others. Is it the need to have the goods, possession or even the connection of others. Wanting what others have for yourself. This is twisted Kindness.</td></tr>
-				<tr><td>7</td><td>Pride</td><td>Pride is considered by some to be the root of all evil and naturally is the most common characteristics for a true vampire to have. The almost stereotypical haughty and self-important vampire lord radiates an aura of superiority as they look down at the foolish adventurers who would dare challenge them. This is twisted Humility.</td></tr>
-				<tr><td>8</td><td>Madness</td><td>Roll twice, rerolling any further results of 8.</td></tr>
+				<tr><td>1</td><td>Greed</td><td> Greed is an inordinate desire to acquire or possess more than one needs, especially with respect to material wealth. This is twisted Charity.</td></tr>
+				<tr><td>2</td><td>Lust</td><td> Lust is characterized as an intense longing. It is usually thought of as unbridled sexual desire, which leads to fraudulent sexual acts. However, lust can also mean simply desire in general. This is twisted Chastity.</td></tr>
+				<tr><td>3</td><td>Gluttony</td><td> Gluttony is overindulgence and overconsumption of anything to the point of waste. This is twisted Temperance.</td></tr>
+				<tr><td>4</td><td>Sloth</td><td> Sloth is affectectionless, a lack of any feeling about self or other, a mind-state that gives rise to boredom, rancor, apathy, and a passive inert or sluggish mentation. This is twisted Diligence.</td></tr>
+				<tr><td>5</td><td>Wrath</td><td> It is important to understand that anger isn't evil nor good, it is a neutral act on the scale of good and evil, however, anger becomes wrath when it is directed against an innocent, when it is unduly, unbending or long-lasting, or when it desires excessive punishment. This is twisted Patience.</td></tr>
+				<tr><td>6</td><td>Envy</td><td> Envy is the need to have better or be better than others. Is it the need to have the goods, possession or even the connection of others. Wanting what others have for yourself. This is twisted Kindness.</td></tr>
+				<tr><td>7</td><td>Pride</td><td> Pride is considered by some to be the root of all evil and naturally is the most common characteristics for a true vampire to have. The almost stereotypical haughty and self-important vampire lord radiates an aura of superiority as they look down at the foolish adventurers who would dare challenge them. This is twisted Humility.</td></tr>
+				<tr><td>8</td><td>Madness</td><td> Roll twice, rerolling any further results of 8.</td></tr>
 			</table>
             <h4>Coffinlike Structure</h4>
             <p> For those vampires who are pure and powerful, a coffinlike structure is needed as a safe place. This is normally some form of large container that usually takes the form of a sarcophagus, casket, or coffin. It is here that a true vampire rests and reforms when they're defeated. They are usually hidden away in areas that are difficult to access by non-vampires and are heavily protected by minions, traps, and thralls. A coffinlike structure is made from the wood of your original coffin, or the stone of your original tombstone in some cases. The structure is large enough to encase your body in and must have an opening to allow mist to enter and exit.</p>
             <p> If a vampire didn't receive a formal burial, it must lie beneath a foot of earth at the place of its transition to undeath. True vampires can move its place of burial by transporting its coffinlike structure or a significant amount of grave dirt to another location. Some vampires set up multiple resting places this way.</p>
-            <p class="indent">With your Dungeon Master's discretion, the area in which your coffinlike structure rests for 2d6 days can be considered your lair, manifesting the following regional effects as it is warped by your unnatural presence:</p>
+            <p class="indent"> With your Dungeon Master's discretion, the area in which your coffinlike structure rests for 2d6 days can be considered your lair, manifesting the following regional effects as it is warped by your unnatural presence:</p>
 			<ul>
-				<li>There's a noticeable increase in the populations of bats, rats, and wolves in the region.</li>
-				<li>Plants within 500 feet of the lair wither, and their stems and branches become twisted and thorny.</li>
-				<li>Shadows cast within 500 feet of the lair seem abnormally gaunt and sometimes move as though alive.</li>
-				<li>A creeping fog clings to the ground within 500 feet of the vampire's lair. The fog occasionally takes eerie forms, such as grasping claws and writhing serpents.</li>
+				<li> There's a noticeable increase in the populations of bats, rats, and wolves in the region.</li>
+				<li> Plants within 500 feet of the lair wither, and their stems and branches become twisted and thorny.</li>
+				<li> Shadows cast within 500 feet of the lair seem abnormally gaunt and sometimes move as though alive.</li>
+				<li> A creeping fog clings to the ground within 500 feet of the vampire's lair. The fog occasionally takes eerie forms, such as grasping claws and writhing serpents.</li>
 			</ul>
-            <p>If you are destroyed, or you move your coffinlike structure to elsewhere these effects end after 2d6 days.</p>
+            <p> If you are destroyed, or you move your coffinlike structure to elsewhere these effects end after 2d6 days.</p>
             <h4>Vampire Weaknesses</h4>
-            <p>Although vampires can be incredibly strong, their curse still comes with several notable drawbacks. Regardless of if you are a vampire spawn or a true vampire, you are affected by the following weakness unless specified otherwise:</p>
+            <p> Although vampires can be incredibly strong, their curse still comes with several notable drawbacks. Regardless of if you are a vampire spawn or a true vampire, you are affected by the following weakness unless specified otherwise:</p>
             <ul>
-                <li>Forbiddance: You can't enter a residence without an invitation from one of the occupants.</li>
-                <li>Running Water: Your flesh is torn apart in the presence of water, you take 20 acid damage when you end your turn in running water. This damage may not be reduced in any way.</li>
-                <li>Stake to the Heart: If a piercing weapon made of wood is driven into your heart while incapacitated in your coffinlike structure, you become paralyzed until the stake is removed if you are a true vampire. However, if you are a vampire spawn, you are instead destroyed.</li>
-                <li>Sunlight Hypersensitivity: You sear and burn in the light of the sun, your flesh immolating. If you end your turn in direct sunlight, you take 20 radiant damage. You also have disadvantage on any attack rolls and ability checks when in direct sunlight.</li>
+                <li> Forbiddance: You can't enter a residence without an invitation from one of the occupants.</li>
+                <li> Running Water: Your flesh is torn apart in the presence of water, you take 20 acid damage when you end your turn in running water. This damage may not be reduced in any way.</li>
+                <li> Stake to the Heart: If a piercing weapon made of wood is driven into your heart while incapacitated in your coffinlike structure, you become paralyzed until the stake is removed if you are a true vampire. However, if you are a vampire spawn, you are instead destroyed.</li>
+                <li> Sunlight Hypersensitivity: You sear and burn in the light of the sun, your flesh immolating. If you end your turn in direct sunlight, you take 20 radiant damage. You also have disadvantage on any attack rolls and ability checks when in direct sunlight.</li>
             </ul>
 			<h4>Vampire Kindred Traits</h4>
-			<p>You have the following racial traits.</p>
+			<p> You have the following racial traits.</p>
 			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Increase one score by 2 and increase a different score by 1, or you increase three different scores by 1.</p>
 			<p class="indent"><strong><em>Creature Type.</em></strong> You are considered an Undead.</p>
 			<p class="indent"><strong><em>Size.</em></strong> You are Medium or Small. You choose the size when you gain this lineage.</p>
 			<p class="indent"><strong><em>Speed.</em></strong> Your walking speed is 35 feet.</p>
 			<p class="indent"><strong><em>Ancestral Legacy.</em></strong> If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.</p>
-			<p class="indent">If you don’t keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
+			<p class="indent"> If you don’t keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
 			<p class="indent"><strong><em>Unholy Body.</em></strong> Dark magic sustains you, making you resistant to necrotic damage. Healing potions do not have a healing effect on you. Instead, they deal poison damage equal to the amount that was meant to heal. To heal you must either drink blood, spend hit dice, or finish a long rest.</p>
 			<p class="indent"><strong><em>Spider Climb.</em></strong> You have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
             <p class="indent"><strong><em>Thirsting Hunger</em></strong> Even though you are undead, you still require sustenance in your unholy existence. You are immune to diseases. You do not need to eat or breathe, but you can ingest food and drink if you wish, though this food is always bland and stale to you. If you go for longer then seven days without drinking at least one ration of blood, every midnight after you suffer one level of exhaustion, which can only be removed by drinking a ration of blood. After consuming one ration of blood, you recover all levels of exhaustion caused by this trait. If you reach six levels of exhaustion due to this trait, you are destroyed. A ration of blood is a vial, roughly 4 ounces, and that is just enough to sustain you each week. Drinking a ration of blood heals you for 1d4 + 1 hit points while a pint will heal you for 2d4 + 2 hit points.</p>
 			<p class="indent"><strong><em>Languages.</em></strong> Your character can speak, read, and write Common and two other languages that you and your DM agree are appropriate for the character.</p>
 		    <p class="indent"><strong><em>Vampiric Rank.</em></strong> Depending on if you are a new and slaved being, or the real deal, you are divided into two different ranks: vampire spawn or true vampire. Talk to your DM and choose the rank that best suits your character's backstory.</p>
+			<p class="indent"><strong><em>The Radiant Death.</em></strong> On top taking passive damage from sunlight, magical damage of radiant type destroys your body like no other magic. You are vulnerable to radiant damage (this does not modify the passive damage from sunlight, which is still 20 each turn).</p>
 		</description>
 		<sheet display="false" />
         <setters>
@@ -112,13 +113,14 @@
 			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_VAMPIRE_KINDRED_UNHOLY_BODY" />
 			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_VAMPIRE_KINDRED_SPIDER_CLIMB" />
 			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_VAMPIRE_KINDRED_VAMPIRIC_RANK" />
+			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_VAMPIRE_KINDRED_THE_RADIANT_DEATH" />
 		</rules>
 	</element>
 
 	<element name="Ancestral Legacy" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_VAMPIRE_KINDRED_ANCESTRAL_LEGACY">
 		<description>
-			<p>If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.</p>
-			<p class="indent">If you don’t keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
+			<p> If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.</p>
+			<p class="indent"> If you don’t keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
 			<p><strong><em>Notes:</em></strong> This trait's mechanics aren't implemented in the Aurora Builder. But you can emulate mechanics of this trait with following options:</p>
 			<p class="indent"><b>Skill Proficiencies.</b> You can recover lost skill proficiencies by selecting and equipping items from Additional Proficiency category of the Equipment section.</p>
 			<p class="indent"><b>Speed.</b> You can regain lost speed by selecting and equipping items from Additional Features category of the Equipment section.</p>
@@ -143,11 +145,11 @@
 
 	<element name="Spider Climb" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_VAMPIRE_KINDRED_SPIDER_CLIMB">
 		<description>
-			<p>You have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
+			<p> You have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
 		</description>
 		<sheet>
-			<description>You have a climbing speed equal to your walking speed.</description>
-			<description level="3">You have a climbing speed equal to your walking speed. In addition you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</description>
+			<description> You have a climbing speed equal to your walking speed.</description>
+			<description level="3"> You have a climbing speed equal to your walking speed. In addition you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</description>
 		</sheet>
 		<rules>
 			<stat name="innate speed:climb" value="innate speed" bonus="base" />
@@ -156,10 +158,10 @@
 
     <element name="Thirsting Hunger" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_VAMPIRE_KINDRED_THIRSTING_HUNGER">
 		<description>
-			<p>Even though you are undead, you still require sustenance in your unholy existence. You are immune to diseases. You do not need to eat or breathe, but you can ingest food and drink if you wish, though this food is always bland and stale to you. If you go for longer then seven days without drinking at least one ration of blood, every midnight after you suffer one level of exhaustion, which can only be removed by drinking a ration of blood. After consuming one ration of blood, you recover all levels of exhaustion caused by this trait. If you reach six levels of exhaustion due to this trait, you are destroyed. A ration of blood is a vial, roughly 4 ounces, and that is just enough to sustain you each week. Drinking a ration of blood heals you for 1d4 + 1 hit points while a pint will heal you for 2d4 + 2 hit points.</p>
+			<p> Even though you are undead, you still require sustenance in your unholy existence. You are immune to diseases. You do not need to eat or breathe, but you can ingest food and drink if you wish, though this food is always bland and stale to you. If you go for longer then seven days without drinking at least one ration of blood, every midnight after you suffer one level of exhaustion, which can only be removed by drinking a ration of blood. After consuming one ration of blood, you recover all levels of exhaustion caused by this trait. If you reach six levels of exhaustion due to this trait, you are destroyed. A ration of blood is a vial, roughly 4 ounces, and that is just enough to sustain you each week. Drinking a ration of blood heals you for 1d4 + 1 hit points while a pint will heal you for 2d4 + 2 hit points.</p>
 		</description>
 		<sheet>
-			<description>Even though you are undead, you still require sustenance in your unholy existence. You are immune to diseases. You do not need to eat or breathe, but you can ingest food and drink if you wish, though this food is always bland and stale to you. If you go for longer then seven days without drinking at least one ration of blood, every midnight after you suffer one level of exhaustion, which can only be removed by drinking a ration of blood. After consuming one ration of blood, you recover all levels of exhaustion caused by this trait. If you reach six levels of exhaustion due to this trait, you are destroyed. A ration of blood is a vial, roughly 4 ounces, and that is just enough to sustain you each week. Drinking a ration of blood heals you for 1d4 + 1 hit points while a pint will heal you for 2d4 + 2 hit points.</description>
+			<description> Even though you are undead, you still require sustenance in your unholy existence. You are immune to diseases. You do not need to eat or breathe, but you can ingest food and drink if you wish, though this food is always bland and stale to you. If you go for longer then seven days without drinking at least one ration of blood, every midnight after you suffer one level of exhaustion, which can only be removed by drinking a ration of blood. After consuming one ration of blood, you recover all levels of exhaustion caused by this trait. If you reach six levels of exhaustion due to this trait, you are destroyed. A ration of blood is a vial, roughly 4 ounces, and that is just enough to sustain you each week. Drinking a ration of blood heals you for 1d4 + 1 hit points while a pint will heal you for 2d4 + 2 hit points.</description>
 		</sheet>
 	</element>
 
@@ -173,10 +175,19 @@
 		</rules>
 	</element>
 
+	<element name="The Radiant Death" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_VAMPIRE_KINDRED_THE_RADIANT_DEATH">
+		<description>
+			<p> On top taking passive damage from sunlight, magical damage of radiant type destroys your body like no other magic. You are vulnerable to radiant damage (this does not modify the passive damage from sunlight, which is still 20 each turn).</p>
+		</description>
+		<sheet>
+			<description> You are vulnerable to radiant damage.</description>
+		</sheet>
+	</element>
+
     <element name="Vampire Spawn" type="Sub Race" source="XENBuilder" id="ID_XENBUILDER_SUB_RACE_VAMPIRE_KINDRED_VAMPIRE_SPAWN">
 		<supports>Vampire Kindred</supports>
 		<description>
-			<p>Most of a vampire's victims become vampire spawn- ravenous creatures with a vampire's hunger for blood, but under the control of the vampire that created them. If a true vampire allows a spawn to draw blood from its own body, the spawn transforms into a true vampire no longer under its master's control. Few vampires are willing to relinquish their control in this manner. A vampire spawn becomes free-willed when their creator dies but may seek to become true vampires via drinking from another true vampire or making a pact with some otherworldly entity.</p>
+			<p> Most of a vampire's victims become vampire spawn- ravenous creatures with a vampire's hunger for blood, but under the control of the vampire that created them. If a true vampire allows a spawn to draw blood from its own body, the spawn transforms into a true vampire no longer under its master's control. Few vampires are willing to relinquish their control in this manner. A vampire spawn becomes free-willed when their creator dies but may seek to become true vampires via drinking from another true vampire or making a pact with some otherworldly entity.</p>
 			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can discern color in darkness.</p>
 			<p class="indent"><strong><em>Vampiric Claws.</em></strong> As a vampire you have a set of claws as are natural weapons, which you can use to make unarmed strikes. You may use your Strength or Dexterity modifier for your attack and damage rolls with your claws. If you hit with them, you deal 1d6 slashing damage instead of the bludgeoning damage normal for an unarmed strike.</p>
             <p class="indent"><strong><em>Vampiric Bite.</em></strong> All vampires have sharpened teeth capable of tearing flesh from bone and draining blood from the body. If a willing, paralyzed, charmed, incapacitated, restrained, or grappled, creature within 5 feet of you has blood, you may use your bonus action to Bite them dealing 1d4 piercing damage and draining their blood dealing additional necrotic damage equal to twice your Constitution modifier. Drinking blood this way is equal to consuming a ration as per your Thirsting Hunger trait. When you use your Vampiric Bite, you can choose to not deal damage.</p>
@@ -192,10 +203,10 @@
 	</element> 	
 	<element name="Vampiric Claws" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_VAMPIRE_SPAWN_VAMPIRIC_CLAWS">
 		<description>
-			<p>As a vampire you have a set of claws as natural weapons, which you can use to make unarmed strikes. They are a Finesse, 1d6 slashing, simple melee weapon which you are proficient in.</p>
+			<p> As a vampire you have a set of claws as natural weapons, which you can use to make unarmed strikes. They are a Finesse, 1d6 slashing, simple melee weapon which you are proficient in.</p>
 		</description>
 		<sheet display="false">
-			<description>As a vampire you have a set of claws as natural weapons, which you can use to make unarmed strikes. They do 1d6 + {{vampclaws:mod}} slashing.</description>
+			<description> As a vampire you have a set of claws as natural weapons, which you can use to make unarmed strikes. They do 1d6 + {{vampclaws:mod}} slashing.</description>
 		</sheet>
 		<rules>
 			<stat name="vampclaws:mod:ability" value="strength:modifier" bonus="ability"/>
@@ -207,8 +218,14 @@
 			<p> All vampires have sharpened teeth capable of tearing flesh from bone and draining blood from the body. If a willing, paralyzed, charmed, incapacitated, restrained, or grappled, creature within 5 feet of you has blood, you may use your bonus action to Bite them dealing 1d4 piercing damage and draining their blood dealing additional necrotic damage equal to twice your Constitution modifier. Drinking blood this way is equal to consuming a ration as per your Thirsting Hunger trait. When you use your Vampiric Bite, you can choose to not deal damage.</p>
 		</description>
 		<sheet>
-			<description> All vampires have sharpened teeth capable of tearing flesh from bone and draining blood from the body. Under the right conditions, you may use your bonus action to Bite a creature, dealing 1d4 piercing damage plus an additional {{constitution:modifier*2}} necrotic damage. This counts as consuming a ration as per your Thirsting Hunger trait. When you use your Vampiric Bite, you can choose to not deal damage.</description>
+			<description> All vampires have sharpened teeth capable of tearing flesh from bone and draining blood from the body. Under the right conditions, you may use your bonus action to Bite a creature, dealing 1d4 piercing damage plus an additional {{vampbite:nec}} necrotic damage. This counts as consuming a ration as per your Thirsting Hunger trait. When you use your Vampiric Bite, you can choose to not deal damage.</description>
 		</sheet>
+		<rules>
+			<stat name="vampbite:mod:con" value="constitution:modifier" />
+			<stat name="vampbite:mod" value="vampbite:mod:con" />
+			<stat name="vampbite:mod" value="vampbite:mod:con" />
+			<stat name="vampbite:nec" value="vampbite:mod" />
+		</rules>
 	</element>
 	<element name="Spawn" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_VAMPIRE_SPAWN_SPAWN">
 		<description>
@@ -224,10 +241,11 @@
 		<description>
 			<p> Whether you drank the blood of a true vampire as a vampire spawn or made a pact with a dark power, you have become a true vampire, gaining the following traits.</p>
 			<p class="indent"><strong><em>Superior Darkvision.</em></strong> You can see in dim light within 120 feet of you as if it were bright light, and in darkness as if it were dim light. You can also see through magical darkness. You can discern color in darkness and magical darkness.</p>
-			<p class="indent"><strong><em>Vampiric Talons.</em></strong> As a vampire you have a set of claws as are natural weapons, which you can use to make unarmed strikes. You may use your Strength or Dexterity modifier for your attack and damage rolls with your claws. If you hit with them, you deal 1d6 slashing damage instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Torpor.</em></strong> As per your Thirsting Hunger trait, if you reach six levels of exhaustion due to this trait, instead of suffering death, no longer gain any more levels of exhaustion and become indefinitely paralyzed. The only way to remove this paralyze is to be exposed to a rations worth of blood.</p>
+            <p class="indent"><strong><em>Vampiric Talons.</em></strong> As a true vampire, you have a set of claws and talons as natural weapons, which you can use to make unarmed strikes. They are a Finesse, 1d8 slashing, simple melee weapon which you are proficient in.</p>
             <p class="indent"><strong><em>Draining Bite.</em></strong> All vampires have sharpened teeth capable of tearing flesh from bone and draining blood from the body. If a willing, paralyzed, charmed, incapacitated, restrained, or grappled, creature within 5 feet of you has blood, you may use your bonus action to Bite them dealing 1d6 (+1d6 at 5th, 11th and 17th level) piercing damage and draining their blood dealing additional necrotic damage equal to three times your Constitution modifier. Drinking blood this way is equal to consuming a ration as per your Thirsting Hunger trait. When you use your Vampiric Bite, you can choose to not deal damage.</p>
 			<p class="indent"><strong><em>Ascended.</em></strong> You are a vampire spawn and as such your will is circumvented by that of your true vampire master. There is little you can do in the way of resisting your master and can't take actions to harm them, however, you can pervert the intent of their commands by exploiting their poor wording. The knowing perversion of such a command though will often lead to your destruction if their master believes it to be so. Any attempt to go against you masters will or pervert their command requires you to make a DC 17 Charisma saving throw at disadvantage.</p>
-            <p class="indent"><strong><em>Misty Escape.</em></strong>When you drop to 0 hit points outside of your coffinlike structure, you transform into a cloud of mist instead of falling unconscious, provided you are not in an area of sunlight or running water. If you can't transform, you are destroyed. While in mist form, you can't take any actions, speak, or manipulate objects. You are weightless, have a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. It has advantage on Strength, Dexterity, and Constitution saving throws, and is immune to all nonmagical damage, except the damage it takes from sunlight. While you have 0 hit points in mist form, you can't revert to your vampire form. If you do not reach your coffinlike structure within 2 hours, you are destroyed. Once in you coffinlike structure, you revert to your vampire form. You are then paralyzed until you regain at least 1 hit point. After spending 1 hour in your coffinlike structure with 0 hit points, you regain 1 hit point.</p>
+            <p class="indent"><strong><em>Misty Escape.</em></strong> When you drop to 0 hit points outside of your coffinlike structure, you transform into a cloud of mist instead of falling unconscious, provided you are not in an area of sunlight or running water. If you can't transform, you are destroyed. While in mist form, you can't take any actions, speak, or manipulate objects. You are weightless, have a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. It has advantage on Strength, Dexterity, and Constitution saving throws, and is immune to all nonmagical damage, except the damage it takes from sunlight. While you have 0 hit points in mist form, you can't revert to your vampire form. If you do not reach your coffinlike structure within 2 hours, you are destroyed. Once in you coffinlike structure, you revert to your vampire form. You are then paralyzed until you regain at least 1 hit point. After spending 1 hour in your coffinlike structure with 0 hit points, you regain 1 hit point.</p>
         </description>
 		<sheet display="false" />
 		<rules>
@@ -241,10 +259,10 @@
 	</element> 	
     <element name="Torpor" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_TRUE_VAMPIRE_TORPOR">
 		<description>
-			<p>  As per your Thirsting Hunger trait, if you reach six levels of exhaustion due to this trait, instead of suffering death, no longer gain any more levels of exhaustion and become indefinitely paralyzed. The only way to remove this paralyze is to be exposed to a rations worth of blood.</p>
+			<p> As per your Thirsting Hunger trait, if you reach six levels of exhaustion due to this trait, instead of suffering death, no longer gain any more levels of exhaustion and become indefinitely paralyzed. The only way to remove this paralyze is to be exposed to a rations worth of blood.</p>
 		</description>
 		<sheet>
-            <description>  As per your Thirsting Hunger trait, if you reach six levels of exhaustion due to this trait, instead of suffering death, no longer gain any more levels of exhaustion and become indefinitely paralyzed. The only way to remove this paralyze is to be exposed to a rations worth of blood. </description>
+            <description> As per your Thirsting Hunger trait, if you reach six levels of exhaustion due to this trait, instead of suffering death, no longer gain any more levels of exhaustion and become indefinitely paralyzed. The only way to remove this paralyze is to be exposed to a rations worth of blood. </description>
         </sheet>
 	</element>
 	<element name="Vampiric Talons" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_TRUE_VAMPIRE_VAMPIRIC_TALONS">
@@ -252,11 +270,12 @@
 			<p> As a true vampire, you have a set of claws and talons as natural weapons, which you can use to make unarmed strikes. They are a Finesse, 1d8 slashing, simple melee weapon which you are proficient in.</p>
 		</description>
         <sheet>
-			<description>As a true vampire you have a set of claws as natural weapons, which you can use to make unarmed strikes. They do 1d8 + {{vamptalons:mod}} slashing.</description>
+			<description> As a true vampire you have a set of claws as natural weapons, which you can use to make unarmed strikes. They do 1d8 + {{vamptalons:mod}} slashing.</description>
 		</sheet>
 		<rules>
 			<stat name="vamptalons:mod:ability" value="strength:modifier" bonus="ability"/>
 			<stat name="vamptalons:mod:ability" value="dexterity:modifier" bonus="ability"/>
+			<stat name="vamptalons:mod" value="vamptalons:mod:ability" />
         </rules>
 	</element>
 	<element name="Draining Fangs" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_TRUE_VAMPIRE_DRAINING_FANGS">
@@ -264,9 +283,14 @@
 			<p> All vampires have sharpened teeth capable of tearing flesh from bone and draining blood from the body. If a willing, paralyzed, charmed, incapacitated, restrained, or grappled, creature within 5 feet of you has blood, you may use your bonus action to Bite them dealing 1d6 (+1d6 at 5th, 11th and 17th level) piercing damage and draining their blood dealing additional necrotic damage equal to three times your Constitution modifier. Drinking blood this way is equal to consuming a ration as per your Thirsting Hunger trait. When you use your Vampiric Bite, you can choose to not deal damage.</p>
 		</description>
 		<sheet>
-			<description> All vampires have sharpened teeth capable of tearing flesh from bone and draining blood from the body. Under the right conditions, you may use your bonus action to Bite a creature, dealing {{truebite:amount}}d6 piercing damage plus an additional {{constitution:modifier*3}} necrotic damage. This counts as consuming a ration as per your Thirsting Hunger trait. When you use your Vampiric Bite, you can choose to not deal damage.</description>
+			<description> All vampires have sharpened teeth capable of tearing flesh from bone and draining blood from the body. Under the right conditions, you may use your bonus action to Bite a creature, dealing {{truebite:amount}}d6 piercing damage plus an additional {{drainfang:nec}} necrotic damage. This counts as consuming a ration as per your Thirsting Hunger trait. When you use your Vampiric Bite, you can choose to not deal damage.</description>
 		</sheet>
         <rules>
+			<stat name="drainfang:mod:con" value="constitution:modifier" />
+			<stat name="drainfang:mod" value="drainfang:mod:con" />
+			<stat name="drainfang:mod" value="drainfang:mod:con" />
+			<stat name="drainfang:mod" value="drainfang:mod:con" />
+			<stat name="drainfang:nec" value="drainfang:mod" />
             <stat name="truebite:amount" value="1" />
             <stat name="truebite:amount" value="1" level="5" />
             <stat name="truebite:amount" value="1" level="11" />
@@ -277,9 +301,7 @@
 		<description>
 			<p> Your new rank give you power, and more importantly, freedom. You gain a coffinlike structure. In addition, you can now take vampire feats and you gain one of these feats of your choice.</p>
 		</description>
-		<sheet>
-            <description> Your new rank give you power, and more importantly, freedom. You gain a coffinlike structure. In addition, you can now take vampire feats and you gain one of these feats of your choice. </description>
-        </sheet>
+		<sheet display="false"/>
 	</element>
 	<element name="Misty Escape" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_TRUE_VAMPIRE_MISTY_ESCAPE">
 		<description>
@@ -288,5 +310,175 @@
 		<sheet>
             <description> When you drop to 0 hit points outside of your coffinlike structure, you transform into a cloud of mist instead of falling unconscious, provided you are not in an area of sunlight or running water. If you can't transform, you are destroyed. It has advantage on Strength, Dexterity, and Constitution saving throws, and is immune to all nonmagical damage, except the damage it takes from sunlight. You remain in this form until you reach your coffinlike structure, where you revert to your vampire form and start healing. You are destroyed if you don't reach your coffinlike structure within 2 hours. </description>
         </sheet>
+	</element>
+	<!-- HÄRKÄCINE -->
+	<element name="Härkäcine" type="Race" source="XENBuilder" id="ID_XENBUILDER_RACE_HARKACINE">
+		<description>
+			<p> Härkäcine are, in a sense, half-minotaur people, but saying that is a dishonor to their race. While they are physically larger and stronger than most other humans (or other humanoids), they are not fully bovine creatures, often only sporting horns and a tail, or patches of hair in their arms and legs. </p>
+			<h4>VEHEMENT BASTIONS</h4>
+			<p> While maybe not as brutal as full minotaurs, their genetics made Härkäcine built for heavy lifting, giving them unparalleled strength and endurance, along with the mental and emotional determination of humans. </p>
+			<h4>BOVINE STUNNERS</h4>
+			<p> Most Härkäcine have thick, beautiful horns that come in many shapes, thin tailes with hair on the tip, and patches of heavy fur on their extremities. Both their horns and fur tend to be either shades of white, brown or black, although some show more exotic colours and patterns.</p>
+			<h4>FORTITUDE IN NUMBERS</h4>
+			<p> While they love travelling, and most are Nomads or move a few times at some point in their lives, Härkäcine tend to flock together and move as units. They congregate in great towns or cities of bustling joy and care, accept foreigners into their culture, and are very family-oriented people, often forming huge families and friend-groups.</p>
+			<h4>EMOTIONAL TO THE CORE</h4>
+			<p> Härkäcine are known for their big hearts and deep feelings. Some people say they are soft, not knowing that they are in fact tough, but deliberately choose to feel profound emotions for everything they do. Their heart is, indeed, their strongest muscle.</p> 
+			<ul class="unstyled">
+				<li><strong>Female Names:</strong> Asazli, Birice, Kardayar, Orkaz, Sanumer</li>
+				<li><strong>Male Names:</strong> Aslek, Buran, Ketarad, Okanul, Senol</li>
+			</ul>
+			<h4>HÄRKÄCINE TRAITS</h4>
+			<p> Your Härkäcine character has the following racial traits:</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Härkäcine mature and age roughly at about the same rate as humans, but they can live up to 180 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Härkäcine delight in living in a tight community. They gravitate toward law, and most are good-hearted people, but some have rebelled before.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Härkäcine are tall and powerfully built, ranging from 6 feet to almost 8 feet in height, with generally stocky builds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.</p>
+			<p class="indent"><strong><em>Horned Beast.</em></strong> You can use your head and horns to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier.</p>
+			<p class="indent"><strong><em>Vigorous Rover.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift. Also, you travel or work for twice as long (16h) before you need to rest to avert exhaustion. </p>
+			<p class="indent"><strong><em>Massive Souls.</em></strong> You have proficiency in the Persuasion and Intimidation skills, as your mighty aura helps you captivate or scare individuals.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one extra language of your choice.</p>
+			<p class="indent"><strong><em>Subrace.</em></strong> There are three main kinds of Härkäcine, drifter, arisen, and bulwarked. Choose one of these subraces.</p>
+		</description>
+		<setters>
+			<set name="names" type="male"> Aslek, Buran, Ketarad, Okanul, Senol</set>
+			<set name="names" type="female"> Asazli, Birice, Kardayar, Orkaz, Sanumer</set>			
+			<set name="height" modifier="3d8">5'9"</set>
+			<set name="weight" modifier="1d6">200 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Härkäcine)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_HARKACINE_HORNED_BEAST" />
+			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_HARKACINE_VIGOROUS_ROVER" />
+			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_HARKACINE_MASSIVE_SOULS" />
+			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_HARKACINE_SUBRACE" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Härkäcine)" supports="Standard||Exotic"/>
+		</rules>
+	</element>
+	<element name="Horned Beast" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_HARKACINE_HORNED_BEAST">
+		<description>
+			<p> You can use your head and horns to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier..</p>
+		</description>
+		<sheet>
+			<description> You can use your head and horns to make unarmed strikes. If you hit with them, you deal 1d6 + {{strength:modifier}} piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Vigorous Rover" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_HARKACINE_VIGOROUS_ROVER">
+		<description>
+			<p> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift. Also, you travel or work for twice as long (16h) before you need to rest to avert exhaustion.</p>
+		</description>
+		<sheet>
+			<description> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift. Also, you travel or work for twice as long (16h) before you need to rest to avert exhaustion.</description>
+		</sheet>
+	</element>
+	<element name="Massive Souls" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_HARKACINE_MASSIVE_SOULS">
+		<description>
+			<p> You have proficiency in the Persuasion and Intimidation skills, as your mighty aura helps you captivate or scare individuals.</p>
+		</description>
+		<sheet>
+			<description> You have proficiency in the Persuasion and Intimidation skills, as your mighty aura helps you captivate or scare individuals.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency (Massive Souls)" supports="Skill" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Härkäcine Subrace" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_HARKACINE_SUBRACE">
+		<description>
+			<p> There are three main kinds of Härkäcine, drifter, arisen, and bulwarked. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Härkäcine Subrace" supports="Harkacine" />
+		</rules>
+	</element>
+	<element name="Drifter Härkäcine" type="Sub Race" source="XENBUILDER" id="ID_XENBUILDER_SUB_RACE_DRIFTER_HARKACINE">
+		<supports>Harkacine</supports>
+			<description>
+			<p> Drifter Härkäcines look the leanest, because they are always moving. Their groups often use light, comfortable clothing and live a complete nomadic lifestyle, never settling anywhere for more than a couple of weeks at most. They are the most common type of Härkäcine.</p>
+			<p> Your knowledge of nature and the wilds is great even within Härkäcine culture, and your kind are often designated to help scout or search locations before the rest of the herd arrives.</p>
+			<p>
+				<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2.</p>
+				<p class="indent"><strong><em>Uncanny Awareness.</em></strong> You almost unnatural talents with nature make you the best at finding the right spots to settle and when to move on. You have advantage on Wisdom (Survival) checks.</p>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Drifter Härkäcine)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_UNCANNY_AWARENESS" />
+		</rules>
+	</element>
+	<element name="Arisen Härkäcine" type="Sub Race" source="XENBUILDER" id="ID_XENBUILDER_SUB_RACE_ARISEN_HARKACINE">
+		<supports>Harkacine</supports>
+			<description>
+			<p> Those of Arisen blood found power within themselves, power believed to not have been part of them for a long, long time. This newfound force manifests as weird fur colorations, ranging from blues to greens to pinks, and weird glowing marks, almost like tattoos, on their horns and chest.</p>
+			<p> These marks allow Arisen Härkäcine to innately use magic, to a somewhat limited degree.</p>
+			<p>
+				<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 2.</p>
+				<p class="indent"><strong><em>Primal Magiks.</em></strong> Ancient energies flow through your veins, but it has long thinned. You know the druidcraft, thaumaturgy, and elemental burst cantrips, and can cast them at will. </p>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Arisen Härkäcine)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_PRIMAL_MAGIKS" />
+		</rules>
+	</element>
+	<element name="Bulwarked Härkäcine" type="Sub Race" source="XENBUILDER" id="ID_XENBUILDER_SUB_RACE_BULWARKED_HARKACINE">
+		<supports>Harkacine</supports>
+			<description>
+			<p> The Bulwarked are a sturdier, almost metallic variation of Härkäcines. Their bodies are more grey/slate toned, and their horns look almost like forged iron.</p>
+			<p> This resilient walls are often soldiers, guards or hunters because they rarely get hurt.</p>
+			<p>
+				<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2.</p>
+				<p class="indent"><strong><em>Fortress Framed.</em></strong> Your body was made to take a beating, and you feel unstoppable. When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't do so again until you finish a long rest.</p>
+			</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Bulwarked Härkäcine)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_FORTRESS_FRAMED" />
+		</rules>
+	</element>
+	<element name="Uncanny Awareness" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_UNCANNY_AWARENESS">
+		<description>
+			<p> You almost unnatural talents with nature make you the best at finding the right spots to settle and when to move on. You have advantage on Wisdom (Survival) checks.</p>
+		</description>
+		<sheet>
+			<description> You have advantage on Wisdom (Survival) checks.</description>
+		</sheet>
+	</element>
+	<element name="Primal Magiks" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_PRIMAL_MAGIKS">
+		<description>
+			<p> Ancient energies flow through your veins, but it has long thinned. You know the druidcraft, thaumaturgy, and elemental burst cantrips, and can cast them at will.</p>
+		</description>
+		<sheet>
+			<description> You know the druidcraft, thaumaturgy, and elemental burst cantrips, and can cast them at will.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
+			<grant type="Spell" id="ID_XENBUILDER_SPELL_ELEMENTAL_BURST" />
+		</rules>
+	</element>
+	<element name="Fortress Framed" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_FORTRESS_FRAMED">
+		<description>
+			<p> Your body was made to take a beating, and you feel unstoppable. When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. Once you use this trait, you can't do so again until you finish a long rest.</p>
+		</description>
+		<sheet>
+			<description> Once per long rest, when you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. </description>
+		</sheet>
 	</element>
 </elements>
