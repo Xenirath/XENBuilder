@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Races</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="races.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/races.xml" />
 		</update>
 	</info>
@@ -401,7 +401,7 @@
 			<select type="Sub Race" name="Härkäcine Subrace" supports="Harkacine" />
 		</rules>
 	</element>
-	<element name="Drifter Härkäcine" type="Sub Race" source="XENBUILDER" id="ID_XENBUILDER_SUB_RACE_DRIFTER_HARKACINE">
+	<element name="Drifter Härkäcine" type="Sub Race" source="XENBuilder" id="ID_XENBUILDER_SUB_RACE_DRIFTER_HARKACINE">
 		<supports>Harkacine</supports>
 			<description>
 			<p> Drifter Härkäcines look the leanest, because they are always moving. Their groups often use light, comfortable clothing and live a complete nomadic lifestyle, never settling anywhere for more than a couple of weeks at most. They are the most common type of Härkäcine.</p>
@@ -418,7 +418,7 @@
 			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_UNCANNY_AWARENESS" />
 		</rules>
 	</element>
-	<element name="Arisen Härkäcine" type="Sub Race" source="XENBUILDER" id="ID_XENBUILDER_SUB_RACE_ARISEN_HARKACINE">
+	<element name="Arisen Härkäcine" type="Sub Race" source="XENBuilder" id="ID_XENBUILDER_SUB_RACE_ARISEN_HARKACINE">
 		<supports>Harkacine</supports>
 			<description>
 			<p> Those of Arisen blood found power within themselves, power believed to not have been part of them for a long, long time. This newfound force manifests as weird fur colorations, ranging from blues to greens to pinks, and weird glowing marks, almost like tattoos, on their horns and chest.</p>
@@ -435,7 +435,7 @@
 			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_PRIMAL_MAGIKS" />
 		</rules>
 	</element>
-	<element name="Bulwarked Härkäcine" type="Sub Race" source="XENBUILDER" id="ID_XENBUILDER_SUB_RACE_BULWARKED_HARKACINE">
+	<element name="Bulwarked Härkäcine" type="Sub Race" source="XENBuilder" id="ID_XENBUILDER_SUB_RACE_BULWARKED_HARKACINE">
 		<supports>Harkacine</supports>
 			<description>
 			<p> The Bulwarked are a sturdier, almost metallic variation of Härkäcines. Their bodies are more grey/slate toned, and their horns look almost like forged iron.</p>
