@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>magic items</name>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="magic-items.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/magic-items.xml" />
 		</update>
 	</info>
@@ -479,6 +479,7 @@
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">50 gp</set>
 			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
 			<set name="type">Wondrous Item</set>
 			<set name="attunement">false</set>
 			<set name="rarity">Uncommon</set>
@@ -509,6 +510,7 @@
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">100 gp</set>
 			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
 			<set name="type">Wondrous Item</set>
 			<set name="attunement">false</set>
 			<set name="rarity">Uncommon</set>
@@ -539,6 +541,7 @@
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">150 gp</set>
 			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
 			<set name="type">Wondrous Item</set>
 			<set name="attunement">false</set>
 			<set name="rarity">Uncommon</set>
@@ -569,6 +572,7 @@
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">200 gp</set>
 			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
 			<set name="type">Wondrous Item</set>
 			<set name="attunement">false</set>
 			<set name="rarity">Uncommon</set>
