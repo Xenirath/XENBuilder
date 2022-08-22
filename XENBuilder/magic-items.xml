@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>magic items</name>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="magic-items.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/magic-items.xml" />
 		</update>
 	</info>
@@ -457,4 +457,91 @@
 			<grant type="Spell" id="ID_PHB_SPELL_ELDRITCH_BLAST" spellcasting="Warlock" />
 		</rules>
     </element>
+	<element name="Medical Aid (Support Frame)" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_MEDICAL_AID_SUPPORT_FRAME">
+		<description>
+			<p>This aid might take many forms, from greaves to bracers, to corsets or helmets. Whatever the actual piece is, it's design is to help those whose body has either started to deteriorate in some way, shape or form, or for those who have suffered some sort of accident.</p>
+			<p class="indent">Modern medicine has made three different types of aid to help those in need; depending on the aid's type, your Ability Score (of that type) changes to 8.</p>
+			<p class="indent">The aid has no effect on you if your related Ability Score without the aid is equal to or greater than the aid’s score.</p>
+			<table>
+				<thead>
+					<tr><td>Aid type</td><td>Score</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>Support Frame</td><td>Strength</td></tr>
+					<tr><td>Brace</td><td>Constitution</td></tr>
+					<tr><td>Plastic Surgery</td><td>Charisma</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">strength</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">25 gp</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<stat name="strength:score:set" value="8" bonus="base" />
+		</rules>
+	</element>
+	<element name="Medical Aid (Brace)" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_MEDICAL_AID_BRACE">
+		<description>
+			<p>This aid might take many forms, from greaves to bracers, to corsets or helmets. Whatever the actual piece is, it's design is to help those whose body has either started to deteriorate in some way, shape or form, or for those who have suffered some sort of accident.</p>
+			<p class="indent">Modern medicine has made three different types of aid to help those in need; depending on the aid's type, your Ability Score (of that type) changes to 8.</p>
+			<p class="indent">The aid has no effect on you if your related Ability Score without the aid is equal to or greater than the aid’s score.</p>
+			<table>
+				<thead>
+					<tr><td>Aid type</td><td>Score</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>Support Frame</td><td>Strength</td></tr>
+					<tr><td>Brace</td><td>Constitution</td></tr>
+					<tr><td>Plastic Surgery</td><td>Charisma</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">constitution</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">35 gp</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<stat name="constitution:score:set" value="8" bonus="base" />
+		</rules>
+	</element>
+	<element name="Medical Aid (Plastic Surgery)" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_MEDICAL_AID_PLASTIC_SURGERY">
+		<description>
+			<p>This aid might take many forms, from greaves to bracers, to corsets or helmets. Whatever the actual piece is, it's design is to help those whose body has either started to deteriorate in some way, shape or form, or for those who have suffered some sort of accident.</p>
+			<p class="indent">Modern medicine has made three different types of aid to help those in need; depending on the aid's type, your Ability Score (of that type) changes to 8.</p>
+			<p class="indent">The aid has no effect on you if your related Ability Score without the aid is equal to or greater than the aid’s score.</p>
+			<table>
+				<thead>
+					<tr><td>Aid type</td><td>Score</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>Support Frame</td><td>Strength</td></tr>
+					<tr><td>Brace</td><td>Constitution</td></tr>
+					<tr><td>Plastic Surgery</td><td>Charisma</td></tr>
+				</tbody>
+			</table>
+		</description>
+		<setters>
+			<set name="keywords">charisma</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">25 gp</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<rules>
+			<stat name="charisma:score:set" value="8" bonus="base" />
+		</rules>
+	</element>
 </elements>
