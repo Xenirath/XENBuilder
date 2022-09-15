@@ -2,7 +2,7 @@
 <elements>
 	<info>
         <name>spells</name>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/spells.xml" />
 		</update>
 	</info>
@@ -166,6 +166,27 @@
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="duration">Instantaneous</set>
+		</setters>
+	</element>
+	<element name="Punny Phouk-Act" type="Spell" source="XENBuilder" id="ID_XENBUILDER_SPELL_PUNNY_PHOUK_ACT">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>When you strike a foe with a melee weapon attack, you can immediately cast Punny Phouk-Act as a bonus action. The joy and magic from the feywild surges from you, granting you armor class 16 + your Dexterity modifer for the spell’s duration. This magical armor has no Strength requirement, doesn’t hinder spellcasting, and doesn’t incur disadvantage on Dexterity (Stealth) checks.</p>
+			<p class="indent">If the creature you struck was a fey, the armor also grants you advantage on Wisdom saving throws.</p>
+		</description>
+		<setters>
+			<set name="keywords">feywild magic</set>
+			<set name="level">3</set>
+			<set name="school" addition="Blood">Enchantment</set>
+			<set name="time">1 bonus action</set>
+			<set name="range">Self</set>
+			<set name="duration">1 hour</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent" addition="you must have just struck a foe with a melee weapon">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
 		</setters>
 	</element>
 </elements>
