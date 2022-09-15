@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Races</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="races.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/races.xml" />
 		</update>
 	</info>
@@ -507,6 +507,92 @@
 		</description>
 		<sheet>
 			<description> Once per long rest, when you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. </description>
+		</sheet>
+	</element>
+	<!-- ERINYES -->
+	<element name="Erinyes" type="Race" source="XENBuilder" id="ID_XENBUILDER_RACE_ERINYES">
+		<description>
+			<p class="flavor">Once fallen angels, now the most wrathful torturers of the Lower Planes. They live by the sword and kill by the sword. Their idealized beauty is nothing compared to their wrath.</p>
+			<h4>DEVILISH DAZZLERS</h4>
+			<p>Erinyes were the furies of the Nine Hells, responsible for bringing infernal justice and vengeful retribution to mortals and devils alike. They appeared as imposing yet beautiful figures, so attractive that they could be easily mistaken for celestials. Although they were naturally female, erinyes could appear as idealized versions of the sexes of any mortal race. Their natural forms normally possessed glowing red eyes, as well as large, feathered wings that stayed regardless of the form that they took.</p>
+			<h4>WRATHFUL TORTURERS</h4>
+			<p>Erinyes were not only physically stunning, but dangerously capable, highly disciplined and unfailingly loyal to their lords. When hunting mortal souls they showed both ruthlessness and cunning, exploiting their angelic appearance and tempting those they came across into committing wicked acts.</p>
+			<p class="indent">The relationship between erinyes and other devils was a conflicting combination of admiration and hatred. Having come from celestials as opposed to damned souls, erinyes viewed themselves as innately superior to other baatezu, causing a mutual disdain between them and their devil kin. Other devils greatly envied the erinyes, yet at the same time, were inspired by their indomitable fury. Feelings of lust and idolization clashed with hostility so much so that the two groups occasionally disobeyed their superiors and met one another with violence.</p>
+			<h4>ERINYES TRAITS</h4>
+			<p>Erinyes share certain racial traits as a result of their infernal descent.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 2, and your Strength score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Erinyes are ageless devils, typically appearing as perfect adults between 18 and 25, and will not die of old age.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Erinyes are about the same size and build as humans or tieflings. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Truesight.</em></strong> Thanks to your infernal heritage, you gain truesight up to 120ft. With it, you can see in normal and magical darkness, see invisible creatures and objects, automatically detect visual illusions and succeed on saving throws against them, and perceives the original form of a shapechanger or a creature that is transformed by magic. Furthermore, you can see into the Ethereal Plane.</p>
+			<p class="indent"><strong><em>Hell Flight.</em></strong> You have a flying speed of 60 feet.</p>
+			<p class="indent"><strong><em>Greater Hellish Resistance.</em></strong> You have resistance to fire and poison damage.</p>
+			<p class="indent"><strong><em>Magic Resistance.</em></strong> You have advantage on saving throws against spells and other magical effects.</p>
+			<p class="indent"><strong><em>Animate Rope.</em></strong> You can turn any rope or whip you are holding into a 'Rope of Entanglement' and use it as such as long as you keep holding it. It returns to normal as soon as you let go of it.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Infernal.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Akmenos, Amnon, Barakas, Damakos, Ekemon, Iados, Kairon, Leucis, Melech, Mordai, Morthos, Pelaios, Skamos, Therai</set>
+			<set name="names" type="female">Akta, Anakis, Bryseis, Criella, Damaia, Ea, Kallista, Lerissa, Makaria, Nemeia, Orianna, Phelaia, Rieta</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d10">4'11"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Erinyes)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Erinyes)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_TRUESIGHT" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<grant type="Language" id="ID_LANGUAGE_INFERNAL" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" number="2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />			
+			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_HELL_FLIGHT" />
+			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_GREATER_HELLISH_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_MAGIC_RESISTANCE" />
+			<grant type="Racial Trait" id="ID_XENBUILDER_RACIAL_TRAIT_ANIMATE_ROPE" />
+		</rules>
+	</element>
+	<element name="Hell Flight" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_HELL_FLIGHT">
+		<description>
+			<p>You have a flying speed of 60 feet.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed of 60 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="60" bonus="base" />
+		</rules>
+	</element>
+	<element name="Greater Hellish Resistance" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_GREATER_HELLISH_RESISTANCE">
+		<description>
+			<p>You have resistance to fire and poison damage.</p>
+		</description>
+		<sheet>
+			<description>You have resistance to fire and poison damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	<element name="Magic Resistance" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_MAGIC_RESISTANCE">
+		<description>
+			<p>You have advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>
+	<element name="Animate Rope" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_RACIAL_TRAIT_ANIMATE_ROPE">
+		<description>
+			<p>You can turn any rope or whip you are holding into a 'Rope of Entanglement' and use it as such as long as you keep holding it. It returns to normal as soon as you let go of it.</p>
+		</description>
+		<sheet>
+			<description>You can turn any rope or whip you are holding into a 'Rope of Entanglement' and use it as such as long as you keep holding it. It returns to normal as soon as you let go of it.</description>
 		</sheet>
 	</element>
 </elements>
