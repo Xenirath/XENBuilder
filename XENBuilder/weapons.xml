@@ -2,11 +2,12 @@
 <elements>
     <info>
         <name>weapons</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="weapons.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/weapons.xml" />
 		</update>
 	</info>
-    <!-- non magical weapons -->
+
+    <!-- WEAPONS -->
     <element name="Yo-Yo" type="Weapon" source="XENBuilder" id="ID_XENBUILDER_WEAPON_YOYO">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_HIDDEN, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_YOYO</supports>
 		<description>
@@ -75,6 +76,37 @@
 		</setters>
 	</element>
 
+	<element name="XEN Grim Scythe" type="Weapon" source="XENBuilder" id="ID_XENBUILDER_WEAPON_XEN_GRIM_SCYTHE">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE </supports>
+		<description>
+			<p>A scythe made for war instead of farming. It's huge size hides it's lightweight make and perfect momentum-based balance that makes it quick to wield while moving.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">65</set>
+			<set name="weight" lb="6">6 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">1d10</set>
+			<set name="versatile">1d12</set>
+			<set name="proficiency">ID_XENBUILDER_PROFICIENCY_WEAPON_XEN_GRIM_SCYTHE</set>
+		</setters>
+	</element>
+
+	<element name="XEN Zweihander" type="Weapon" source="XENBuilder" id="ID_XENBUILDER_WEAPON_XEN_ZWEIHANDER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_XENBUILDER_WEAPON_PROPERTY_SUPERHEAVY</supports>
+		<description>
+			<p>An incredibly sized, two-handed, heavy sword that not many can wield. Only the strongest get to carry this giant's beauty.</p>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">80</set>
+			<set name="weight" lb="16">16 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d8</set>
+			<set name="proficiency">ID_XENBUILDER_PROFICIENCY_WEAPON_XEN_ZWEIHANDER</set>
+		</setters>
+	</element>
+
 	<!-- magical weapons -->
 	<element name="Whisper" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_WHISPER">
 		<description>
@@ -94,17 +126,58 @@
 			<set name="name-format">Whisper {{parent}}, +{{enhancement}}</set>
 		</setters>
 	</element>
+
+    <element name="Mind-Shattering Weapon" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_MIND_SHATTERING_WEAPON">
+        <description>
+            <p>You gain a +1 bonus to attack and damage rolls made with this magic weapon. In addition, while you are attuned to this weapon, any psionic/psychic abilities that need a focus, weapon, or requirement to work can be instead used with this weapon (E.g. Psychic Blades from the Soulknife allows you to attack as a bonus action if you attacked with your blades as an action. Both attacks can be performed with this gun instead).</p>
+			<p>You are also permanently under the effects of a non-detection spell.</p>
+            <p class="indent"><strong><em>Migraine Shots.</em></strong> When you deal damage to a target using this weapon, you deal an extra 3d4 psychic damage.</p>
+            <p class="indent"><strong><em>Mind-Shatter.</em></strong> Instead of attacking, you can overload the weapon with psionic energy, causing a creature in range to suffer and temporarely "breaking" the weapon. Choose a creature within 60 feet. You shoot at them, and can cast Feeblemind or Reality Break on the target using that shot. If you succeed on the attack roll, they have disadvantage on their saving throw against the spell.</p> 
+			<p class="indent">Alternatively, you can shoot yourself, casting either Inner World or Mind Blank with you as the target. After casting the spell, the weapon shatters into psionic fractals and it can’t be used to cast a spell until the next dawn. Dexterity is your spellcasting ability for these spells.</p>
+        </description>
+        <setters>
+			<set name="keywords">sidearm</set>
+            <set name="category">Magic Weapons</set>
+			<set name="type" addition="any sidearm">Weapon</set>
+            <set name="attunement">true</set>
+            <set name="rarity">Very Rare</set>
+            <set name="weapon">ID_INTERNAL_WEAPON_GROUP_SIDEARMS</set>
+			<set name="name-format">Mind-Shattering {{parent}}</set>
+            <set name="enhancement">1</set>
+        </setters>
+    </element>
+
+	<element name="Star Scythe" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_STAR_SCYTHE">
+		<description>
+			<p>This item appears to be a detailed, carved quarterstaff of very nice make, with a metallic "line" or "slot" on one point. While grasping it, you can use a bonus action to cause a crescent blade of pure radiance to spring into existence, or make the blade disappear. While the blade exists, this magic scythe has the finesse property. If you are proficient with grim scythes, you are proficient with the <em>star scythe</em>.</p>
+			<p class="indent">You gain a +2 bonus to attack and damage rolls made with this weapon, which deals radiant damage instead of slashing damage. When you hit an undead with it, that target takes an extra 1d8 radiant damage.</p>
+			<p class="indent">The scythe's luminous blade emits bright light in a 15-foot radius and dim light for an additional 15 feet. The light is sunlight. While the blade persists, you can use an action to expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each.</p>
+		</description>
+		<setters>
+			<set name="keywords">scythe,grim,radiant</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="grim scythe">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">XEN Grim Scythe</set>
+		</setters>
+	</element>
+
     <!-- weapon properties -->
     <element name="YoYo" type="Weapon Property" source="XENBuilder" id="ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_YOYO">
 		<description>
 			<p>Special. If you attack with this weapon without throwing it, it deals 1 bludgeoning damage. When the yo-yo is thrown, it deals 1d6 bludgeoning damage. You do not have disadvantage when attacking by throwing the yo-yo at a creature within 5 feet of you. After the yo-yo is thrown, you must make a Sleight of Hand skill check (DC 10) to make the string return the Yo-Yo to you. On a failed skill check, you must use an action to wind up the string before throwing the Yo-Yo again. If you are proficient with yo-yos specifically (proficiency in all simple weapons doesn't count), you automatically succeed this skill check.</p>
 		</description>
     </element>
+
 	<element name="Knuckledusters" type="Weapon Property" source="XENBuilder" id="ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_KNUCKLEDUSTERS">
 		<description>
 			<p>Special. Using Knuckledusters doesn't counts as using a weapon, but as unarmed strikes instead. "Martial Arts", "Fisticuffs" or any other feature that modifies unarmed strikes work in addition to Knuckledusters. If your unarmed strike is modified by a feature like the ones mentioned, you instead add the weapons damage to your unarmed strikes damage, along with any special or magical properties of the Knuckledusters. </p>
 		</description>
     </element>
+
 	<element name="Shieldbow Special Rules" type="Weapon Property" source="XENBuilder" id="ID_INTERNAL_XENBUILDER_WEAPON_PROPERTY_SPECIAL_SHIELDBOW">
 		<description>
 			<p> Wielding a gunshield increases your Armor Class by 2. You can benefit from only one shield at a time.</p>
@@ -113,6 +186,7 @@
 			<description> You AC increases by 2.</description>
 		</sheet>
 	</element>
+
 	<element name="Gunshield Special Rules" type="Weapon Property" source="XENBuilder" id="ID_INTERNAL_XENBUILDER_WEAPON_PROPERTY_SPECIAL_GUNSHIELD">
 		<description>
 			<p> Wielding a gunshield increases your Armor Class by 3. You can benefit from only one shield at a time. Normally, you have disadvantage on attack rolls that you make with a gunshield. However, while you are wielding a gunshield, you can spend an amount of movement equal to half your speed to gain half cover until the start of your next turn. When you do so, you also stabilize your aim, allowing you to attack without disadvantage.</p>
@@ -121,25 +195,55 @@
 			<description> You AC increases by 3. You have disadvantage on attack rolls that you make with a gunshield, unless you can spend half your movement speed to brace the shield, gaining half cover until the start of your next turn and stabilizing the gun, allowing you to attack without disadvantage.</description>
 		</sheet>
 	</element>
+
 	<element name="Shell Loading 12" type="Weapon Property" source="XENBuilder" id="ID_INTERNAL_XENBUILDER_WEAPON_PROPERTY_SHELL_LOADING_12">
 		<description>
 			<p>This weapon needs to be reloaded after 12 shots.</p>
 			<div element="ID_INTERNAL_AAGNG_WEAPON_PROPERTY_SHELL_LOADING" />
 		</description>
 	</element>
+
+	<element name="Superheavy" type="Weapon Property" source="XENBuilder" id="ID_INTERNAL_XENBUILDER_WEAPON_PROPERTY_SUPERHEAVY">
+		<description>
+			<p>This weapon is unusually large for its type. You must have a Strength score of 16 or higher to wield a superheavy weapon.</p>
+			<div element="ID_INTERNAL_XENBUILDER_WEAPON_PROPERTY_SUPERHEAVY" />
+		</description>
+	</element>
+
     <!-- weapon proficiencies -->
     <element name="Weapon Proficiency (Yo-Yos)" type="Proficiency" source="XENBuilder" id="ID_XENBUILDER_PROFICIENCY_WEAPON_PROFICIENCY_YOYO">
 	    <supports>Weapon, Melee, ID_XENBUILDER_WEAPON_GROUP_YOYOS</supports>
 	</element>
+
 	<element name="Weapon Proficiency (Knuckledusters)" type="Proficiency" source="XENBuilder" id="ID_XENBUILDER_PROFICIENCY_WEAPON_PROFICIENCY_KNUCKLEDUSTERS">
 	    <supports>Weapon, Melee, ID_XENBUILDER_WEAPON_GROUP_KNUCKLEDUSTERS</supports>
 	</element>
-	<element name="Weapon Proficiency (Shieldbow)" type="Proficiency" source="XENBuilder" id="ID_XENBUILDER_PROFICIENCY_SHIELDBOW">
+
+	<element name="Weapon Proficiency (Shieldbow)" type="Proficiency" source="XENBuilder" id="ID_XENBUILDER_PROFICIENCY_WEAPON_SHIELDBOW">
 		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
 		<sheet alt="Shieldbow" />
 	</element>
-	<element name="Weapon Proficiency (Gunshield)" type="Proficiency" source="XENBuilder" id="ID_XENBUILDER_PROFICIENCY_GUNSHIELD">
+
+	<element name="Weapon Proficiency (Gunshield)" type="Proficiency" source="XENBuilder" id="ID_XENBUILDER_PROFICIENCY_WEAPON_GUNSHIELD">
 		<requirements>ID_WOTC_DMG_OPTION_FIREARMS</requirements>
 		<sheet alt="Gunshield" />
 	</element>
+
+	<element name="Weapon Proficiency (XEN Grim Scythe)" type="Proficiency" source="XENBuilder" id="ID_XENBUILDER_PROFICIENCY_WEAPON_XEN_GRIM_SCYTHE">
+		<supports>Weapon, Martial, Melee, Finesse, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_XENBUILDER_WEAPON_XEN_GRIM_SCYTHE" />
+		</rules>
+	</append>
+
+	<element name="Weapon Proficiency (XEN Zweihander)" type="Proficiency" source="XENBuilder" id="ID_XENBUILDER_PROFICIENCY_WEAPON_XEN_ZWEIHANDER">
+		<supports>Weapon, Martial, Melee, ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_XENBUILDER_WEAPON_PROPERTY_SUPERHEAVY</supports>
+	</element>
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_XENBUILDER_WEAPON_XEN_ZWEIHANDER" />
+		</rules>
+	</append>
 </elements>
