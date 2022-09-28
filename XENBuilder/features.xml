@@ -2,10 +2,13 @@
 <elements>
 	<info>
 		<name>features</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="features.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/features.xml" />
 		</update>
   	</info>
+
+	<!-- CLASS FEATURES -->
+
 	<element name="Shield Bracing" type="Class Feature" source="XENBuilder" id="ID_XENBUILDER_CLASS_FEATURE_FIGHTINGSTYLE_SHIELD_BRACING">
 		<supports>Fighting Style, Fighter, Paladin, Ranger, Gunslinger</supports>
 		<description>
@@ -15,4 +18,172 @@
 			<description>You can now wield a two-handed melee weapon with a shield, but must brace it against the shield as a bonus action to attack with it or use any of it's properties.</description>
 		</sheet>
 	</element>
+
+	<!-- OPTIONS -->
+	<!--- AS Improvements (Max) -->
+
+	<element name="Additional Ability Score Max Improvement, Strength" type="Item" source="XENBuilder" id="ID_XENBUILDER_ITEM_ASI_STRENGTH_MAX_INCREASE_1">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_XENBUILDER_INFORMATION_ASI_STRENGTH_MAX_INCREASE_1" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="category">Additional Ability Score Improvement</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="1" alt="Ability Score Increase" />
+			<stat name="strength:max" value="1" alt="Ability Score Max Increase"/>
+		</rules>
+	</element>
+
+	<element name="Additional Ability Score Max Improvement, Dexterity" type="Item" source="XENBuilder" id="ID_XENBUILDER_ITEM_ASI_DEXTERITY_MAX_INCREASE_1">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_XENBUILDER_INFORMATION_ASI_DEXTERITY_MAX_INCREASE_1" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="category">Additional Ability Score Improvement</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="1" alt="Ability Score Increase" />
+			<stat name="dexterity:max" value="1" alt="Ability Score Max Increase"/>
+		</rules>
+	</element>
+
+	<element name="Additional Ability Score Max Improvement, Constitution" type="Item" source="XENBuilder" id="ID_XENBUILDER_ITEM_ASI_CONSTITUTION_MAX_INCREASE_1">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_XENBUILDER_INFORMATION_ASI_CONSTITUTION_MAX_INCREASE_1" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="category">Additional Ability Score Improvement</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="1" alt="Ability Score Increase" />
+			<stat name="constitution:max" value="1" alt="Ability Score Max Increase"/>
+		</rules>
+	</element>
+
+	<element name="Additional Ability Score Max Improvement, Intelligence" type="Item" source="XENBuilder" id="ID_XENBUILDER_ITEM_ASI_INTELLIGENCE_MAX_INCREASE_1">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_XENBUILDER_INFORMATION_ASI_INTELLIGENCE_MAX_INCREASE_1" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="category">Additional Ability Score Improvement</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="1" alt="Ability Score Increase" />
+			<stat name="intelligence:max" value="1" alt="Ability Score Max Increase"/>
+		</rules>
+	</element>
+
+	<element name="Additional Ability Score Max Improvement, Wisdom" type="Item" source="XENBuilder" id="ID_XENBUILDER_ITEM_ASI_WISDOM_MAX_INCREASE_1">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_XENBUILDER_INFORMATION_ASI_WISDOM_MAX_INCREASE_1" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="category">Additional Ability Score Improvement</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="1" alt="Ability Score Increase" />
+			<stat name="wisdom:max" value="1" alt="Ability Score Max Increase"/>
+		</rules>
+	</element>
+
+	<element name="Additional Ability Score Max Improvement, Charisma" type="Item" source="XENBuilder" id="ID_XENBUILDER_ITEM_ASI_CHARISMA_MAX_INCREASE_1">
+		<compendium display="false" />
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<div class="reference">
+				<div element="ID_XENBUILDER_INFORMATION_ASI_CHARISMA_MAX_INCREASE_1" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="category">Additional Ability Score Improvement</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="1" alt="Ability Score Increase" />
+			<stat name="charisma:max" value="1" alt="Ability Score Max Increase"/>
+		</rules>
+	</element>
+
+	<!-- OPTION REFERENCES -->
+
+	<element name="Strength" type="Information" source="XENBuilder" id="ID_XENBUILDER_INFORMATION_ASI_STRENGTH_MAX_INCREASE_1">
+		<compendium display="false" />
+		<description>
+			<p>Your Strength increases by 1, and your max Strength also increases by 1.</p>
+		</description>
+	</element>
+
+	<element name="Dexterity" type="Information" source="XENBuilder" id="ID_XENBUILDER_INFORMATION_ASI_DEXTERITY_MAX_INCREASE_1">
+		<compendium display="false" />
+		<description>
+			<p>Your Dexterity increases by 1, and your max Dexterity also increases by 1.</p>
+		</description>
+	</element>
+
+	<element name="Constitution" type="Information" source="XENBuilder" id="ID_XENBUILDER_INFORMATION_ASI_CONSTITUTION_MAX_INCREASE_1">
+		<compendium display="false" />
+		<description>
+			<p>Your Constitution increases by 1, and your max Constitution also increases by 1.</p>
+		</description>
+	</element>
+
+	<element name="Intelligence" type="Information" source="XENBuilder" id="ID_XENBUILDER_INFORMATION_ASI_INTELLIGENCE_MAX_INCREASE_1">
+		<compendium display="false" />
+		<description>
+			<p>Your Intelligence increases by 1, and your max Intelligence also increases by 1.</p>
+		</description>
+	</element>
+
+	<element name="Wisdom" type="Information" source="XENBuilder" id="ID_XENBUILDER_INFORMATION_ASI_WISDOM_MAX_INCREASE_1">
+		<compendium display="false" />
+		<description>
+			<p>Your Wisdom increases by 1, and your max Wisdom also increases by 1.</p>
+		</description>
+	</element>
+
+	<element name="Charisma" type="Information" source="XENBuilder" id="ID_XENBUILDER_INFORMATION_ASI_CHARISMA_MAX_INCREASE_1">
+		<compendium display="false" />
+		<description>
+			<p>Your Charisma increases by 1, and your max Charisma also increases by 1.</p>
+		</description>
+	</element>
+
 </elements>
