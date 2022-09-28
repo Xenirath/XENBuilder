@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>weapons</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="weapons.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/weapons.xml" />
 		</update>
 	</info>
@@ -206,6 +206,7 @@
 	<element name="Superheavy" type="Weapon Property" source="XENBuilder" id="ID_INTERNAL_XENBUILDER_WEAPON_PROPERTY_SUPERHEAVY">
 		<description>
 			<p>This weapon is unusually large for its type. You must have a Strength score of 16 or higher to wield a superheavy weapon.</p>
+			<p>Additionally, all Superheavy weapons do an extra 1d6 bludgeoning damage on every hit, no matter the original damage type of the weapon.</p>
 			<div element="ID_INTERNAL_XENBUILDER_WEAPON_PROPERTY_SUPERHEAVY" />
 		</description>
 	</element>
