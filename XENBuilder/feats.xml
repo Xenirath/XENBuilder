@@ -2,17 +2,18 @@
 <elements>
 	<info>
 		<name>feats</name>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/feats.xml" />
 		</update>
   	</info>
-	<element name="Shadowy Boi" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_SHADOWY_BOI">
+	
+	<element name="Shadowstep" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_SHADOWSTEP">
 		<description>
 			<p>You are a being made of shadows. You gain the following benefits while in dim light or darkness:</p>
 			<ul>
 				<li>Your speed increases by 10 feet.</li>
-				<li>You can use a bonus action to channel and teleport up to 90ft to another dim or dark place that you can see.</li>
-				<li>While channeling, you are defenseless, triggering attacks of opportunity from nearby enemies. Attacks of opportunity don't cancel the teleportation.</li>
+				<li>You can use a bonus action to tap into your dark powers and teleport up to 60ft to an empty space, that's in dim light or darkness, that you can see.</li>
+				<li>You can use this a number of times equal to twice your (profTimesMod) per long rest.</li>
 			</ul>
 		</description>
 		<sheet>
@@ -27,6 +28,7 @@
 			<stat name="innate speed:burrow:misc" value="10" requirements="[innate speed:burrow:1]" />
 		</rules>
 	</element>
+	
 	<element name="Anti-Component Caster" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_ANTI_COMPONENT_CASTER_VARIANT">
 		<supports/>
 		<prerequisite> The ability to cast at least one spell.</prerequisite>
@@ -75,6 +77,7 @@
 			<select type="Ability Score Improvement" name="Anti-Component Caster, Variant" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
 		</rules>
 	</element>
+	
 	<element name="Cantrip Collector" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_CANTRIP_COLLECTOR">
 		<supports />
 			<prerequisite>Ability to cast at least 1 spell.</prerequisite>
@@ -96,6 +99,7 @@
 			<grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" />
 		</rules>
   	</element>
+	
  	<element name="Determinator" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_DETERMINATOR">
 		<supports />
 		<prerequisite>Wisdom 13 or higher</prerequisite>
@@ -115,23 +119,7 @@
 			<description> You get advantage on death saving throws, and once per long rest can drop to 1hp instead of 0 if not killed outright.</description>
 		</sheet>
 	</element>
-	<element name="Full Counter" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_FULL_COUNTER">
-		<supports />
-			<prerequisite>Dexterity 13 or higher.</prerequisite>
-			<requirements>[dex:13]</requirements>
-		<description>
-			<p>Reflect attacks aimed at you back at your enemy, but with double the power.</p>
-			<ul>
-				<li>When selecting this feat, pick either magical or physical attacks. Upon being hit by either a magical or melee attack, you can use your reaction to reflect double the damage onto the attacker. You regain the use of this ability after a long rest.</li>
-			</ul>
-		</description>
-		<setters>
-			<set name="sourceUrl">https://www.dandwiki.com/wiki/Full_Counter_(5e_Feat)</set>
-		</setters>
-		<sheet>
-			<description> You can return either a magical or physical attack, at double the power, back at your enemy once per long rest. </description>
-		</sheet>
-	</element>
+	
 	<element name="Interposing Reaction" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_INTERPOSING_REACTION">
 		<supports />
 			<prerequisite>Constitution 13 or higher, Dexterity 13 or higher.</prerequisite>
@@ -154,6 +142,7 @@
 			<stat name="constitution" value="1" />
 		</rules>
 	</element>
+	
 	<element name="Lustful Caress" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_LUSTFUL_CARESS">
 		<supports />
 		<prerequisite>Tiefling, Charisma 16 or higher.</prerequisite>
@@ -178,6 +167,7 @@
 			<description> You gain the ability to deeply seduce a creature. </description>
 		</sheet>
 	</element>
+	
 	<element name="Magic Initiate, Variant" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_MAGIC_INITIATE_VARIANT">
 		<supports />
 		<prerequisite>At least 8 levels in a single spellcasting class.</prerequisite>
@@ -279,6 +269,7 @@
 			<select type="Spell" name="Cantrip (Magic Initiate, Variant)" supports="0,Wizard" number="2" />
 		</rules>
 	</element>
+	
 	<element name="Silent Performance" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_SILENT_PERFORMANCE">
 		<supports />
 			<prerequisite>Ability to cast at least 1 spell and play at least 1 instrument</prerequisite>
@@ -303,6 +294,7 @@
 			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_PERFORMANCE" />
 		</rules>
 	</element>
+	
 	<element name="Snap Shooter" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_SNAP_SHOOTER">
 		<supports />
 		<prerequisite>Dexterity or Strength of 13 or higher.</prerequisite>
@@ -322,6 +314,7 @@
 			<description>Your AoO reactions can be ranged, and you threaten an area that increases with your Dexterity or Strenght score.</description>
 		</sheet>
 	</element>
+	
 	<element name="Thrifty Caster" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_THRIFTY_CASTER">
 		<supports />
 		<prerequisite>Ability to cast at least 1 spell.</prerequisite>
@@ -343,28 +336,38 @@
 			<select type="Ability Score Improvement" name="Thrifty Caster" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
 		</rules>
 	</element>
-	<element name="Trained Blindsight" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_TRAINED_BLINDSIGHT">
+	
+	<element name="Blind Savant" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_BLIND_SAVANT">
 		<supports />
 		<prerequisite>Being completely blind and having trained your other senses for years.</prerequisite>
 		<description>
-			<p>After being born blind or losing you sight as a child or many years ago, you tried to better your other senses to superhuman levels. Or maybe you have something special that allows you to detect without sight, such as a bats echolocation. You can change how the blindsight exactly works with your DM, depending on what you want it to be.</p>
+			<p>After being born blind or losing you sight many, many years ago, you tried to better your other senses to until they reached superhuman levels. Or maybe you have something special that allows you to detect things without sight, such as a bats echolocation. You can change how the blindsight exactly works with your DM, depending on what you want it to be.</p>
 			<p>When you choose this feat, you gain the following traits:</p>
 			<ul>
-				<li>You lose all normal / natural sight, and you gain <b>Blindsight</b> with a radius of 30ft. You cannot see anything past this radius unless you use special or magical means to do so, but can hear or smell like normal.</li>
-				<li>You automatically fail all checks that rely  <b>entirely</b> on sight, and have disadvantage on any checks that rely <b>mostly</b> on sight.</li>
+				<li>You lose all normal/natural sight, and you permanently gain the <b>blinded</b> condition. This cannot be removed unless by magical means of sight.</li>
+				<li>You gain <b>Blindsight</b>  with a radius of 60ft, but cannot see or detect anything past this range, unless by magical means.</li>
 				<li>You have <b>disadvantage</b> on any saving throw against <b>sudden</b> loud sounds or powerful smells, such as the sound created by the Thunderwave spell.</li>
-				<li>You are <b>immune</b> to conditions or effects that require sight, such the blind condition, gaze effects, invisibility or darkness of any kind. You are also <b>vulnerable</b> to Thunder damage.</li>
+				<li>You are <b>immune</b> to conditions or effects that require sight, such as gaze effects, invisibility or darkness of any kind.</li>
 				<li>You have <b>advantage</b> on Wisdom (Perception) checks that rely on smell, hearing or touch.</li>
-				<li>Once on your turn, you can use a <b>bonus action</b> to try to focus your senses. If you succeed, your Blindsight radius <b>increases</b> to 60ft until the start of your following turn. You can do this a number of times equal to Wisdom modifier, and recharges on a long rest.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>Through training, you gained blindsight.</description>
+			<description>Through training, magical means, or otherwise, you gained blindsight up to 60ft.</description>
 		</sheet>
 		<rules>
-			<grant type="Vision" id="ID_VISION_BLINDSIGHT"/>	
+			<grant type="Vision" id="ID_XENBUILDER_BLIND_SAVANT_BLINDSIGHT"/>	
 		</rules>
 	</element>
+	
+	<element name="Blind Savant Blindsight" type="Racial Trait" source="XENBuilder" id="ID_XENBUILDER_BLIND_SAVANT_BLINDSIGHT">
+		<description>
+			<p>You have blindsight with a range of 60 feet.</p>
+		</description>
+		<sheet>
+			<description>You have blindsight with a range of 60 ft.</description>
+		</sheet>
+	</element>
+	
 	<element name="Xen's Familiar Buddy" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_XENS_FAMILIAR_BUDDY">
 		<prerequisite></prerequisite>
 		<requirements></requirements>
@@ -385,6 +388,8 @@
 			<select type="Companion" name="Buddy" supports="Familiar"/>
 		</rules>
 	</element>
+
+	
 	<!-- VAMPIRE KINDRED FEATS BELOW -->
 	<element name="Superior Body" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_SUPERIOR_BODY">
 		<prerequisite>Vampire Kindred (True Vampire)</prerequisite>
