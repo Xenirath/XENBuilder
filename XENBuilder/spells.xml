@@ -2,10 +2,11 @@
 <elements>
 	<info>
         <name>spells</name>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="spells.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/spells.xml" />
 		</update>
 	</info>
+	
 	<element name="Magnet Orb" type="Spell" source="XENBuilder" id="ID_XENBUILDER_SPELL_MAGNET_ORB">
 		<supports>Sorcerer, Wizard, Warlock, Bard</supports>
 		<description>
@@ -28,28 +29,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Arcane Rend" type="Spell" source="XENBuilder" id="ID_XENBUILDER_SPELL_ARCANE_REND">
-		<supports>Sorcerer, Wizard, Warlock</supports>
-		<description>
-			<p class="flavor"> You rip the weave from someone to attack another target.</p>
-			<p> Make a ranged spell attack against a creature 30 feet from you. That creature, if not willing, must make a wisdom saving throw. If it fails, they take 1d10 force damage, and you must select another creature within 30 feet of the target to also take the same damage. If the creature is willing, both chained creatures instead take 2d10. The first target also loses a spell slot (if it has any) of a level equal to the casting of this spell. </p>
-			<p class="indent"><b><i>At Higher Levels. </i></b> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.</p>
-		</description>
-		<setters>
-			<set name="keywords"></set>
-			<set name="level">1</set>
-			<set name="school">Evocation</set>
-			<set name="time">1 action</set>
-			<set name="duration">Instantaneous</set>
-			<set name="range">30 feet, then another 30 feet</set>
-			<set name="hasVerbalComponent">false</set>
-			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent">true</set>
-			<set name="materialComponent">A drop of goblin blood.</set>
-			<set name="isConcentration">false</set>
-			<set name="isRitual">false</set>
-		</setters>
-	</element>
+	
 	<element name="Shadow Blink" type="Spell" source="XENBuilder" id="ID_XENBUILDER_SPELL_SHADOW_BLINK">
 		<supports>Ranger, Sorcerer, Wizard</supports>
 		<description>
@@ -71,6 +51,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+	
 	<element name="Xen's Temporal Rush" type="Spell" source="XENBuilder" id="ID_XENBUILDER_XENS_TEMPORAL_RUSH">
    		<supports>Wizard, Warlock, Sorcerer</supports>
    		<description>
@@ -100,6 +81,7 @@
    			<set name="isRitual">false</set>
   		</setters>
  	</element>  
+	
 	<element name="Xen's Transmogrification" type="Spell" source="XENBuilder" id="ID_XENBUILDER_SPELL_XENS_TRANSMOGRIFICATION">
 		<supports>Sorcerer, Wizard, Warlock</supports>
 		<description>
@@ -123,6 +105,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
+	
 	<element name="Blessed Blade" type="Spell" source="XENBuilder" id="ID_XENBUILDER_SPELL_BLESSED_BLADE">
 		<supports>Cleric, Druid, Ranger, Warlock</supports>
 		<description>
@@ -141,6 +124,7 @@
 			<set name="duration">Instantaneous</set>
 		</setters>
 	</element>
+	
 	<element name="Elemental Burst" type="Spell" source="XENBuilder" id="ID_XENBUILDER_SPELL_ELEMENTAL_BURST">
 		<supports>Sorcerer</supports>
 		<description>
@@ -168,25 +152,5 @@
 			<set name="duration">Instantaneous</set>
 		</setters>
 	</element>
-	<element name="Punny Phouk-Act" type="Spell" source="XENBuilder" id="ID_XENBUILDER_SPELL_PUNNY_PHOUK_ACT">
-		<supports>Sorcerer, Warlock, Wizard</supports>
-		<description>
-			<p>When you strike a foe with a melee weapon attack, you can immediately cast Punny Phouk-Act as a bonus action. The joy and magic from the feywild surges from you, granting you armor class 16 + your Dexterity modifer for the spell’s duration. This magical armor has no Strength requirement, doesn’t hinder spellcasting, and doesn’t incur disadvantage on Dexterity (Stealth) checks.</p>
-			<p class="indent">If the creature you struck was a fey, the armor also grants you advantage on Wisdom saving throws.</p>
-		</description>
-		<setters>
-			<set name="keywords">feywild magic</set>
-			<set name="level">3</set>
-			<set name="school" addition="Blood">Enchantment</set>
-			<set name="time">1 bonus action</set>
-			<set name="range">Self</set>
-			<set name="duration">1 hour</set>
-			<set name="hasVerbalComponent">true</set>
-			<set name="hasSomaticComponent" addition="you must have just struck a foe with a melee weapon">true</set>
-			<set name="hasMaterialComponent">false</set>
-			<set name="materialComponent"></set>
-			<set name="isConcentration">false</set>
-			<set name="isRitual">false</set>
-		</setters>
-	</element>
+	
 </elements>
