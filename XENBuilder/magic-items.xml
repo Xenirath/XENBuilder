@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>magic items</name>
-		<update version="0.1.7">
+		<update version="0.1.8">
 			<file name="magic-items.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/magic-items.xml" />
 		</update>
 	</info>
@@ -584,46 +584,30 @@
 	
 	<element name="Frozen Gem" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_FROZEN_GEM">
 		<description>
-			<p>This staff can be wielded as a magic quarterstaff that grants a +2 bonus to attack and damage rolls made with it. While holding it, you gain a +2 bonus to Armor Class, saving throws, and spell attack rolls.</p>
-			<p class="indent">The staff has 20 charges for the following properties. The staff regains 2d8 + 4 expended charges daily at dawn. If you expend the last charge, roll a d20. On a 1, the staff retains its +2 bonus to attack and damage rolls but loses all other properties. On a 20, the staff regains 1d8 + 2 charges.</p>
-			<p class="indent"><strong><em>Power Strike.</em></strong> When you hit with a melee attack using the staff, you can expend 1 charge to deal an extra 1d6 force damage to the target.</p>
-			<p class="indent"><strong><em>Spells.</em></strong> While holding this staff, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus: <em>cone of cold</em> (5 charges), <em>fireball</em> (5th-level version, 5 charges), <em>globe of invulnerability</em> (6 charges), <em>hold monster</em> (5 charges), <em>levitate</em> (2 charges), <em>lightning bolt</em> (5th-level version, 5 charges), <em>magic missile</em> (1 charge), <em>ray of enfeeblement</em> (1 charge), or <em>wall of force</em> (5 charges).</p>
-			<p class="indent"><strong><em>Retributive Strike.</em></strong> You can use an action to break the staff over your knee or against a solid surface, performing a retributive strike. The staff is destroyed and releases its remaining magic in an explosion that expands to fill a 30-foot-radius sphere centered on it.</p>
-			<p class="indent">You have a 50 percent chance to instantly travel to a random plane of existence, avoiding the explosion. If you fail to avoid the effect, you take force damage equal to 16 x the number of charges in the staff. Every other creature in the area must make a DC 17 Dexterity saving throw. On a failed save, a creature takes an amount of damage based on how far away it is from the point of origin, as shown in the following table. On a successful save, a creature takes half as much damage.</p>
+			<p>This gelid, frozen sapphire is infused with icy elemental magic, and was found fused to a huge Winter Wolf, who was carrying a blizzard around itself due to this.</p>
+			<p class="indent">The gem has 5 charges, and regains 1d4+1 expended charges daily at midnight. If you expend the last charge, roll a d20. On a 1, the gem explodes, releasing the elemental magic contained within, and apparating a Rime Hulk (Elemental) where the gem was. The Rime Hulk is hostile to everyone.</p>
+			<p class="indent"><strong><em>Spells.</em></strong> While attuned to this gem, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus: <em>Flurry</em> (1 charge), <em>Armor of Agathys</em> (1 charge), <em>Frost Fingers</em> (1 charge), <em>Ice Knife</em> (1 charge), <em>Creeping Ice</em> (2 charges), <em>Ice Hammer</em> (2 charges), <em>Sculpt Snow</em> (2 charges),<em>Snow Fort</em> (2 charges), <em>Rime's Binding Ice</em> (2 charges), <em>Frozen Razors</em> (5 charges), <em>Bitter Wind</em> (5 charges), <em>Freezing Fog</em> (5 charges), <em>Frozen Lance</em> (5 charges), <em>Frost Armor</em> (5 charges), or <em>Ice Claw Prison</em> (5 charges).</p> 
 			<table>
 				<thead>
-					<tr><td>Charges</td><td>Spell</td></tr>
+					<tr><td>Charges</td><td>Spells</td></tr>
 				</thead>
 				<tbody>
-					<tr><td>1</td><td>  </td></tr>
-					<tr><td>3</td><td>  </td></tr>
-					<tr><td>5</td><td>  </td></tr>
+					<tr><td>1</td><td>Flurry, Armor of Agathys, Frost Fingers, Ice Knife</td></tr>
+					<tr><td>3</td><td>Creeping Ice, Ice Hammer, Sculpt Snow, Snow Fort, Rime's Binding Ice</td></tr>
+					<tr><td>5</td><td>Frocen Razors, Bitter Wind, Freezing Fog, Frost Armor, Frozen Lance, Ice Claw Prison</td></tr>
 				</tbody>
 			</table>
 		</description>
 		<setters>
-			<set name="keywords">sorcerer, warlock, wizard</set>
-			<set name="category">Staffs</set>
+			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="4">4 lb.</set>
+			<set name="weight" lb="4">1 lb.</set>
 			<set name="slot">onehand</set>
-			<set name="weapon">Quarterstaff</set>
-			<set name="type">Staff</set>
-			<set name="attunement" addition="by a sorcerer, warlock, or wizard">true</set>
-			<set name="rarity">Very Rare</set>
-			<set name="enhancement">2</set>
-			<set name="charges">20</set>
+			<set name="type">Wondrous Items</set>
+			<set name="attunement"</set>
+			<set name="rarity">Rare</set>
+			<set name="charges">5</set>
 		</setters>
-		<rules>
-			<stat name="ac:misc" value="2" />
-			<stat name="strength:save:misc" value="2" />
-			<stat name="dexterity:save:misc" value="2" />
-			<stat name="constitution:save:misc" value="2" />
-			<stat name="intelligence:save:misc" value="2" />
-			<stat name="wisdom:save:misc" value="2" />
-			<stat name="charisma:save:misc" value="2" />
-			<stat name="spellcasting:attack" value="2" />
-		</rules>
 	</element>
 	
 </elements>
