@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>magic items</name>
-		<update version="0.1.8">
+		<update version="0.1.9">
 			<file name="magic-items.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/magic-items.xml" />
 		</update>
 	</info>
@@ -604,7 +604,7 @@
 			<set name="weight" lb="4">1 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="type">Wondrous Items</set>
-			<set name="attunement"</set>
+			<set name="attunement">true</set>
 			<set name="rarity">Rare</set>
 			<set name="charges">5</set>
 		</setters>
