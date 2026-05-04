@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>magic items</name>
-		<update version="0.2.0">
+		<update version="0.2.1">
 			<file name="magic-items.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/magic-items.xml" />
 		</update>
 	</info>
@@ -586,7 +586,7 @@
 		<description>
 			<p>This gelid, frozen sapphire is infused with icy elemental magic, and was found fused to a huge Winter Wolf, who was carrying a blizzard around itself due to this.</p>
 			<p class="indent">The gem has 5 charges, and regains 1d4+1 expended charges daily at midnight. If you expend the last charge, roll a d20. On a 1, the gem explodes, releasing the elemental magic contained within, and apparating a Rime Hulk (Elemental) where the gem was. The Rime Hulk is hostile to everyone.</p>
-			<p class="indent"><strong><em>Spells.</em></strong> While attuned to this gem, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC and spell attack bonus: <em>Flurry</em> (1 charge), <em>Armor of Agathys</em> (1 charge), <em>Frost Fingers</em> (1 charge), <em>Ice Knife</em> (1 charge), <em>Creeping Ice</em> (2 charges), <em>Ice Hammer</em> (2 charges), <em>Sculpt Snow</em> (2 charges),<em>Snow Fort</em> (2 charges), <em>Rime's Binding Ice</em> (2 charges), <em>Frozen Razors</em> (5 charges), <em>Bitter Wind</em> (5 charges), <em>Freezing Fog</em> (5 charges), <em>Frozen Lance</em> (5 charges), <em>Frost Armor</em> (5 charges), or <em>Ice Claw Prison</em> (5 charges).</p> 
+			<p class="indent"><strong><em>Spells.</em></strong> You can cast the following spells by using 1 or more charges, depending on the spell level (1 charge for 1st, 3 charges for 2nd, 5 charges for 3rd).</p> 
 			<table>
 				<thead>
 					<tr><td>Charges</td><td>Spells</td></tr>
@@ -602,7 +602,6 @@
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="4">1 lb.</set>
-			<set name="slot">onehand</set>
 			<set name="type">Wondrous Items</set>
 			<set name="attunement" addition="by a spellcaster">true</set>
 			<set name="rarity">Rare</set>
