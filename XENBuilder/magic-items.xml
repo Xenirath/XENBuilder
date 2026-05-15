@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>magic items</name>
-		<update version="0.2.1">
+		<update version="0.2.2">
 			<file name="magic-items.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/magic-items.xml" />
 		</update>
 	</info>
@@ -601,12 +601,44 @@
 		<setters>
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="4">1 lb.</set>
+			<set name="weight" lb="1">1 lb.</set>
 			<set name="type">Wondrous Items</set>
 			<set name="attunement" addition="by a spellcaster">true</set>
 			<set name="rarity">Rare</set>
 			<set name="charges">5</set>
 		</setters>
 	</element>
-	
+	<element name="Cube of Many Secrets" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_CUBE_OF_MANY_SECRETS">
+		<description>
+			<p>This cube, roughly 6x6x6 cm in size, is made of a alloy called Arcanium, which is mainly maraging steel alloy mixed with adamantine and bismuth, and charged with magical properties.</p>
+			<p class="indent">The cube is smooth to the touch, except where the runes are carved, and quite cold. Each side has many runes in different patterns.</p>
+			<p class="indent">You can attempt to decipher the magic in the cubes sides with an Arcana 20+ check. If you fail, the cube reacts negatively to your magical tamperings, and becomes dormant for 24h, unable to be deciphered. If you suceed the check, roll 1d6.</p>
+			<p class="indent">Depending on which number you roll on the d6, a different side is permanently open to you. After succeeding, the cube becomes dormant for 8h.</p>
+			<table>
+				<thead>
+					<tr><td>D6</td><td>Secret</td></tr>
+				</thead>
+				<tbody>
+					<tr><td>1</td><td> Creates a "Voltedge" magical longsword in the ground beneath the cube.</td></tr>
+					<tr><td>2</td><td> Creates an "Orb of the Veil" magical item in the ground beneath the cube. </td></tr>
+					<tr><td>3</td><td> Creates a "Ring of Regeneration" magical item in the ground beneath the cube. </td></tr>
+					<tr><td>4</td><td> Magically infuses the user, and allows them to cast the "Falling Star" spell, once. </td></tr>
+					<tr><td>5</td><td> Magically infuses the user, and allows them to cast the "Prismatic Spray" spell, once. </td></tr>
+					<tr><td>6</td><td> Magically infuses the user, and allows them to cast the "Wish" spell, once. </td></tr>
+				</tbody>
+			</table>
+			<p>After the user deciphers any of the sides, it's instantly cursed by the Cube's curse.</p>
+			<p class="indent"><strong><em>Curse.</em></strong> A creature cursed by the Cube of Many Secrets won't part with the cube under any circumstance, believing they absolutely need it on their person at all times.</p>
+			<p class="indent">Every morning, the cube tries to absorb the vitality and magical prowess from each user it cursed. Cursed creature has to roll a Constitution (CON) saving throw, DC 20. On a fail, they gain 1 level of exhaustion and Drained.</p>
+			<p class="indent"><strong><em>Drained</em></strong> creatures cannot heal from magical spells, and have -2 to all Strength, Dexterity and Constitution saving throws for the duration.</p>
+			<p>The Drained status effect lasts for 8h or until the next long rest, whichever comes first. </p>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">10000</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="type">Wondrous Items</set>
+			<set name="rarity">Very rare</set>
+		</setters>
+	</element>
 </elements>
