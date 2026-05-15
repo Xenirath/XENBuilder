@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>special-weapons</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="special-weapons.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/special-weapons.xml" />
 		</update>
 	</info>
@@ -380,7 +380,7 @@
 			<p>This ivory bracelet is engraved with simplistic icons of the elements: acid, cold, fire, lightning, and thunder.</p>
 			<p>When the wearer casts a spell that does elemental damage of a type listed above, the caster can expend one charge to alter that damage to that of a different element of a type listed above.</p>
 			<p>For example if the fireball spell were cast, one charge could be expended by the caster to change the damage type from fire to acid.</p>
-			<p>The bracelet can hold up to 5 charges and regains 1 charge at dawn.</p>
+			<p>The bracelet can hold up to 5 charges and regains 1d4 charges at dawn.</p>
 		</description>
 		<setters>
 			<set name="keywords">bracelet, element, damage, spell, cast, custom, xenbuilder</set>
