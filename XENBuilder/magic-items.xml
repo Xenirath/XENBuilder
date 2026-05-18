@@ -2,7 +2,7 @@
 <elements>
     <info>
         <name>magic items</name>
-		<update version="0.2.2">
+		<update version="0.2.3">
 			<file name="magic-items.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/magic-items.xml" />
 		</update>
 	</info>
@@ -612,7 +612,7 @@
 		<description>
 			<p>This cube, roughly 6x6x6 cm in size, is made of a alloy called Arcanium, which is mainly maraging steel alloy mixed with adamantine and bismuth, and charged with magical properties.</p>
 			<p class="indent">The cube is smooth to the touch, except where the runes are carved, and quite cold. Each side has many runes in different patterns.</p>
-			<p class="indent">You can attempt to decipher the magic in the cubes sides with an Arcana 20+ check. If you fail, the cube reacts negatively to your magical tamperings, and becomes dormant for 24h, unable to be deciphered. If you suceed the check, roll 1d6.</p>
+			<p class="indent">You can attempt to decipher the magic in the cubes sides with an Arcana 20+ check. If you fail, the cube reacts negatively to your magical tamperings, and becomes dormant for 24h, unable to be deciphered. If you succeed the check, roll 1d6.</p>
 			<p class="indent">Depending on which number you roll on the d6, a different side is permanently open to you. After succeeding, the cube becomes dormant for 8h.</p>
 			<table>
 				<thead>
