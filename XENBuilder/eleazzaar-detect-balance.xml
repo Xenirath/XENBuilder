@@ -1,0 +1,3079 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+
+    <!--UPDATED 2020-12-16-->
+
+    <!--Base Kit-->
+    
+    <element name="Custom Race" type="Race" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <description>
+            <p>Using Eleazzaar's custom race balance sheet, this option allows players to make something unavailable in official content. Races made vary slightly between over- and underpowered based on how efficiently racial points are used up. Keep points between 20 and 30 for balance. The builder will display your points on the character sheet.</p>
+            <p>Scores are slightly overtuned since anti-synergies cannot be added.</p>
+        </description>
+        <sheet>
+            <description>{{eleazzaar points:points}}</description>
+        </sheet>
+        <rules>
+            <select type="Racial Trait" name="Ability Score Increase, Custom Race" supports="Eleazzaar ASI" />
+            <select type="Racial Trait" name="Language, Custom Race" supports="Eleazzaar Language" />
+            <select type="Racial Trait" name="Movement, Custom Race" supports="Eleazzaar Movement" />
+            <select type="Racial Trait" name="Size, Custom Race" supports="Eleazzaar Size" />
+            <stat name="eleazzaar points:points" value="0" />
+        </rules>
+    </element>
+
+    <!--ASI-->
+
+    <element name="ASI 0" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI0">
+        <supports>Eleazzaar ASI</supports>
+        <description>
+            <p>No ability score modification</p>
+        </description>
+        <sheet display="false" />
+    </element>
+    <element name="ASI +1" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI1">
+        <supports>Eleazzaar ASI</supports>
+        <requirements>![eleazzaar points:points:26]|ID_ELEAZZAAR_RACIAL_TRAIT_ASI1</requirements>
+        <description>
+            <p>5 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="ASI +1" supports="Eleazzaar ASI 1" />
+            <stat name="eleazzaar points:points" value="5" />
+        </rules>
+    </element>
+    <element name="ASI +2" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI2">
+        <supports>Eleazzaar ASI</supports>
+        <requirements>![eleazzaar points:points:23]|ID_ELEAZZAAR_RACIAL_TRAIT_ASI2</requirements>
+        <description>
+            <p>8 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="ASI +2 Distribution" supports="Eleazzaar ASI 2 Distribution" />
+            <stat name="eleazzaar points:points" value="8" />
+        </rules>
+    </element>
+    <element name="ASI +3" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI3">
+        <supports>Eleazzaar ASI</supports>
+        <requirements>![eleazzaar points:points:19]|ID_ELEAZZAAR_RACIAL_TRAIT_ASI3</requirements>
+        <description>
+            <p>12 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="ASI +3 Distribution" supports="Eleazzaar ASI 3 Distribution" />
+            <stat name="eleazzaar points:points" value="12" />
+        </rules>
+    </element>
+    <element name="ASI +4" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI4">
+        <supports>Eleazzaar ASI</supports>
+        <requirements>![eleazzaar points:points:15]|ID_ELEAZZAAR_RACIAL_TRAIT_ASI4</requirements>
+        <description>
+            <p>16 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="ASI +4 Distribution" supports="Eleazzaar ASI 4 Distribution" />
+            <stat name="eleazzaar points:points" value="16" />
+        </rules>
+    </element>
+    <element name="All ASI +1" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ALL_ASI_1">
+        <supports>Eleazzaar ASI</supports>
+        <requirements>![eleazzaar points:points:15]|ID_ELEAZZAAR_RACIAL_TRAIT_ALL_ASI_1</requirements>
+        <description>
+            <p>16 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="strength" value="1" />
+            <stat name="dexterity" value="1" />
+            <stat name="constitution" value="1" />
+            <stat name="intelligence" value="1" />
+            <stat name="wisdom" value="1" />
+            <stat name="charisma" value="1" />
+            <stat name="eleazzaar points:points" value="16" />
+        </rules>
+    </element>
+
+    <element name="+1/+1" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI2_1_1">
+        <supports>Eleazzaar ASI 2 Distribution</supports>
+        <description>
+            <p>+1/+1</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="ASI +1/+1" supports="Eleazzaar ASI 1" number="2" />
+        </rules>
+    </element>
+    <element name="+2" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI2_2">
+        <supports>Eleazzaar ASI 2 Distribution</supports>
+        <description>
+            <p>+2</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="ASI +2" supports="Eleazzaar ASI 2" />
+        </rules>
+    </element>
+    <element name="+2/+1" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI3_2_1">
+        <supports>Eleazzaar ASI 3 Distribution</supports>
+        <description>
+            <p>+2/+1</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="ASI +2" supports="Eleazzaar ASI 2" />
+            <select type="Racial Trait" name="ASI +1" supports="Eleazzaar ASI 1" />
+        </rules>
+    </element>
+    <element name="+1/+1/+1" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI3_1_1_1">
+        <supports>Eleazzaar ASI 3 Distribution</supports>
+        <description>
+            <p>+1/+1/+1</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="ASI +1/+1/+1" supports="Eleazzaar ASI 1" number="3" />
+        </rules>
+    </element>
+    <element name="+2/+2" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI4_2_4">
+        <supports>Eleazzaar ASI 4 Distribution</supports>
+        <description>
+            <p>+2/+2</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="ASI +2/+2" supports="Eleazzaar ASI 2" number="2" />
+        </rules>
+    </element>
+    <element name="+2/+1/+1" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI4_2_1_1">
+        <supports>Eleazzaar ASI 4 Distribution</supports>
+        <description>
+            <p>+2/+1/+1</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="ASI +2" supports="Eleazzaar ASI 2" />
+            <select type="Racial Trait" name="ASI +1" supports="Eleazzaar ASI 1" number="2" />
+        </rules>
+    </element>
+
+    <element name="Strength" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI_STR_1">
+        <supports>Eleazzaar ASI 1</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASI_STR_2</requirements>
+        <description>
+            <p>Strength</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="strength" value="1" />
+        </rules>
+    </element>
+    <element name="Strength" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI_STR_2">
+        <supports>Eleazzaar ASI 2</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASI_STR_1</requirements>
+        <description>
+            <p>Strength</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="strength" value="2" />
+        </rules>
+    </element>
+    <element name="Dexterity" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI_DEX_1">
+        <supports>Eleazzaar ASI 1</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASI_DEX_2</requirements>
+        <description>
+            <p>Dexterity</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="1" />
+        </rules>
+    </element>
+    <element name="Dexterity" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI_DEX_2">
+        <supports>Eleazzaar ASI 2</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASI_DEX_1</requirements>
+        <description>
+            <p>Dexterity</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="2" />
+        </rules>
+    </element>
+    <element name="Constitution" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI_CON_1">
+        <supports>Eleazzaar ASI 1</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASI_CON_2</requirements>
+        <description>
+            <p>Constitution</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="1" />
+        </rules>
+    </element>
+    <element name="Constitution" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI_CON_2">
+        <supports>Eleazzaar ASI 2</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASI_CON_1</requirements>
+        <description>
+            <p>Constitution</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="2" />
+        </rules>
+    </element>
+    <element name="Intelligence" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI_INT_1">
+        <supports>Eleazzaar ASI 1</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASI_INT_2</requirements>
+        <description>
+            <p>Intelligence</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="1" />
+        </rules>
+    </element>
+    <element name="Intelligence" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI_INT_2">
+        <supports>Eleazzaar ASI 2</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASI_INT_1</requirements>
+        <description>
+            <p>Intelligence</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="2" />
+        </rules>
+    </element>
+    <element name="Wisdom" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI_WIS_1">
+        <supports>Eleazzaar ASI 1</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASI_WIS_2</requirements>
+        <description>
+            <p>Wisdom</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="1" />
+        </rules>
+    </element>
+    <element name="Wisdom" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI_WIS_2">
+        <supports>Eleazzaar ASI 2</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASI_WIS_1</requirements>
+        <description>
+            <p>Wisdom</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="2" />
+        </rules>
+    </element>
+    <element name="Charisma" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI_CHA_1">
+        <supports>Eleazzaar ASI 1</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASI_CHA_2</requirements>
+        <description>
+            <p>Charisma</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" value="1" />
+        </rules>
+    </element>
+    <element name="Charisma" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASI_CHA_2">
+        <supports>Eleazzaar ASI 2</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASI_CHA_1</requirements>
+        <description>
+            <p>Charisma</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" value="2" />
+        </rules>
+    </element>
+
+    <append id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <rules>
+            <select type="Racial Trait" name="Ability Score Decrease" supports="Eleazzaar ASD" optional="true" />
+        </rules>
+    </append>
+    <element name="ASD -1" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASD1">
+        <supports>Eleazzaar ASD</supports>
+        <requirements>![eleazzaar points:points:31]|ID_ELEAZZAAR_RACIAL_TRAIT_ASD1</requirements>
+        <description>
+            <p>-2 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="ASD -1" supports="Eleazzaar ASD 1" />
+            <stat name="eleazzaar points:points" value="-2" />
+        </rules>
+    </element>
+    <element name="ASD -2" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASD2">
+        <supports>Eleazzaar ASD</supports>
+        <requirements>![eleazzaar points:points:31]|ID_ELEAZZAAR_RACIAL_TRAIT_ASD2</requirements>
+        <description>
+            <p>-4 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="ASD -2" supports="Eleazzaar ASD 2" />
+            <stat name="eleazzaar points:points" value="-4" />
+        </rules>
+    </element>
+
+    <element name="Strength" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASD_STR_1">
+        <supports>Eleazzaar ASD 1</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASD_STR_2</requirements>
+        <description>
+            <p>Strength</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="strength" value="-1" />
+        </rules>
+    </element>
+    <element name="Strength" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASD_STR_2">
+        <supports>Eleazzaar ASD 2</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASD_STR_1</requirements>
+        <description>
+            <p>Strength</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="strength" value="-2" />
+        </rules>
+    </element>
+    <element name="Dexterity" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASD_DEX_1">
+        <supports>Eleazzaar ASD 1</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASD_DEX_2</requirements>
+        <description>
+            <p>Dexterity</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="-1" />
+        </rules>
+    </element>
+    <element name="Dexterity" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASD_DEX_2">
+        <supports>Eleazzaar ASD 2</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASD_DEX_1</requirements>
+        <description>
+            <p>Dexterity</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="-2" />
+        </rules>
+    </element>
+    <element name="Constitution" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASD_CON_1">
+        <supports>Eleazzaar ASD 1</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASD_CON_2</requirements>
+        <description>
+            <p>Constitution</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="-1" />
+        </rules>
+    </element>
+    <element name="Constitution" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASD_CON_2">
+        <supports>Eleazzaar ASD 2</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASD_CON_1</requirements>
+        <description>
+            <p>Constitution</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="-2" />
+        </rules>
+    </element>
+    <element name="Intelligence" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASD_INT_1">
+        <supports>Eleazzaar ASD 1</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASD_INT_2</requirements>
+        <description>
+            <p>Intelligence</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="-1" />
+        </rules>
+    </element>
+    <element name="Intelligence" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASD_INT_2">
+        <supports>Eleazzaar ASD 2</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASD_INT_1</requirements>
+        <description>
+            <p>Intelligence</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="-2" />
+        </rules>
+    </element>
+    <element name="Wisdom" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASD_WIS_1">
+        <supports>Eleazzaar ASD 1</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASD_WIS_2</requirements>
+        <description>
+            <p>Wisdom</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="-1" />
+        </rules>
+    </element>
+    <element name="Wisdom" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASD_WIS_2">
+        <supports>Eleazzaar ASD 2</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASD_WIS_1</requirements>
+        <description>
+            <p>Wisdom</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="-2" />
+        </rules>
+    </element>
+    <element name="Charisma" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASD_CHA_1">
+        <supports>Eleazzaar ASD 1</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASD_CHA_2</requirements>
+        <description>
+            <p>Charisma</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" value="-1" />
+        </rules>
+    </element>
+    <element name="Charisma" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ASD_CHA_2">
+        <supports>Eleazzaar ASD 2</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_ASD_CHA_1</requirements>
+        <description>
+            <p>Charisma</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" value="-2" />
+        </rules>
+    </element>
+    
+    <!--Language-->
+
+    <element name="Common &amp; 1 languages" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_COMMON_1">
+        <supports>Eleazzaar Language</supports>
+        <description>
+            <p>0 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <select type="Language" name="Language, Custom Race" supports="Standard||Exotic" />
+        </rules>
+    </element>
+    <element name="Common &amp; 2 languages" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_COMMON_2">
+        <supports>Eleazzaar Language</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_COMMON_2</requirements>
+        <description>
+            <p>1 POINT</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <select type="Language" name="Language, Custom Race" supports="Standard||Exotic" number="2" />
+            <stat name="eleazzaar points:points" value="1" />
+        </rules>
+    </element>
+
+    <append id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <rules>
+            <select type="Racial Trait" name="Language Bonus" supports="Eleazzaar Lang Plus" optional="true" />
+        </rules>
+    </append>
+    <element name="Speak with Small Beasts" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_LANG_BEASTS">
+        <supports>Eleazzaar Lang Plus</supports>
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_LANG_BEASTS</requirements>
+        <description>
+            <p>2 POINTS</p>
+            <p>You can communicate simple ideas with small or smaller beasts.</p>
+        </description>
+        <sheet>
+            <description>You can communicate simple ideas with small or smaller beasts.</description>
+        </sheet>
+        <rules>
+            <select type="Racial Trait" name="Language Bonus" supports="Eleazzaar Lang Plus" optional="true" />
+            <stat name="eleazzaar points:points" value="2" />
+        </rules>
+    </element>
+    <element name="Lesser Telepathy" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_LANG_TELEPATHY">
+        <supports>Eleazzaar Lang Plus</supports>
+        <requirements>![eleazzaar points:points:25]|ID_ELEAZZAAR_RACIAL_TRAIT_LANG_TELEPATHY</requirements>
+        <description>
+            <p>6 POINTS</p>
+            <p>You can speak telepathically to any creature you can see, provided the creature is within 30 feet of you and shares a language.</p>
+        </description>
+        <sheet>
+            <description>You can speak telepathically to any creature you can see, provided the creature is within 30 feet of you and shares a language.</description>
+        </sheet>
+        <rules>
+            <select type="Racial Trait" name="Language Bonus" supports="Eleazzaar Lang Plus" optional="true" />
+            <stat name="eleazzaar points:points" value="6" />
+        </rules>
+    </element>
+
+    <!--Movement-->
+
+    <element name="20 ft speed" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SPEED_20">
+        <supports>Eleazzaar Movement</supports>
+        <description>
+            <p>-3 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="innate speed" value="20" bonus="base" />
+            <stat name="eleazzaar points:points" value="-3" />
+        </rules>
+    </element>
+    <element name="25 ft speed" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SPEED_25">
+        <supports>Eleazzaar Movement</supports>
+        <description>
+            <p>-2 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="innate speed" value="25" bonus="base" />
+            <stat name="eleazzaar points:points" value="-2" />
+        </rules>
+    </element>
+    <element name="30 ft speed" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SPEED_30">
+        <supports>Eleazzaar Movement</supports>
+        <description>
+            <p>0 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="innate speed" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element name="35 ft speed" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SPEED_35">
+        <supports>Eleazzaar Movement</supports>
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_SPEED_35</requirements>
+        <description>
+            <p>2 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="innate speed" value="35" bonus="base" />
+            <stat name="eleazzaar points:points" value="2" />
+        </rules>
+    </element>
+    <element name="40 ft speed" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SPEED_40">
+        <supports>Eleazzaar Movement</supports>
+        <requirements>![eleazzaar points:points:26]|ID_ELEAZZAAR_RACIAL_TRAIT_SPEED_40</requirements>
+        <description>
+            <p>5 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="innate speed" value="40" bonus="base" />
+            <stat name="eleazzaar points:points" value="5" />
+        </rules>
+    </element>
+
+    <append id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <rules>
+            <select type="Racial Trait" name="Mobility" supports="Eleazzaar Mobility" optional="true" />
+        </rules>
+    </append>
+    <element name="30 ft Climb" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_CLIMB_30">
+        <supports>Eleazzaar Mobility</supports>
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_CLIMB_30</requirements>
+        <description>
+            <p>2 POINTS</p>
+			<p>You have a climb speed of 30 ft.</p>
+		</description>
+		<sheet alt="Climber">
+			<description>You have a climb speed of 30 ft.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb" value="30" bonus="base" />
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Mobility" supports="Eleazzaar Mobility" optional="true" />
+		</rules>
+    </element>
+    <element name="Spider Climb" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_SPIDER_CLIMB">
+        <supports>Eleazzaar Mobility</supports>
+        <requirements>![eleazzaar points:points:27]|ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_SPIDER_CLIMB</requirements>
+        <description>
+            <p>4 POINTS</p>
+			<p>You have  the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
+		</description>
+		<sheet>
+			<description>You have  the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</description>
+		</sheet>
+		<rules>
+            <stat name="eleazzaar points:points" value="4" />
+            <select type="Racial Trait" name="Mobility" supports="Eleazzaar Mobility" optional="true" />
+		</rules>
+    </element>
+    <element name="30 ft Swim" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_SWIM_30">
+        <supports>Eleazzaar Mobility</supports>
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_SWIM_30</requirements>
+        <description>
+            <p>2 POINTS</p>
+			<p>You have a swim speed of 30 ft.</p>
+		</description>
+		<sheet alt="Swimmer">
+			<description>You have a swim speed of 30 ft.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:swim" value="30" bonus="base" />
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Mobility" supports="Eleazzaar Mobility" optional="true" />
+		</rules>
+    </element>
+    <element name="Feline Agility" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_FELINE_AGILITY">
+        <supports>Eleazzaar Mobility</supports>
+        <requirements>![eleazzaar points:points:27]|ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_FELINE_AGILITY</requirements>
+        <description>
+            <p>4 POINTS</p>
+			<p>Your reflexes and agility allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can’t use it again until you move 0 feet on one of your turns.</p>
+		</description>
+		<sheet>
+			<description>When you move on your turn in combat, you can double your speed until the end of the turn. Once you use this trait, you can’t use it again until you move 0 feet on one of your turns.</description>
+		</sheet>
+		<rules>
+            <stat name="eleazzaar points:points" value="4" />
+            <select type="Racial Trait" name="Mobility" supports="Eleazzaar Mobility" optional="true" />
+		</rules>
+    </element>
+    <element name="Aggressive" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_AGGRESSIVE">
+        <supports>Eleazzaar Mobility</supports>
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_AGGRESSIVE</requirements>
+        <description>
+            <p>3 POINTS</p>
+			<p>As a bonus action, you can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can move up to your speed toward an enemy of your choice that you can see or hear. You must end this move closer to the enemy than you started.</description>
+		</sheet>
+		<rules>
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Racial Trait" name="Mobility" supports="Eleazzaar Mobility" optional="true" />
+		</rules>
+    </element>
+    <element name="Unburdened" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_UNBURDENED">
+        <supports>Eleazzaar Mobility</supports>
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_UNBURDENED</requirements>
+        <description>
+            <p>2 POINTS</p>
+			<p>Your move speed cannot be decreased through armor effects.</p>
+		</description>
+		<sheet>
+			<description>Your move speed cannot be decreased through armor effects.</description>
+		</sheet>
+		<rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <stat name="speed" value="0" bonus="armor" />
+            <select type="Racial Trait" name="Mobility" supports="Eleazzaar Mobility" optional="true" />
+		</rules>
+    </element>
+    <element name="Rare Traversal" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_RARE_TRAVERSAL">
+        <supports>Eleazzaar Mobility</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_RARE_TRAVERSAL</requirements>
+        <description>
+            <p>1 POINTS</p>
+			<p>You ignore a rare type of rough terrain (consult with your DM).</p>
+		</description>
+		<sheet>
+			<description>You ignore a rare type of rough terrain (consult with your DM).</description>
+		</sheet>
+		<rules>
+            <stat name="eleazzaar points:points" value="1" />
+            <select type="Racial Trait" name="Mobility" supports="Eleazzaar Mobility" optional="true" />
+		</rules>
+    </element>
+    <element name="Common Traversal" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_COMMON_TRAVERSAL">
+        <supports>Eleazzaar Mobility</supports>
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_COMMON_TRAVERSAL</requirements>
+        <description>
+            <p>2 POINTS</p>
+			<p>You ignore a common type of rough terrain (consult with your DM).</p>
+		</description>
+		<sheet>
+			<description>You ignore a common type of rough terrain (consult with your DM).</description>
+		</sheet>
+		<rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Mobility" supports="Eleazzaar Mobility" optional="true" />
+		</rules>
+    </element>
+    <element name="Effortless Traversal" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_EFFORTLESS_TRAVERSAL">
+        <supports>Eleazzaar Mobility</supports>
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_MOBILITY_EFFORTLESS_TRAVERSAL</requirements>
+        <description>
+            <p>3 POINTS</p>
+			<p>You ignore non-magical rough terrain.</p>
+		</description>
+		<sheet>
+			<description>You ignore non-magical rough terrain.</description>
+		</sheet>
+		<rules>
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Racial Trait" name="Mobility" supports="Eleazzaar Mobility" optional="true" />
+		</rules>
+    </element>
+
+
+    <!--Size-->
+
+    <element name="Small" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SIZE_SMALL">
+        <supports>Eleazzaar Size</supports>
+        <description>
+            <p>0 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Size" id="ID_SIZE_SMALL" />
+            <select type="Racial Trait" name="Size" supports="Eleazzaar Size Add" optional="true" />
+        </rules>
+    </element>
+    <element name="Medium" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SIZE_MEDIUM">
+        <supports>Eleazzaar Size</supports>
+        <description>
+            <p>0 POINTS</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <select type="Racial Trait" name="Size" supports="Eleazzaar Size Add" optional="true" />
+        </rules>
+    </element>
+    <element name="Powerful Build" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SIZE_POWERFUL_BUILD">
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_SIZE_POWERFUL_BUILD</requirements>
+        <supports>Eleazzaar Size Add</supports>
+        <description>
+            <p>3 POINTS</p>
+            <p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+        </description>
+        <sheet>
+            <description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_COUNTS_AS_LARGER" />
+            <select type="Racial Trait" name="Size" supports="Eleazzaar Size Add" optional="true" />
+        </rules>
+    </element>
+
+    <!--Natural Armor-->
+
+    <append id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <rules>
+            <select type="Racial Trait" name="Natural Armor" supports="Eleazzaar Armor" optional="true" />
+        </rules>
+    </append>
+    <element name="11+Dex Armor" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ARMOR_11">
+        <supports>Eleazzaar Armor</supports>
+        <requirements>![eleazzaar points:points:31]|ID_ELEAZZAAR_RACIAL_TRAIT_ARMOR_11</requirements>
+        <description>
+            <p>0 POINTS</p>
+			<p>When you aren’t wearing armor, your AC is 11 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</p>
+		</description>
+		<sheet alt="Natural Armor">
+			<description>When you aren’t wearing armor, your AC is {{eleazzaar:natural armor}}. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</description>
+		</sheet>
+		<rules>
+			<stat name="eleazzaar:natural armor" value="11" />
+			<stat name="eleazzaar:natural armor" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="eleazzaar:natural armor" bonus="calculation" alt="Natural Armor (Custom Race)" />
+            <stat name="eleazzaar points:points" value="0" />
+		</rules>
+    </element>
+    <element name="12+Dex Armor" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ARMOR_12">
+        <supports>Eleazzaar Armor</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_ARMOR_12</requirements>
+        <description>
+            <p>1 POINT</p>
+			<p>When you aren’t wearing armor, your AC is 12 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</p>
+		</description>
+		<sheet alt="Natural Armor">
+			<description>When you aren’t wearing armor, your AC is {{eleazzaar:natural armor}}. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</description>
+		</sheet>
+		<rules>
+			<stat name="eleazzaar:natural armor" value="12" />
+			<stat name="eleazzaar:natural armor" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="eleazzaar:natural armor" bonus="calculation" alt="Natural Armor (Custom Race)" />
+            <stat name="eleazzaar points:points" value="1" />
+		</rules>
+    </element>
+    <element name="13+Dex Armor" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ARMOR_13">
+        <supports>Eleazzaar Armor</supports>
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_ARMOR_13</requirements>
+        <description>
+            <p>3 POINTS</p>
+			<p>When you aren’t wearing armor, your AC is 13 + your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</p>
+		</description>
+		<sheet alt="Natural Armor">
+			<description>When you aren’t wearing armor, your AC is {{eleazzaar:natural armor}}. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</description>
+		</sheet>
+		<rules>
+			<stat name="eleazzaar:natural armor" value="13" />
+			<stat name="eleazzaar:natural armor" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="eleazzaar:natural armor" bonus="calculation" alt="Natural Armor (Custom Race)" />
+            <stat name="eleazzaar points:points" value="3" />
+		</rules>
+    </element>
+    <element name="AC +1" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ARMOR_1">
+        <supports>Eleazzaar Armor</supports>
+        <requirements>![eleazzaar points:points:23]|ID_ELEAZZAAR_RACIAL_TRAIT_ARMOR_1</requirements>
+        <description>
+            <p>8 POINTS</p>
+            <p>Your AC is increased by 1</p>
+        </description>
+        <sheet alt="Well Armored">
+            <description>Your AC is increased by 1.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:misc" value="1" />
+            <stat name="eleazzaar points:points" value="8" />
+        </rules>
+    </element>
+
+    <!--Breathing-->
+
+    <append id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <rules>
+            <select type="Racial Trait" name="Breathing" supports="Eleazzaar Breathing" optional="true" />
+        </rules>
+    </append>
+    <element name="Large Lungs" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_BREATH_15">
+        <supports>Eleazzaar Breathing</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_BREATH_15</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>Your powerful lungs let you hold your breath for up to 15 minutes.</p>
+        </description>
+        <sheet>
+            <description>Your powerful lungs let you hold your breath for up to 15 minutes.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+            <select type="Racial Trait" name="Breathing" supports="Eleazzaar Breathing" optional="true" />
+        </rules>
+    </element>
+    <element name="Amphibious" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_BREATH_AMPHIBIOUS">
+        <supports>Eleazzaar Breathing</supports>
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_BREATH_AMPHIBIOUS</requirements>
+        <description>
+            <p>2 POINTS</p>
+            <p>You can breathe both air and water.</p>
+        </description>
+        <sheet>
+            <description>You can breathe both air and water.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Breathing" supports="Eleazzaar Breathing" optional="true" />
+        </rules>
+    </element>
+    <element name="Unending Breath" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_BREATH_UNENDING">
+        <supports>Eleazzaar Breathing</supports>
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_BREATH_UNENDING</requirements>
+        <description>
+            <p>3 POINTS</p>
+            <p>While not incapacitated, you are able to breathe in any conditions.</p>
+        </description>
+        <sheet>
+            <description>While not incapacitated, you are able to breathe in any conditions.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Racial Trait" name="Breathing" supports="Eleazzaar Breathing" optional="true" />
+        </rules>
+    </element>
+    <element name="Breathless" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_BREATH_BREATHLESS">
+        <supports>Eleazzaar Breathing</supports>
+        <requirements>![eleazzaar points:points:27]|ID_ELEAZZAAR_RACIAL_TRAIT_BREATH_BREATHLESS</requirements>
+        <description>
+            <p>3 POINTS</p>
+            <p>You do not need to breathe.</p>
+        </description>
+        <sheet>
+            <description>You do not need to breathe.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="4" />
+        </rules>
+    </element>
+
+    <!--Flight-->
+
+    <append id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <rules>
+            <select type="Racial Trait" name="Flight" supports="Eleazzaar Flight" optional="true" />
+        </rules>
+    </append>
+    <element name="Flight" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_STANDARD">
+        <supports>Eleazzaar Flight</supports>
+        <requirements>![eleazzaar points:points:15]|ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_STANDARD</requirements>
+        <description>
+			<p>16 POINTS</p>
+            <p>You have a flying speed of 30 feet. To use this speed, you can’t be wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed of {{speed:fly}} feet. To use this speed, you can’t be wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="30" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+            <stat name="eleazzaar points:points" value="16" />
+            <select type="Racial Trait" name="Flight Speed" supports="Eleazzaar Flight Speed" optional="true" />
+            <select type="Racial Trait" name="Turn End Flight" supports="Eleazzaar Flight End" optional="true" />
+            <select type="Racial Trait" name="Feather Fall" supports="Eleazzaar Feather Fall" optional="true" />
+		</rules>
+    </element>
+    <element name="Unrestricted Flight" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_UNRESTRICTED">
+        <supports>Eleazzaar Flight</supports>
+        <requirements>![eleazzaar points:points:7]|ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_UNRESTRICTED</requirements>
+        <description>
+			<p>24 POINTS</p>
+            <p>You have a flying speed of 30 feet.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed of {{speed:fly}} feet.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="30" bonus="base" />
+            <stat name="eleazzaar points:points" value="24" />
+            <select type="Racial Trait" name="Flight Speed" supports="Eleazzaar Flight Speed" optional="true" />
+            <select type="Racial Trait" name="Turn End Flight" supports="Eleazzaar Flight End" optional="true" />
+            <select type="Racial Trait" name="Feather Fall" supports="Eleazzaar Feather Fall" optional="true" />
+		</rules>
+    </element>
+
+    <element name="+5 ft fly speed" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_5">
+        <supports>Eleazzaar Flight Speed</supports>
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_5</requirements>
+        <description>
+            <p>3 POINTS</p>
+            <p>Your fly speed increases 5 ft.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="eleazzaar points:points" value="3" />
+            <stat name="speed:fly" value="5" />
+        </rules>
+    </element>
+    <element name="+10 ft fly speed" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_10">
+        <supports>Eleazzaar Flight Speed</supports>
+        <requirements>![eleazzaar points:points:25]|ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_10</requirements>
+        <description>
+            <p>6 POINTS</p>
+            <p>Your fly speed increases 10 ft.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="eleazzaar points:points" value="6" />
+            <stat name="speed:fly" value="10" />
+        </rules>
+    </element>
+
+    <element name="Hover" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_HOVER">
+        <supports>Eleazzaar Flight End</supports>
+        <requirements>![eleazzaar points:points:13]|ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_HOVER</requirements>
+        <description>
+            <p>18 POINTS</p>
+            <p>You can choose to stay in the air even when knocked prone or after moving less than half your flight speed on your turn.</p>
+        </description>
+        <sheet>
+            <description>You can choose to stay in the air even when knocked prone or after moving less than half your flight speed on your turn.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="18" />
+        </rules>
+    </element>
+    <element name="Forced Landing" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_LANDING">
+        <supports>Eleazzaar Flight End</supports>
+        <description>
+            <p>-12 POINTS</p>
+            <p>You must land at the end of your turn's movement.</p>
+        </description>
+        <sheet>
+            <description>You must land at the end of your turn's movement.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-12" />
+        </rules>
+    </element>
+
+    <element name="Graceful Fall" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_FALL">
+        <supports>Eleazzaar Feather Fall</supports>
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_FALL</requirements>
+        <description>
+            <p>3 POINTS</p>
+            <p>You have a maximum fall speed of 60 feet. You always land on your feet and do not take fall damage.</p>
+        </description>
+        <sheet>
+            <description>You have a maximum fall speed of 60 feet. You always land on your feet and do not take fall damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="3" />
+        </rules>
+    </element>
+
+    <!--Resistances-->
+
+    <append id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <rules>
+            <select type="Racial Trait" name="Resistance" supports="Eleazzaar Resist" optional="true" />
+        </rules>
+    </append>
+    <element name="Light's Denial" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_RADIANT">
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_RADIANT</requirements>
+        <supports>Eleazzaar Resist</supports>
+        <description>
+            <p>2 POINTS</p>
+            <p>You have resistance to radiant damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to radiant damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Resistance" supports="Eleazzaar Resist" optional="true" />
+        </rules>
+    </element>
+    <element name="Forcefield" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_FORCE">
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_FORCE</requirements>
+        <supports>Eleazzaar Resist</supports>
+        <description>
+            <p>2 POINTS</p>
+            <p>You have resistance to force damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to force damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Resistance" supports="Eleazzaar Resist" optional="true" />
+        </rules>
+    </element>
+    <element name="Mental Shield" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_PSYCHIC">
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_PSYCHIC</requirements>
+        <supports>Eleazzaar Resist</supports>
+        <description>
+            <p>2 POINTS</p>
+            <p>You have resistance to psychic damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to psychic damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Resistance" supports="Eleazzaar Resist" optional="true" />
+        </rules>
+    </element>
+    <element name="Soundproofing" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_THUNDER">
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_THUNDER</requirements>
+        <supports>Eleazzaar Resist</supports>
+        <description>
+            <p>2 POINTS</p>
+            <p>You have resistance to thunder damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to thunder damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Resistance" supports="Eleazzaar Resist" optional="true" />
+        </rules>
+    </element>
+    <element name="Thermal Insulation" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_COLD">
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_COLD</requirements>
+        <supports>Eleazzaar Resist</supports>
+        <description>
+            <p>3 POINTS</p>
+            <p>You have resistance to cold damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to cold damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Racial Trait" name="Resistance" supports="Eleazzaar Resist" optional="true" />
+        </rules>
+    </element>
+    <element name="Grounded" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_LIGHTNING">
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_LIGHTNING</requirements>
+        <supports>Eleazzaar Resist</supports>
+        <description>
+            <p>3 POINTS</p>
+            <p>You have resistance to lightning damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to lightning damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Racial Trait" name="Resistance" supports="Eleazzaar Resist" optional="true" />
+        </rules>
+    </element>
+    <element name="Grave Rebuke" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_NECROTIC">
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_NECROTIC</requirements>
+        <supports>Eleazzaar Resist</supports>
+        <description>
+            <p>3 POINTS</p>
+            <p>You have resistance to necrotic damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to necrotic damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Racial Trait" name="Resistance" supports="Eleazzaar Resist" optional="true" />
+        </rules>
+    </element>
+    <element name="Nonreactive" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_ACID">
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_ACID</requirements>
+        <supports>Eleazzaar Resist</supports>
+        <description>
+            <p>3 POINTS</p>
+            <p>You have resistance to acid damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to acid damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Racial Trait" name="Resistance" supports="Eleazzaar Resist" optional="true" />
+        </rules>
+    </element>
+    <element name="Heat Sink" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_FIRE">
+        <requirements>![eleazzaar points:points:27]|ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_FIRE</requirements>
+        <supports>Eleazzaar Resist</supports>
+        <description>
+            <p>4 POINTS</p>
+            <p>You have resistance to fire damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to fire damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+            <stat name="eleazzaar points:points" value="4" />
+            <select type="Racial Trait" name="Resistance" supports="Eleazzaar Resist" optional="true" />
+        </rules>
+    </element>
+    <element name="Antidote" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_POISON">
+        <requirements>![eleazzaar points:points:27]|ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_POISON</requirements>
+        <supports>Eleazzaar Resist</supports>
+        <description>
+            <p>4 POINTS</p>
+            <p>You have resistance to poison damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to poison damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+            <stat name="eleazzaar points:points" value="4" />
+            <select type="Racial Trait" name="Resistance" supports="Eleazzaar Resist" optional="true" />
+        </rules>
+    </element>
+    <element name="Sheer Strength" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_SLASHING">
+        <requirements>![eleazzaar points:points:21]|ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_SLASHING</requirements>
+        <supports>Eleazzaar Resist</supports>
+        <description>
+            <p>10 POINTS</p>
+            <p>You have resistance to nonmagical slashing damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to nonmagical slashing damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_SLASHING" />
+            <stat name="eleazzaar points:points" value="10" />
+            <select type="Racial Trait" name="Resistance" supports="Eleazzaar Resist" optional="true" />
+        </rules>
+    </element>
+    <element name="Bulletproof" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_PIERCING">
+        <requirements>![eleazzaar points:points:21]|ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_PIERCING</requirements>
+        <supports>Eleazzaar Resist</supports>
+        <description>
+            <p>10 POINTS</p>
+            <p>You have resistance to nonmagical piercing damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to nonmagical piercing damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PIERCING" />
+            <stat name="eleazzaar points:points" value="10" />
+            <select type="Racial Trait" name="Resistance" supports="Eleazzaar Resist" optional="true" />
+        </rules>
+    </element>
+    <element name="Padded" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_BLUDGEONING">
+        <requirements>![eleazzaar points:points:19]|ID_ELEAZZAAR_RACIAL_TRAIT_RESIST_BLUDGEONING</requirements>
+        <supports>Eleazzaar Resist</supports>
+        <description>
+            <p>12 POINTS</p>
+            <p>You have resistance to nonmagical bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>You have resistance to nonmagical bludgeoning damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" />
+            <stat name="eleazzaar points:points" value="12" />
+            <select type="Racial Trait" name="Resistance" supports="Eleazzaar Resist" optional="true" />
+        </rules>
+    </element>
+
+    <!--Advantage-->
+
+    <append id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <rules>
+            <select type="Racial Trait" name="Advantage" supports="Eleazzaar Adv" optional="true" />
+        </rules>
+    </append>
+    <element name="Rare Advantage" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ADV_RARE">
+        <supports>Eleazzaar Adv</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_ADV_RARE</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>You have advantage on a certain rare roll (consult with your DM)</p>
+        </description>
+        <sheet>
+            <description>You have advantage on a certain rare roll (consult with your DM)</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+            <select type="Racial Trait" name="Advantage" supports="Eleazzaar Adv" optional="true" />
+        </rules>
+    </element>
+    <element name="Situational Advantage" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ADV_SITUATIONAL">
+        <supports>Eleazzaar Adv</supports>
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_ADV_SITUATIONAL</requirements>
+        <description>
+            <p>2 POINTS</p>
+            <p>You have advantage on a certain situational roll (consult with your DM)</p>
+        </description>
+        <sheet>
+            <description>You have advantage on a certain situational roll (consult with your DM)</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Advantage" supports="Eleazzaar Adv" optional="true" />
+        </rules>
+    </element>
+    <element name="Common Advantage" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ADV_COMMON">
+        <supports>Eleazzaar Adv</supports>
+        <requirements>![eleazzaar points:points:27]|ID_ELEAZZAAR_RACIAL_TRAIT_ADV_COMMON</requirements>
+        <description>
+            <p>4 POINTS</p>
+            <p>You have advantage on a certain common roll (consult with your DM)</p>
+        </description>
+        <sheet>
+            <description>You have advantage on a certain common roll (consult with your DM)</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="4" />
+            <select type="Racial Trait" name="Advantage" supports="Eleazzaar Adv" optional="true" />
+        </rules>
+    </element>
+    <element name="Very Common Advantage" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_ADV_VCOMMON">
+        <supports>Eleazzaar Adv</supports>
+        <requirements>![eleazzaar points:points:23]|ID_ELEAZZAAR_RACIAL_TRAIT_ADV_VCOMMON</requirements>
+        <description>
+            <p>8 POINTS</p>
+            <p>You have advantage on a certain very common roll or set of rolls (consult with your DM)</p>
+        </description>
+        <sheet>
+            <description>You have advantage on a certain very common roll or set of rolls (consult with your DM)</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="8" />
+            <select type="Racial Trait" name="Advantage" supports="Eleazzaar Adv" optional="true" />
+        </rules>
+    </element>
+
+    <!--Weapons-->
+
+    <append id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <rules>
+            <select type="Racial Trait" name="Weapons" supports="Eleazzaar Weapons" optional="true" />
+        </rules>
+    </append>
+    <element name="2 Simple Weapons" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_SIMPLE">
+        <supports>Eleazzaar Weapons</supports>
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_SIMPLE</requirements>
+        <description>
+            <p>2 POINTS</p>
+            <p>You gain proficiency in 2 simple weapons of your choice.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in 2 simple weapons of your choice.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Weapon Proficiency, Custom Race" supports="Weapon, Simple" number="2" />
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Weapons" supports="Eleazzaar Weapons" optional="true" />
+        </rules>
+    </element>
+    <element name="2 Martial Weapons" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_MARTIAL">
+        <supports>Eleazzaar Weapons</supports>
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_MARTIAL</requirements>
+        <description>
+            <p>3 POINTS</p>
+            <p>You gain proficiency in 2 martial weapons of your choice.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in 2 martial weapons of your choice.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" name="Weapon Proficiency, Custom Race" supports="Weapon, Martial" number="2" />
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Racial Trait" name="Weapons" supports="Eleazzaar Weapons" optional="true" />
+        </rules>
+    </element>
+
+    <element name="Enhanced Unarmed Strike" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_UNARMED_4">
+        <supports>Eleazzaar Weapons</supports>
+        <requirements>(![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_UNARMED_4), !(ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_UNARMED_6|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_UNARMED_8)</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>Your unarmed strikes deal 1d4 base damage.</p>
+        </description>
+        <sheet>
+            <description>Your unarmed strikes deal 1d4+{{strength:modifier}} bludgeoning damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+            <select type="Racial Trait" name="Weapons" supports="Eleazzaar Weapons" optional="true" />
+        </rules>
+    </element>
+    <element name="Powerful Unarmed Strike" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_UNARMED_6">
+        <supports>Eleazzaar Weapons</supports>
+        <requirements>(![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_UNARMED_6), !(ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_UNARMED_4|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_UNARMED_8)</requirements>
+        <description>
+            <p>2 POINTS</p>
+            <p>Your unarmed strikes deal 1d6 base damage.</p>
+        </description>
+        <sheet>
+            <description>Your unarmed strikes deal 1d6+{{strength:modifier}} bludgeoning damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Weapons" supports="Eleazzaar Weapons" optional="true" />
+        </rules>
+    </element>
+    <element name="Godly Unarmed Strike" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_UNARMED_8">
+        <supports>Eleazzaar Weapons</supports>
+        <requirements>(![eleazzaar points:points:25]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_UNARMED_8), !(ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_UNARMED_4|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_UNARMED_6)</requirements>
+        <description>
+            <p>6 POINTS</p>
+            <p>Your unarmed strikes deal 1d8 base damage.</p>
+        </description>
+        <sheet>
+            <description>Your unarmed strikes deal 1d8+{{strength:modifier}} bludgeoning damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="6" />
+            <select type="Racial Trait" name="Weapons" supports="Eleazzaar Weapons" optional="true" />
+        </rules>
+    </element>
+
+    <element name="Minor Natural Weapon" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_4">
+        <supports>Eleazzaar Weapons</supports>
+        <requirements>(![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_4), !(ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_6|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_8|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_10)</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>You have a natural weapon which you can use to make unarmed strikes. If you hit with it, you deal 1d4 + your strength modifier damage.</p>
+        </description>
+        <sheet>
+            <description>You have a natural weapon which deals 1d4+{{strength:modifier}} damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+            <select type="Racial Trait" name="Weapons" supports="Eleazzaar Weapons" optional="true" />
+            <select type="Racial Trait" name="Damage Type, Natural Weapon" supports="Eleazzaar Natural Weapon Damage Type" />
+            <select type="Racial Trait" name="Natural Weapon Modifier" supports="Eleazzaar Natural Weapon Modifier" optional="true" />
+        </rules>
+    </element>
+    <element name="Natural Weapon" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_6">
+        <supports>Eleazzaar Weapons</supports>
+        <requirements>(![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_6), !(ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_4|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_8|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_10)</requirements>
+        <description>
+            <p>2 POINTS</p>
+            <p>You have a natural weapon which you can use to make unarmed strikes. If you hit with it, you deal 1d6 + your strength modifier damage.</p>
+        </description>
+        <sheet>
+            <description>You have a natural weapon which deals 1d6+{{strength:modifier}} damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Weapons" supports="Eleazzaar Weapons" optional="true" />
+            <select type="Racial Trait" name="Damage Type, Natural Weapon" supports="Eleazzaar Natural Weapon Damage Type" />
+            <select type="Racial Trait" name="Natural Weapon Modifier" supports="Eleazzaar Natural Weapon Modifier" optional="true" />
+        </rules>
+    </element>
+    <element name="Threatening Natural Weapon" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_8">
+        <supports>Eleazzaar Weapons</supports>
+        <requirements>(![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_8), !(ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_6|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_4|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_10)</requirements>
+        <description>
+            <p>3 POINTS</p>
+            <p>You have a natural weapon which you can use to make unarmed strikes. If you hit with it, you deal 1d8 + your strength modifier damage.</p>
+        </description>
+        <sheet>
+            <description>You have a natural weapon which deals 1d8+{{strength:modifier}} damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Racial Trait" name="Weapons" supports="Eleazzaar Weapons" optional="true" />
+            <select type="Racial Trait" name="Damage Type, Natural Weapon" supports="Eleazzaar Natural Weapon Damage Type" />
+            <select type="Racial Trait" name="Natural Weapon Modifier" supports="Eleazzaar Natural Weapon Modifier" optional="true" />
+        </rules>
+    </element>
+    <element name="Powerful Natural Weapon" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_10">
+        <supports>Eleazzaar Weapons</supports>
+        <requirements>(![eleazzaar points:points:27]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_10), !(ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_6|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_8|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_NATURAL_4)</requirements>
+        <description>
+            <p>4 POINTS</p>
+            <p>You have a natural weapon which you can use to make unarmed strikes. If you hit with it, you deal 1d10 + your strength modifier damage.</p>
+        </description>
+        <sheet>
+            <description>You have a natural weapon which deals 1d10+{{strength:modifier}} damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="4" />
+            <select type="Racial Trait" name="Weapons" supports="Eleazzaar Weapons" optional="true" />
+            <select type="Racial Trait" name="Damage Type, Natural Weapon" supports="Eleazzaar Natural Weapon Damage Type" />
+            <select type="Racial Trait" name="Natural Weapon Modifier" supports="Eleazzaar Natural Weapon Modifier" optional="true" />
+        </rules>
+    </element>
+
+    <element name="Unhanded" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_UNHANDED">
+        <supports>Eleazzaar Natural Weapon Modifier</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_UNHANDED</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>Your natural weapon does not require a free hand to use.</p>
+        </description>
+        <sheet>
+            <description>Your natural weapon does not require a free hand to use.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+            <select type="Racial Trait" name="Natural Weapon Modifier" supports="Eleazzaar Natural Weapon Modifier" optional="true" />
+        </rules>
+    </element>
+    <element name="Finesse" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_FINESSE">
+        <supports>Eleazzaar Natural Weapon Modifier</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_FINESSE</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>You can use dexterity when attacking with your natural weapon instead of strength.</p>
+        </description>
+        <sheet>
+            <description>You can use dexterity when attacking with your natural weapon instead of strength.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+            <select type="Racial Trait" name="Natural Weapon Modifier" supports="Eleazzaar Natural Weapon Modifier" optional="true" />
+        </rules>
+    </element>
+
+    <element name="Slashing" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_SLASHING">
+        <supports>Eleazzaar Natural Weapon Damage Type</supports>
+        <requirements>![eleazzaar points:points:31]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_SLASHING</requirements>
+        <description>
+            <p>Your natural weapon deals slashing damage.</p>
+        </description>
+        <sheet>
+            <description>Your natural weapon deals slashing damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="0" />
+        </rules>
+    </element>
+    <element name="Piercing" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_PIERCING">
+        <supports>Eleazzaar Natural Weapon Damage Type</supports>
+        <requirements>![eleazzaar points:points:31]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_PIERCING</requirements>
+        <description>
+            <p>Your natural weapon deals piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Your natural weapon deals piercing damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="0" />
+        </rules>
+    </element>
+    <element name="Bludgeoning" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_BLUDGEONING">
+        <supports>Eleazzaar Natural Weapon Damage Type</supports>
+        <requirements>![eleazzaar points:points:31]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_BLUDGEONING</requirements>
+        <description>
+            <p>Your natural weapon deals bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>Your natural weapon deals bludgeoning damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="0" />
+        </rules>
+    </element>
+    <element name="Poison" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_POISON">
+        <supports>Eleazzaar Natural Weapon Damage Type</supports>
+        <requirements>![eleazzaar points:points:31]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_POISON</requirements>
+        <description>
+            <p>Your natural weapon deals poison damage.</p>
+        </description>
+        <sheet>
+            <description>Your natural weapon deals poison damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="0" />
+        </rules>
+    </element>
+    <element name="Fire" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_FIRE">
+        <supports>Eleazzaar Natural Weapon Damage Type</supports>
+        <requirements>![eleazzaar points:points:31]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_FIRE</requirements>
+        <description>
+            <p>Your natural weapon deals fire damage.</p>
+        </description>
+        <sheet>
+            <description>Your natural weapon deals fire damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="0" />
+        </rules>
+    </element>
+    <element name="Cold" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_COLD">
+        <supports>Eleazzaar Natural Weapon Damage Type</supports>
+        <requirements>![eleazzaar points:points:31]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_COLD</requirements>
+        <description>
+            <p>Your natural weapon deals cold damage.</p>
+        </description>
+        <sheet>
+            <description>Your natural weapon deals cold damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="0" />
+        </rules>
+    </element>
+    <element name="Acid" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_ACID">
+        <supports>Eleazzaar Natural Weapon Damage Type</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_ACID</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>Your natural weapon deals acid damage.</p>
+        </description>
+        <sheet>
+            <description>Your natural weapon deals acid damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+        </rules>
+    </element>
+    <element name="Psychic" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_PSYCHIC">
+        <supports>Eleazzaar Natural Weapon Damage Type</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_PSYCHIC</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>Your natural weapon deals psychic damage.</p>
+        </description>
+        <sheet>
+            <description>Your natural weapon deals psychic damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+        </rules>
+    </element>
+    <element name="Necrotic" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_NECROTIC">
+        <supports>Eleazzaar Natural Weapon Damage Type</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_NECROTIC</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>Your natural weapon deals necrotic damage.</p>
+        </description>
+        <sheet>
+            <description>Your natural weapon deals necrotic damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+        </rules>
+    </element>
+    <element name="Radiant" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_RADIANT">
+        <supports>Eleazzaar Natural Weapon Damage Type</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_RADIANT</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>Your natural weapon deals radiant damage.</p>
+        </description>
+        <sheet>
+            <description>Your natural weapon deals radiant damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+        </rules>
+    </element>
+    <element name="Force" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_FORCE">
+        <supports>Eleazzaar Natural Weapon Damage Type</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_FORCE</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>Your natural weapon deals force damage.</p>
+        </description>
+        <sheet>
+            <description>Your natural weapon deals force damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+        </rules>
+    </element>
+    <element name="Thunder" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_THUNDER">
+        <supports>Eleazzaar Natural Weapon Damage Type</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_THUNDER</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>Your natural weapon deals thunder damage.</p>
+        </description>
+        <sheet>
+            <description>Your natural weapon deals thunder damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+        </rules>
+    </element>
+    <element name="Lightning" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_LIGHTNING">
+        <supports>Eleazzaar Natural Weapon Damage Type</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_WEAPON_DMG_LIGHTNING</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>Your natural weapon deals lightning damage.</p>
+        </description>
+        <sheet>
+            <description>Your natural weapon deals lightning damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+        </rules>
+    </element>
+
+    <!--Vulnerabilities-->
+
+    <append id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <rules>
+            <select type="Racial Trait" name="Vulnerability" supports="Eleazzaar Vulnerable" optional="true" />
+        </rules>
+    </append>
+    <element name="Photosensitive" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_VULN_RADIANT">
+        <supports>Eleazzaar Vulnerable</supports>
+        <description>
+            <p>-8 POINTS</p>
+            <p>You have vulnerability to radiant damage.</p>
+        </description>
+        <sheet>
+            <description>You have vulnerability to radiant damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-8" />
+            <select type="Racial Trait" name="Vulnerability" supports="Eleazzaar Vulnerable" optional="true" />
+        </rules>
+    </element>
+    <element name="Cracked" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_VULN_FORCE">
+        <supports>Eleazzaar Vulnerable</supports>
+        <description>
+            <p>-8 POINTS</p>
+            <p>You have vulnerability to force damage.</p>
+        </description>
+        <sheet>
+            <description>You have vulnerability to force damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-8" />
+            <select type="Racial Trait" name="Vulnerability" supports="Eleazzaar Vulnerable" optional="true" />
+        </rules>
+    </element>
+    <element name="Weak Minded" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_VULN_PSYCHIC">
+        <supports>Eleazzaar Vulnerable</supports>
+        <description>
+            <p>-8 POINTS</p>
+            <p>You have vulnerability to psychic damage.</p>
+        </description>
+        <sheet>
+            <description>You have vulnerability to psychic damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-8" />
+            <select type="Racial Trait" name="Vulnerability" supports="Eleazzaar Vulnerable" optional="true" />
+        </rules>
+    </element>
+    <element name="Resonant" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_VULN_THUNDER">
+        <supports>Eleazzaar Vulnerable</supports>
+        <description>
+            <p>-8 POINTS</p>
+            <p>You have vulnerability to thunder damage.</p>
+        </description>
+        <sheet>
+            <description>You have vulnerability to thunder damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-8" />
+            <select type="Racial Trait" name="Vulnerability" supports="Eleazzaar Vulnerable" optional="true" />
+        </rules>
+    </element>
+    <element name="Chilled" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_VULN_COLD">
+        <supports>Eleazzaar Vulnerable</supports>
+        <description>
+            <p>-16 POINTS</p>
+            <p>You have vulnerability to cold damage.</p>
+        </description>
+        <sheet>
+            <description>You have vulnerability to cold damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-16" />
+            <select type="Racial Trait" name="Vulnerability" supports="Eleazzaar Vulnerable" optional="true" />
+        </rules>
+    </element>
+    <element name="Conductive" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_VULN_LIGHTNING">
+        <supports>Eleazzaar Vulnerable</supports>
+        <description>
+            <p>-16 POINTS</p>
+            <p>You have vulnerability to lightning damage.</p>
+        </description>
+        <sheet>
+            <description>You have vulnerability to lightning damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-16" />
+            <select type="Racial Trait" name="Vulnerability" supports="Eleazzaar Vulnerable" optional="true" />
+        </rules>
+    </element>
+    <element name="Defiled" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_VULN_NECROTIC">
+        <supports>Eleazzaar Vulnerable</supports>
+        <description>
+            <p>-16 POINTS</p>
+            <p>You have vulnerability to necrotic damage.</p>
+        </description>
+        <sheet>
+            <description>You have vulnerability to necrotic damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-16" />
+            <select type="Racial Trait" name="Vulnerability" supports="Eleazzaar Vulnerable" optional="true" />
+        </rules>
+    </element>
+    <element name="Reactive" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_VULN_ACID">
+        <supports>Eleazzaar Vulnerable</supports>
+        <description>
+            <p>-16 POINTS</p>
+            <p>You have vulnerability to acid damage.</p>
+        </description>
+        <sheet>
+            <description>You have vulnerability to acid damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-16" />
+            <select type="Racial Trait" name="Vulnerability" supports="Eleazzaar Vulnerable" optional="true" />
+        </rules>
+    </element>
+    <element name="Inflammable" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_VULN_FIRE">
+        <supports>Eleazzaar Vulnerable</supports>
+        <description>
+            <p>-20 POINTS</p>
+            <p>You have vulnerability to fire damage.</p>
+        </description>
+        <sheet>
+            <description>You have vulnerability to fire damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-20" />
+            <select type="Racial Trait" name="Vulnerability" supports="Eleazzaar Vulnerable" optional="true" />
+        </rules>
+    </element>
+    <element name="Sickly" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_VULN_POISON">
+        <supports>Eleazzaar Vulnerable</supports>
+        <description>
+            <p>-20 POINTS</p>
+            <p>You have vulnerability to poison damage.</p>
+        </description>
+        <sheet>
+            <description>You have vulnerability to poison damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-20" />
+            <select type="Racial Trait" name="Vulnerability" supports="Eleazzaar Vulnerable" optional="true" />
+        </rules>
+    </element>
+    <element name="Brittle" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_VULN_BLUDGEONING">
+        <supports>Eleazzaar Vulnerable</supports>
+        <description>
+            <p>-40 POINTS</p>
+            <p>You have vulnerability to bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>You have vulnerability to bludgeoning damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-40" />
+            <select type="Racial Trait" name="Vulnerability" supports="Eleazzaar Vulnerable" optional="true" />
+        </rules>
+    </element>
+    <element name="Delicate" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_VULN_PIERCING">
+        <supports>Eleazzaar Vulnerable</supports>
+        <description>
+            <p>-40 POINTS</p>
+            <p>You have vulnerability to piercing damage.</p>
+        </description>
+        <sheet>
+            <description>You have vulnerability to piercing damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-40" />
+            <select type="Racial Trait" name="Vulnerability" supports="Eleazzaar Vulnerable" optional="true" />
+        </rules>
+    </element>
+    <element name="Vascular" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_VULN_SLASHING">
+        <supports>Eleazzaar Vulnerable</supports>
+        <description>
+            <p>-40 POINTS</p>
+            <p>You have vulnerability to slashing damage.</p>
+        </description>
+        <sheet>
+            <description>You have vulnerability to slashing damage.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-40" />
+            <select type="Racial Trait" name="Vulnerability" supports="Eleazzaar Vulnerable" optional="true" />
+        </rules>
+    </element>
+
+    <!--Skills-->
+
+    <append id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <rules>
+            <select type="Racial Trait" name="Skill" supports="Eleazzaar Skill" optional="true" />
+        </rules>
+    </append>
+    <element name="Tool Proficiency" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_TOOL">
+        <supports>Eleazzaar Skill</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_TOOL</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>You gain proficiency in a tool of your choice.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in a tool.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+            <select type="Proficiency" name="Tool Proficiency, Custon Race" supports="Tool" />
+            <select type="Racial Trait" name="Skill" supports="Eleazzaar Skill" optional="true" />
+        </rules>
+    </element>
+    <element name="Skill Proficiency" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_SKILL_1">
+        <supports>Eleazzaar Skill</supports>
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_SKILL_1</requirements>
+        <description>
+            <p>3 POINTS</p>
+            <p>You gain proficiency in a skill of your choice.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in a skill.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Proficiency" name="Skill Proficiency, Custom Race" supports="Skill" />
+            <select type="Racial Trait" name="Skill" supports="Eleazzaar Skill" optional="true" />
+        </rules>
+    </element>
+    <element name="Skill Proficiency 2" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_SKILL_2">
+        <supports>Eleazzaar Skill</supports>
+        <requirements>(![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_SKILL_2),ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_SKILL_1</requirements>
+        <description>
+            <p>2 POINTS</p>
+            <p>You gain proficiency in a skill of your choice.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in a skill.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Proficiency" name="Skill Proficiency, Custom Race" supports="Skill" />
+            <select type="Racial Trait" name="Skill" supports="Eleazzaar Skill" optional="true" />
+        </rules>
+    </element>
+    <element name="Rare Expertise" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_RARE">
+        <supports>Eleazzaar Skill</supports>
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_RARE</requirements>
+        <description>
+            <p>1 POINT</p>
+            <p>You add double your proficiency to a rare subset of a skill (consult with your DM).</p>
+        </description>
+        <sheet>
+            <description>You add double your proficiency to a rare subset of a skill (consult with your DM).</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+            <select type="Racial Trait" name="Skill" supports="Eleazzaar Skill" optional="true" />
+        </rules>
+    </element>
+    <element name="Uncommon Expertise" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_UNCOMMON">
+        <supports>Eleazzaar Skill</supports>
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_UNCOMMON</requirements>
+        <description>
+            <p>2 POINTS</p>
+            <p>You add double your proficiency to a subset of a skill (consult with your DM).</p>
+        </description>
+        <sheet>
+            <description>You add double your proficiency to a subset of a skill (consult with your DM).</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Skill" supports="Eleazzaar Skill" optional="true" />
+        </rules>
+    </element>
+    <element name="Common Expertise" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_COMMON">
+        <supports>Eleazzaar Skill</supports>
+        <requirements>![eleazzaar points:points:25]|ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_COMMON</requirements>
+        <description>
+            <p>6 POINTS</p>
+            <p>You gain proficiency in a skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in a skill and can add double your proficiency to it.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="6" />
+            <select type="Racial Trait" name="Skill Expertise" supports="Eleazzaar Skill Expertise" />
+            <select type="Racial Trait" name="Skill" supports="Eleazzaar Skill" optional="true" />
+        </rules>
+    </element>
+
+    <element name="Athletics" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_ATHLETICS">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the athletics skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+            <stat name="athletics:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Acrobatics" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_ACROBATICS">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the acrobatics skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+            <stat name="acrobatics:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Sleight of Hand" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_SLEIGHT">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the slight of hand skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+            <stat name="sleight of hand:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Stealth" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_STEALTH">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the stealth skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+            <stat name="stealth:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Arcana" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_ARCANA">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the arcana skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+            <stat name="arcana:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="History" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_HISTORY">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the history skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+            <stat name="history:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Investigation" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_INVESTIGATION">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the investigation skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+            <stat name="investigation:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Nature" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_NATURE">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the nature skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+            <stat name="nature:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Religion" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_RELIGION">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the religion skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+            <stat name="religion:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Animal Handling" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_ANIMAL_HANDLING">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the animal handling skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+            <stat name="animal handling:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Insight" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_INSIGHT">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the insight skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+            <stat name="insight:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Medicine" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_MEDICINE">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the medicine skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+            <stat name="medicine:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Perception" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_PERCEPTION">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the perception skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+            <stat name="perception:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Survival" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_SURVIVAL">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the survival skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <stat name="survival:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Deception" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_DECEPTION">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the deception skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+            <stat name="deception:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Intimidation" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_INTIMIDATION">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the intimidation skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+            <stat name="intimidation:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Performance" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_PERFORMANCE">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the performance skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+            <stat name="performance:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Persuasion" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SKILL_EXPERT_PERSUASION">
+        <supports>Eleazzaar Skill Expertise</supports>
+        <description>
+            <p>You gain proficiency in the persuasion skill and can add double your proficiency to it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+            <stat name="persuasion:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+
+    <!--Magic-->
+
+    <append id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <rules>
+            <select type="Racial Trait" name="Magic" supports="Eleazzaar Magic" optional="true" />
+        </rules>
+    </append>
+    <element name="Cantrip" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MAGIC_CANTRIP">
+        <supports>Eleazzaar Magic</supports>
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_MAGIC_CANTRIP</requirements>
+        <description>
+            <p>3 POINTS</p>
+            <p>You learn a cantrip of your choice. Choose whether to use intelligence, wisdom, or charisma for your spellcasting stat. If you gain other spells from your race, use the same stat for all spells.</p>
+        </description>
+        <sheet>
+            <description>You learn a cantrip of your choice.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Spell" name="Cantrip, Custom Race" supports="0" />
+            <select type="Racial Trait" name="Magic" supports="Eleazzaar Magic" optional="true" />
+        </rules>
+    </element>
+    <element name="L1 spell at 3rd, 1/day" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MAGIC_1_3">
+        <supports>Eleazzaar Magic</supports>
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_MAGIC_1_3</requirements>
+        <description>
+            <p>2 POINTS</p>
+            <p>You learn a level 1 spell of your choice upon reaching level 3. Choose whether to use intelligence, wisdom, or charisma for your spellcasting stat. If you gain other spells from your race, use the same stat for all spells.</p>
+        </description>
+        <sheet>
+            <description level="3">You learn a level 1 spell of your choice. You can use it once per day.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Spell" name="Level 3, Custom Race" supports="1" level="3" />
+            <select type="Racial Trait" name="Magic" supports="Eleazzaar Magic" optional="true" />
+        </rules>
+    </element>
+    <element name="L2 spell at 3rd, 1/day" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MAGIC_2_3">
+        <supports>Eleazzaar Magic</supports>
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_MAGIC_2_3</requirements>
+        <description>
+            <p>3 POINTS</p>
+            <p>You learn a level 2 spell of your choice upon reaching level 3. Choose whether to use intelligence, wisdom, or charisma for your spellcasting stat. If you gain other spells from your race, use the same stat for all spells.</p>
+        </description>
+        <sheet>
+            <description level="3">You learn a level 2 spell of your choice. You can use it once per day.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Spell" name="Level 3, Custom Race" supports="2" level="3" />
+            <select type="Racial Trait" name="Magic" supports="Eleazzaar Magic" optional="true" />
+        </rules>
+    </element>
+    <element name="L2 spell at 5th, 1/day" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MAGIC_2_5">
+        <supports>Eleazzaar Magic</supports>
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_MAGIC_2_5</requirements>
+        <description>
+            <p>2 POINTS</p>
+            <p>You learn a level 2 spell of your choice upon reaching level 5. Choose whether to use intelligence, wisdom, or charisma for your spellcasting stat. If you gain other spells from your race, use the same stat for all spells.</p>
+        </description>
+        <sheet>
+            <description level="5">You learn a level 2 spell of your choice. You can use it once per day.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Spell" name="Level 5, Custom Race" supports="2" level="5" />
+            <select type="Racial Trait" name="Magic" supports="Eleazzaar Magic" optional="true" />
+        </rules>
+    </element>
+    <element name="L3 spell at 5th, 1/day" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MAGIC_3_5">
+        <supports>Eleazzaar Magic</supports>
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_MAGIC_3_5</requirements>
+        <description>
+            <p>3 POINTS</p>
+            <p>You learn a level 3 spell of your choice upon reaching level 5. Choose whether to use intelligence, wisdom, or charisma for your spellcasting stat. If you gain other spells from your race, use the same stat for all spells.</p>
+        </description>
+        <sheet>
+            <description level="5">You learn a level 3 spell of your choice. You can use it once per day.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Spell" name="Level 5, Custom Race" supports="3" level="5" />
+            <select type="Racial Trait" name="Magic" supports="Eleazzaar Magic" optional="true" />
+        </rules>
+    </element>
+    <element name="L1 spell 1/day" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MAGIC_1">
+        <supports>Eleazzaar Magic</supports>
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_MAGIC_1</requirements>
+        <description>
+            <p>3 POINTS</p>
+            <p>You learn a level 1 spell of your choice. Choose whether to use intelligence, wisdom, or charisma for your spellcasting stat. If you gain other spells from your race, use the same stat for all spells. You can cast it once per day.</p>
+        </description>
+        <sheet>
+            <description>You learn a level 1 spell of your choice. You can cast it once per day.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Spell" name="Level 1, Custom Race" supports="1" />
+            <select type="Racial Trait" name="Magic" supports="Eleazzaar Magic" optional="true" />
+        </rules>
+    </element>
+    <element name="L2 spell 1/day" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_MAGIC_2">
+        <supports>Eleazzaar Magic</supports>
+        <requirements>![eleazzaar points:points:27]|ID_ELEAZZAAR_RACIAL_TRAIT_MAGIC_2</requirements>
+        <description>
+            <p>4 POINTS</p>
+            <p>You learn a level 2 spell of your choice. Choose whether to use intelligence, wisdom, or charisma for your spellcasting stat. If you gain other spells from your race, use the same stat for all spells. You can cast it once per day.</p>
+        </description>
+        <sheet>
+            <description>You learn a level 2 spell of your choice. You can cast it once per day.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Spell" name="Level 1, Custom Race" supports="2" />
+            <select type="Racial Trait" name="Magic" supports="Eleazzaar Magic" optional="true" />
+        </rules>
+    </element>
+
+    <!--Senses-->
+
+    <append id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <rules>
+            <select type="Racial Trait" name="Senses" supports="Eleazzaar Senses" optional="true" />
+        </rules>
+    </append>
+    <element name="Sunlight Sensitivity" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_SUNLIGHT_SENSITIVITY">
+        <supports>Eleazzaar Senses</supports>
+        <description>
+            <p>-3 POINTS</p>
+            <p>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+        </description>
+        <sheet>
+            <description>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-3" />
+            <select type="Racial Trait" name="Senses" supports="Eleazzaar Senses" optional="true" />
+        </rules>
+    </element>
+    <element name="Lesser Darkvision" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_30">
+        <requirements>(![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_30),!(ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_60|ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_120)</requirements>
+        <supports>Eleazzaar Senses</supports>
+        <description>
+            <p>2 POINTS</p>
+            <p>Your darkvision has a radius of 30 feet.</p>
+        </description>
+        <sheet>
+            <description>Your darkvision has a radius of 30 feet.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_ELEAZZAAR_VISION_LESSER_DARKVISION" />
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Senses" supports="Eleazzaar Senses" optional="true" />
+        </rules>
+    </element>
+    <element name="Darkvision" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_60">
+        <requirements>(![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_60),!(ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_30|ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_120)</requirements>
+        <supports>Eleazzaar Senses</supports>
+        <description>
+            <p>3 POINTS</p>
+            <p>Your darkvision has a radius of 60 feet.</p>
+        </description>
+        <sheet>
+            <description>Your darkvision has a radius of 60 feet.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_VISION_DARKVISION" />
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Racial Trait" name="Senses" supports="Eleazzaar Senses" optional="true" />
+        </rules>
+    </element>
+    <element name="Superior Darkvision" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_120">
+        <requirements>(![eleazzaar points:points:27]|ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_120),!(ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_30|ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_60)</requirements>
+        <supports>Eleazzaar Senses</supports>
+        <description>
+            <p>4 POINTS</p>
+            <p>Your darkvision has a radius of 120 feet.</p>
+        </description>
+        <sheet>
+            <description>Your darkvision has a radius of 120 feet.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_VISION_SUPERIORDARKVISION" />
+            <stat name="eleazzaar points:points" value="4" />
+            <select type="Racial Trait" name="Senses" supports="Eleazzaar Senses" optional="true" />
+        </rules>
+    </element>
+    <element name="Situational Awareness" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_BLINDSIGHT_SIGHT">
+        <requirements>![eleazzaar points:points:23]|ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_BLINDSIGHT_SIGHT</requirements>
+        <supports>Eleazzaar Senses</supports>
+        <description>
+            <p>8 POINTS</p>
+            <p>Your blindsight has a radius of 30 feet.</p>
+        </description>
+        <sheet>
+            <description>Your blindsight has a radius of 30 feet.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_VISION_BLINDSIGHT" />
+            <stat name="eleazzaar points:points" value="8" />
+            <select type="Racial Trait" name="Senses" supports="Eleazzaar Senses" optional="true" />
+        </rules>
+    </element>
+    <element name="Sightless" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_BLINDSIGHT">
+        <requirements>(![eleazzaar points:points:27]|ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_BLINDSIGHT),!(ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_30|ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_60|ID_ELEAZZAAR_RACIAL_TRAIT_SENSE_DARKVISION_120)</requirements>
+        <supports>Eleazzaar Senses</supports>
+        <description>
+            <p>4 POINTS</p>
+            <p>Your blindsight has a radius of 30 feet. You are blind beyond this radius.</p>
+        </description>
+        <sheet>
+            <description>Your blindsight has a radius of 30 feet. You are blind beyond this radius.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_VISION_BLINDSIGHT" />
+            <stat name="eleazzaar points:points" value="4" />
+            <select type="Racial Trait" name="Senses" supports="Eleazzaar Senses" optional="true" />
+        </rules>
+    </element>
+
+    <element name="Lesser Darkvision" type="Vision" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_VISION_LESSER_DARKVISION">
+        <description>
+            <p>A monster with darkvision can see in the dark within a radius of 30 ft. The monster can see in dim light within the radius as if it were bright light, and in darkness as if it were dim light. The monster can't discern color in darkness, only shades of gray.</p>
+        </description>
+        <sheet>
+            <description>Your darkvision has a radius of 30 ft.</description>
+        </sheet>
+    </element>
+
+    <!--Uncategorized-->
+
+    <append id="ID_ELEAZZAAR_RACE_CUSTOM">
+        <rules>
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </append>
+    <element name="Alternative Physiology" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_TYPE">
+        <supports>Eleazzaar Other</supports>
+        <requirements>!ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_HYBRID</requirements>
+        <description>
+            <p>-2 -> +2</p>
+            <p>Your type is something other than humanoid.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="Alternative Physiology" supports="Eleazzaar Alternative Physiology" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Hybrid" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_HYBRID">
+        <requirements>(![eleazzaar points:points:34]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_HYBRID),!ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_TYPE</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>-3 POINTS</p>
+            <p>You are considered both humanoid and another creature type for the purposes of spell targeting and effects.</p>
+        </description>
+        <sheet>
+            <description>You are considered both humanoid and another creature type for the purposes of spell targeting and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-3" />
+            <select type="Racial Trait" name="Hybrid" supports="Eleazzaar Alternative Physiology" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Fasting" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_FASTING">
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_FASTING</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>1 POINT</p>
+            <p>You do not need to eat or drink.</p>
+        </description>
+        <sheet>
+            <description>You do not need to eat or drink.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Tinker" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_TINKER">
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_TINKER</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>1 POINT</p>
+            <p>You have proficiency with artisan’s tools (tinker’s tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time.</p>
+        </description>
+        <sheet>
+            <description>Using tinker’s tools, you can construct a Tiny clockwork device. You can have up to three such devices active at a time.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+            <stat name="eleazzaar points:points" value="1" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Acclimatized" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_ACCLIMATED">
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_ACCLIMATED</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>1 POINT</p>
+            <p>You have acclimated to a certain type of harsh environment and can ignore penalties from being in it (consult with your DM).</p>
+        </description>
+        <sheet>
+            <description>You have acclimated to a certain type of harsh environment and can ignore penalties from being in it (consult with your DM).</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Healing Hands" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_HEALING_HANDS">
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_HEALING_HANDS</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>2 POINTS</p>
+            <p>As an action, you can touch a creature and cause it to regain a number of hit points equal to your level. Once you use this trait, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description action="Action" usage="1/Long Rest">As an action, you can touch a creature and cause it to regain {{level}} hit points.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Fey Ancestry" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_FEY_ANCESTRY">
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_FEY_ANCESTRY</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>2 POINTS</p>
+            <p>You have advantage on saving throws against being charmed, and magic can’t put you to sleep.</p>
+        </description>
+        <sheet>
+            <description>Advantage on saving throws against being charmed, and magic can’t put you to sleep.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Nimbleness" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_FEY_NIMBLENESS">
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_FEY_NIMBLENESS</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>2 POINTS</p>
+            <p>You can move through the space of any creature that is of a size larger than yours.</p>
+        </description>
+        <sheet>
+            <description>You can move through the space of any creature that is of a size larger than yours.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Trance" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_TRANCE">
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_TRANCE</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>2 POINTS</p>
+            <p>You don’t need to sleep. Instead, you meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.</p>
+        </description>
+        <sheet>
+            <description>You don’t need to sleep. Instead, you meditate deeply, remaining semiconscious, for 4 hours a day.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Mimicry" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_MIMICRY">
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_MIMICRY</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>2 POINTS</p>
+            <p>You can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Wisdom (Insight) check opposed by your Charisma (Deception) check.</p>
+        </description>
+        <sheet>
+            <description>You can mimic sounds you have heard, including voices. A creature that hears the sounds you make can tell they are imitations with a successful Insight check opposed by your Deception check.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Fury of the Small" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_FURY_SMALL">
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_FURY_SMALL</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>3 POINTS</p>
+            <p>When you damage a creature with an attack or a spell and the creature’s size is larger than yours, you can cause the attack or spell to deal extra damage to the creature. The extra damage equals your level. Once you use this trait, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description usage="1/Short Rest">When you damage a creature with an attack or a spell and the creature’s size is larger than yours, you can cause the attack or spell to deal {{level}} extra damage to the creature.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Mask of the Wild" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_MASK_WILD">
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_MASK_WILD</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>3 POINTS</p>
+            <p>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
+        </description>
+        <sheet>
+            <description>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Savage Attacks" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_SAVAGE_ATTACKS">
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_SAVAGE_ATTACKS</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>3 POINTS</p>
+            <p>When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.</p>
+        </description>
+        <sheet>
+            <description>When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Reach" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_REACH">
+        <requirements>![eleazzaar points:points:25]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_REACH</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>6 POINTS</p>
+            <p>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</p>
+        </description>
+        <sheet>
+            <description>When you make a melee attack on your turn, your reach for it is 5 feet greater than normal.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="6" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Armor Training (Light)" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_ARMOR_L">
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_ARMOR_L</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>1 POINT</p>
+            <p>You have proficiency with light armors.</p>
+        </description>
+        <sheet>
+            <description>You have proficiency with light armors.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Armor Training (Light and Medium)" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_ARMOR_ML">
+        <requirements>![eleazzaar points:points:27]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_ARMOR_ML</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>4 POINTS</p>
+            <p>You have proficiency with light and medium armors.</p>
+        </description>
+        <sheet>
+            <description>You have proficiency with light and medium armors.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="4" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Naturally Stealthy" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_NATURAL_STEALTH">
+        <requirements>![eleazzaar points:points:27]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_NATURAL_STEALTH</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>4 POINTS</p>
+            <p>You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</p>
+        </description>
+        <sheet>
+            <description>You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="4" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Relentless Endurance" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_RELENTLESS_ENDURANCE">
+        <requirements>![eleazzaar points:points:27]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_RELENTLESS_ENDURANCE</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>4 POINTS</p>
+            <p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description usage="1/Long Rest">When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="4" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Lucky" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_LUCKY">
+        <requirements>![eleazzaar points:points:26]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_LUCKY</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>5 POINTS</p>
+            <p>When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.</p>
+        </description>
+        <sheet>
+            <description>When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="5" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Toughness" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_TOUGHNESS">
+        <requirements>![eleazzaar points:points:26]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_TOUGHNESS</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>5 POINTS</p>
+            <p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>
+        </description>
+        <sheet>
+            <description>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="5" />
+            <stat name="hp" value="level" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Stone's Endurance" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_STONE_ENDURANCE">
+        <requirements>![eleazzaar points:points:24]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_STONE_ENDURANCE</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>7 POINTS</p>
+            <p>You can focus yourself to occasionally shrug off injury. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can't use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description action="Reaction" usage="1/Short Rest">When you take damage, you can use your reaction to reduce the damage by 1d12+{{constitution:modifier}}.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="7" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Nimble Escape" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_NIMBLE_ESCAPE">
+        <requirements>![eleazzaar points:points:23]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_NIMBLE_ESCAPE</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>8 POINTS</p>
+            <p>You can take the Disengage or Hide action as a bonus action on each of your turns.</p>
+        </description>
+        <sheet>
+            <description>You can take the Disengage or Hide action as a bonus action on each of your turns.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="8" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Gnomelike Cunning" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_GNOME_CUNNING">
+        <requirements>![eleazzaar points:points:24]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_GNOME_CUNNING</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>7 POINTS</p>
+            <p>You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="7" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Radiant Soul" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_RADIANT_SOUL">
+        <requirements>![eleazzaar points:points:23]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_RADIANT_SOUL</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>8 POINTS</p>
+            <p>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to glimmer and two luminous, incorporeal wings to sprout from your back.</p>
+            <p>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level.</p>
+            <p>Once you use this trait, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you have a flying speed of 30 feet, and once on each of your turns, you can deal {{level}} extra radiant damage to one target when you deal damage to it with an attack or a spell.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="8" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Radiant Consumption" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_RADIANT_CONSUMPTION">
+        <requirements>![eleazzaar points:points:23]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_RADIANT_CONSUMPTION</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>8 POINTS</p>
+            <p>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing a searing light to radiate from you, pour out of your eyes and mouth, and threaten to char you.</p>
+            <p>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, you and each creature within 10 feet of you take radiant damage equal to half your level (rounded up). In addition, once on each of your turns, you can deal extra radiant damage to one target when you deal damage to it with an attack or a spell. The extra radiant damage equals your level.</p>
+            <p>Once you use this trait, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>Your transformation lasts for 1 minute or until you end it as a bonus action. During it, you shed bright light in a 10-foot radius and dim light for an additional 10 feet, and at the end of each of your turns, you and each creature within 10 feet of you take {{level:half:up}} radiant damage. In addition, once on each of your turns, you can deal {{level}} extra radiant damage to one target when you deal damage to it with an attack or a spell.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="8" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Necrotic Shroud" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_NECROTIC_SHROUD">
+        <requirements>![eleazzaar points:points:23]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_NECROTIC_SHROUD</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>8 POINTS</p>
+            <p>Starting at 3rd level, you can use your action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and two skeletal, ghostly, flightless wings to sprout from your back. The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC 8 + your proficiency bonus + your Charisma modifier) or become frightened of you until the end of your next turn.</p>
+            <p class="indent">Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal extra necrotic damage to one target when you deal damage to it with an attack or a spell. The extra necrotic damage equals your level.</p>
+            <p class="indent">Once you use this trait, you can't use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>The instant you transform, other creatures within 10 feet of you that can see you must each succeed on a Charisma saving throw (DC {{necrotic shroud:dc}}) or become frightened of you until the end of your next turn. Your transformation lasts for 1 minute or until you end it as a bonus action. During it, once on each of your turns, you can deal {{level}} extra necrotic damage to one target when you deal damage to it with an attack or a spell.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="8" />
+            <stat name="necrotic shroud:dc" value="8" />
+		    <stat name="necrotic shroud:dc" value="proficiency" />
+		    <stat name="necrotic shroud:dc" value="charisma:modifier" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Pack Tactics" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_PACK_TACTICS">
+        <requirements>![eleazzaar points:points:23]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_PACK_TACTICS</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>8 POINTS</p>
+            <p>You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't incapacitated.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="8" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Choice of Feat" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_FEAT">
+        <requirements>![eleazzaar points:points:11]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_FEAT</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>20 POINTS</p>
+            <p>You gain a feat of your choice.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="eleazzaar points:points" value="20" />
+            <select type="Feat" name="Feat, Custom Race" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Innoculation" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_INNOCULATION">
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_INNOCULATION</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>1 POINT</p>
+            <p>You have advantage on saving throws against diseases.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against diseases.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Magic Resistance" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_MAGIC_RESISTANCE">
+        <requirements>![eleazzaar points:points:12]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_MAGIC_RESISTANCE</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>19 POINTS</p>
+            <p>You have advantage on saving throws against spells and other magical effects.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against spells and other magical effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="19" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+    <element name="Insomniac" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_INSOMNIAC">
+        <requirements>![eleazzaar points:points:28]|ID_ELEAZZAAR_RACIAL_TRAIT_OTHER_MAGIC_INSOMNIAC</requirements>
+        <supports>Eleazzaar Other</supports>
+        <description>
+            <p>3 POINTS</p>
+            <p>You can perform 6 hours of light activity instead of sleeping to gain the benefits of a long rest.</p>
+        </description>
+        <sheet>
+            <description>You can perform 6 hours of light activity instead of sleeping to gain the benefits of a long rest.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="3" />
+            <select type="Racial Trait" name="Other" supports="Eleazzaar Other" optional="true" />
+        </rules>
+    </element>
+
+    <element name="Aberration" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_ABERRATION">
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_ABERRATION</requirements>
+        <supports>Eleazzaar Alternative Physiology</supports>
+        <description>
+            <p>1 POINT</p>
+            <p>You are considered an aberration for the purposes of spell targeting and effects.</p>
+        </description>
+        <sheet>
+            <description>You are considered an aberration for the purposes of spell targeting and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+        </rules>
+    </element>
+    <element name="Beast" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_BEAST">
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_BEAST</requirements>
+        <supports>Eleazzaar Alternative Physiology</supports>
+        <description>
+            <p>2 POINTS</p>
+            <p>You are considered a beast for the purposes of spell targeting and effects.</p>
+        </description>
+        <sheet>
+            <description>You are considered a beast for the purposes of spell targeting and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+        </rules>
+    </element>
+    <element name="Celestial" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_CELESTIAL">
+        <requirements>![eleazzaar points:points:31]|ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_CELESTIAL</requirements>
+        <supports>Eleazzaar Alternative Physiology</supports>
+        <description>
+            <p>0 POINTS</p>
+            <p>You are considered a celestial for the purposes of spell targeting and effects.</p>
+        </description>
+        <sheet>
+            <description>You are considered a celestial for the purposes of spell targeting and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="0" />
+        </rules>
+    </element>
+    <element name="Construct" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_CONSTRUCT">
+        <requirements>![eleazzaar points:points:33]|ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_CONSTRUCT</requirements>
+        <supports>Eleazzaar Alternative Physiology</supports>
+        <description>
+            <p>-2 POINTS</p>
+            <p>You are considered a construct for the purposes of spell targeting and effects.</p>
+        </description>
+        <sheet>
+            <description>You are considered a construct for the purposes of spell targeting and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-2" />
+        </rules>
+    </element>
+    <element name="Dragon" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_DRAGON">
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_DRAGON</requirements>
+        <supports>Eleazzaar Alternative Physiology</supports>
+        <description>
+            <p>2 POINTS</p>
+            <p>You are considered a dragon for the purposes of spell targeting and effects.</p>
+        </description>
+        <sheet>
+            <description>You are considered a dragon for the purposes of spell targeting and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+        </rules>
+    </element>
+    <element name="Elemental" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_ELEMENTAL">
+        <requirements>![eleazzaar points:points:31]|ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_ELEMENTAL</requirements>
+        <supports>Eleazzaar Alternative Physiology</supports>
+        <description>
+            <p>0 POINTS</p>
+            <p>You are considered an elemental for the purposes of spell targeting and effects.</p>
+        </description>
+        <sheet>
+            <description>You are considered an elemental for the purposes of spell targeting and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="0" />
+        </rules>
+    </element>
+    <element name="Fey" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_FEY">
+        <requirements>![eleazzaar points:points:31]|ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_FEY</requirements>
+        <supports>Eleazzaar Alternative Physiology</supports>
+        <description>
+            <p>0 POINTS</p>
+            <p>You are considered a fey for the purposes of spell targeting and effects.</p>
+        </description>
+        <sheet>
+            <description>You are considered a fey for the purposes of spell targeting and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="0" />
+        </rules>
+    </element>
+    <element name="Fiend" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_FIEND">
+        <requirements>![eleazzaar points:points:31]|ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_FIEND</requirements>
+        <supports>Eleazzaar Alternative Physiology</supports>
+        <description>
+            <p>0 POINTS</p>
+            <p>You are considered a fiend for the purposes of spell targeting and effects.</p>
+        </description>
+        <sheet>
+            <description>You are considered a fiend for the purposes of spell targeting and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="0" />
+        </rules>
+    </element>
+    <element name="Giant" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_GIANT">
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_GIANT</requirements>
+        <supports>Eleazzaar Alternative Physiology</supports>
+        <description>
+            <p>2 POINTS</p>
+            <p>You are considered a giant for the purposes of spell targeting and effects.</p>
+        </description>
+        <sheet>
+            <description>You are considered a giant for the purposes of spell targeting and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+        </rules>
+    </element>
+    <element name="Monstrosity" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_MONSTROSITY">
+        <requirements>![eleazzaar points:points:29]|ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_MONSTROSITY</requirements>
+        <supports>Eleazzaar Alternative Physiology</supports>
+        <description>
+            <p>2 POINTS</p>
+            <p>You are considered a monstrosity for the purposes of spell targeting and effects.</p>
+        </description>
+        <sheet>
+            <description>You are considered a monstrosity for the purposes of spell targeting and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="2" />
+        </rules>
+    </element>
+    <element name="Ooze" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_OOZE">
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_OOZE</requirements>
+        <supports>Eleazzaar Alternative Physiology</supports>
+        <description>
+            <p>1 POINT</p>
+            <p>You are considered an ooze for the purposes of spell targeting and effects.</p>
+        </description>
+        <sheet>
+            <description>You are considered an ooze for the purposes of spell targeting and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+        </rules>
+    </element>
+    <element name="Plant" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_PLANT">
+        <requirements>![eleazzaar points:points:30]|ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_PLANT</requirements>
+        <supports>Eleazzaar Alternative Physiology</supports>
+        <description>
+            <p>1 POINT</p>
+            <p>You are considered a plant for the purposes of spell targeting and effects.</p>
+        </description>
+        <sheet>
+            <description>You are considered a plant for the purposes of spell targeting and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="1" />
+        </rules>
+    </element>
+    <element name="Undead" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_UNDEAD">
+        <requirements>![eleazzaar points:points:33]|ID_ELEAZZAAR_RACIAL_TRAIT_TYPE_UNDEAD</requirements>
+        <supports>Eleazzaar Alternative Physiology</supports>
+        <description>
+            <p>-2 POINTS</p>
+            <p>You are considered undead for the purposes of spell targeting and effects.</p>
+        </description>
+        <sheet>
+            <description>You are considered undead for the purposes of spell targeting and effects.</description>
+        </sheet>
+        <rules>
+            <stat name="eleazzaar points:points" value="-2" />
+        </rules>
+    </element>
+
+    <!--Source-->
+
+    <element name="Detect Balance (Eleazzaar)" type="Source" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_SOURCE_DETECT_BALANCE">
+        <description>
+            <![CDATA[<p>Tired of blatantly overpowered homebrew races? Can't seem to make something powerful enough to be useful? Eleazzaar has a solution for you! The Detect Balance sheet allows you to fine-tune custom races to fit the power curve of officially recognized content with an easy point-buy system.</p>]]>
+        </description>
+        <setters>
+            <set name="abbreviation">DB</set>
+            <set name="url">https://docs.google.com/spreadsheets/d/1vq1kz6PRAbw5LHy6amH-bNb4OuB8DBXL1RsZROt03Sc/edit#gid=0</set>
+            <set name="image"></set>
+            <set name="author" abbreviation="Eleaz" url="">Eleazzaar</set>
+            <set name="official">false</set>
+            <set name="supplement">false</set>
+            <set name="playtest">false</set>
+            <set name="third-party">false</set>
+            <set name="homebrew">true</set>
+            <set name="league">false</set>
+            <set name="release">20200118</set>
+        </setters>
+    </element>
+    
+</elements>
