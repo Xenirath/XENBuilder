@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>feats</name>
-		<update version="0.0.6">
+		<update version="0.0.8">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/feats.xml" />
 		</update>
   	</info>
@@ -343,20 +343,20 @@
 		</sheet>
 	</element>
 	
-	<element name="Xen's Familiar Buddy" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_XENS_FAMILIAR_BUDDY">
+	<element name="Xen's Fanciful Familiar" type="Feat" source="XENBuilder" id="ID_XENBUILDER_FEAT_XENS_FANCIFUL_FAMILIAR">
 		<prerequisite></prerequisite>
 		<requirements></requirements>
 		<description>
 			<p>Your charm or quirkiness has called a curious spirit, which is now bonded to you, granting you the following benefits:</p>
 			<ul>
 				<li>You learn the Find Familiar spell, which you can cast once without expending a spell slot. You must finish a long rest before you can cast it in this way again.</li>
-				<li>When choosing your familiar’s form, you can choose any beast or monstrosity up to CR 1/4. </li>
+				<li>When choosing your familiar’s form, you can choose from an expanded list, out of any monster up to CR 1/4. </li>
 				<li>While you are touching your familiar, you can change its form as an action, without needing to cast the spell.</li>
 				<li>While touching your familiar, you can also change it's type, as an action, from another type on the list, without needing to cast the spell. The list of types is also expanded to the following: aberration, celestial, elemental, fey, fiend, undead.</li>
 			</ul>
 		</description>
 		<sheet>
-			<description>Your charm or quirkiness has called a curious spirit, which is now bonded to you. You can cast the Find Familiar spell once per long rest for free, to summon a beast or monstrosity up to CR 1/4. It's form and type can be changed as an action while touching the familiar.</description>
+			<description>Your charm or quirkiness has called a curious spirit, which is now bonded to you. You can cast the Find Familiar spell once per long rest for free, to summon any monster up to CR 1/4. It's form and type can be changed as an action while touching the familiar.</description>
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
