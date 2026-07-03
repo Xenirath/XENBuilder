@@ -360,7 +360,6 @@
 		</sheet>
 		<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_FIND_FAMILIAR" />
-			<select type="Companion" name="Buddy" supports="Familiar"/>
 		</rules>
 	</element>
 
