@@ -2,10 +2,13 @@
 <elements>
 	<info>
         <name>Aurora Extra Options</name>
-		<update version="0.0.2">
+		<update version="0.0.4">
 			<file name="AEO.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/AEO.xml" />
 		</update>
 	</info>
+
+	<!--Character Options-->
+
 	<element name="Free Feat at level 1" type="Option" source="XENBuilder" id="ID_XENBUILDER_FREE_FEAT">
 		<description>
 			<p>Some DMs may grant a free feat for your characters at level 1. Check this if your DM does it.</p>
@@ -17,4 +20,97 @@
 			<select type="Feat" name="Free Feat (Level 1)" />
 		</rules>
 	</element> 
+
+    <!--"Item"-like additions-->
+
+	<element name="10 More Points (Eleazzar's Custom Race)" type="Item" source="XENBuilder" id="ID_XENBUILDER_ELEAZZAAR_MORE_POINTS_10">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p><i>Adds 10 points to your pool of Detect Balance's Custom Race, so you can play around more.</i></p>
+		</description>
+		<setters>
+			<set name="category">Additional Custom Race Points</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="eleazzaar points:points" value="-10" />
+		</rules>
+	</element> 
+
+	<element name="20 More Points (Eleazzar's Custom Race)" type="Item" source="XENBuilder" id="ID_XENBUILDER_ELEAZZAAR_MORE_POINTS_20">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p><i>Adds 20 points to your pool of Detect Balance's Custom Race, so you can play around more.</i></p>
+		</description>
+		<setters>
+			<set name="category">Additional Custom Race Points</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="eleazzaar points:points" value="-20" />
+		</rules>
+	</element> 
+
+	<element name="30 More Points (Eleazzar's Custom Race)" type="Item" source="XENBuilder" id="ID_XENBUILDER_ELEAZZAAR_MORE_POINTS_30">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p><i>Adds 30 points to your pool of Detect Balance's Custom Race, so you can play around more.</i></p>
+		</description>
+		<setters>
+			<set name="category">Additional Custom Race Points</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="eleazzaar points:points" value="-30" />
+		</rules>
+	</element> 
+
+	<element name="40 More Points (Eleazzar's Custom Race)" type="Item" source="XENBuilder" id="ID_XENBUILDER_ELEAZZAAR_MORE_POINTS_40">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p><i>Adds 40 points to your pool of Detect Balance's Custom Race, so you can play around more.</i></p>
+		</description>
+		<setters>
+			<set name="category">Additional Custom Race Points</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="eleazzaar points:points" value="-40" />
+		</rules>
+	</element> 
+
+	<element name="50 More Points (Eleazzar's Custom Race)" type="Item" source="XENBuilder" id="ID_XENBUILDER_ELEAZZAAR_MORE_POINTS_50">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p><i>Adds 50 points to your pool of Detect Balance's Custom Race, so you can play around more.</i></p>
+		</description>
+		<setters>
+			<set name="category">Additional Custom Race Points</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="eleazzaar points:points" value="-50" />
+		</rules>
+	</element> 
+
+	<element name="60 More Points (Eleazzar's Custom Race)" type="Item" source="XENBuilder" id="ID_XENBUILDER_ELEAZZAAR_MORE_POINTS_60">
+		<description>
+			<p><i>You can equip this item to “enable” it. It remains hidden from the inventory on your character sheet.</i></p>
+			<p><i>Adds 60 points to your pool of Detect Balance's Custom Race, so you can play around more.</i></p>
+		</description>
+		<setters>
+			<set name="category">Additional Custom Race Points</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="eleazzaar points:points" value="-60" />
+		</rules>
+	</element> 
+
 </elements>
