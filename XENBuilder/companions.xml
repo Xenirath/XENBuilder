@@ -2,11 +2,13 @@
 <elements>
 	<info>
 		<name>My Companions</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="companions.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/companions.xml" />
 		</update>
 	</info>
+
 	<!-- TRESSYM -->
+
 	<element name="Tressym" type="Companion" source="XENBuilder" id="ID_XENBUILDER_COMPANION_TRESSYM">
 		<supports>Familiar</supports>
 		<description />
@@ -74,7 +76,9 @@
 			<description>Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 slashing damage.</description>
 		</sheet>
 	</element>
+
 	<!-- GAZER -->
+
 	<element name="Gazer" type="Companion" source="XENBuilder" id="ID_XENBUILDER_COMPANION_GAZER">
 		<supports>Familiar</supports>
 		<description />
@@ -151,7 +155,9 @@
 			<description>The gazer moves up to its speed toward a hostile creature that it can see.</description>
 		</sheet>
 	</element>
+
 	<!-- FLUMPH -->
+
 	<element name="Flumph" type="Companion" source="XENBuilder" id="ID_XENBUILDER_COMPANION_FLUMPH">
 		<supports>Familiar</supports>
 		<description />
@@ -227,4 +233,136 @@
 			<description>Each creature in a 15-foot cone originating from the flumph must succeed on a DC 10 Dexterity saving throw or be coated in a foul-smelling liquid. A coated creature exudes a horrible stench for 1d4 hours. The coated creature is poisoned as long as the stench lasts, and other creatures are poisoned while with in 5 feet of the coated creature. A creature can remove the stench on itself by using a short rest to bathe in water, alcohol, or vinegar.</description>
 		</sheet>
 	</element>
+
+	<!-- BONE WHELK -->
+
+	<element name="Bone Whelk" type="Companion" source="XENBuilder" id="ID_XENBUILDER_COMPANION_BONE_WHELK">
+		<supports>Familiar</supports>
+		<description />
+		<setters>
+			<set name="strength">10</set>
+			<set name="dexterity">5</set>
+			<set name="constitution">11</set>
+			<set name="intelligence">6</set>
+			<set name="wisdom">9</set>
+			<set name="charisma">3</set>
+			<set name="ac">12</set>
+			<set name="hp">27 (5d10)</set>
+			<set name="speed">15 ft., climb 15ft.</set>
+			<set name="senses">darkvision 60 ft., Passive Perception 9</set>
+			<set name="languages">—</set>
+			<set name="type">Monstrosity</set>
+			<set name="size">Large</set>
+			<set name="alignment">Unaligned</set>
+			<set name="challenge">1/4</set>
+			<set name="traits">ID_XENBUILDER_COMPANION_TRAIT_BONE_WHELK_ADHESIVE,ID_XENBUILDER_COMPANION_TRAIT_BONE_WHELK_DEATH_SCREAM,ID_XENBUILDER_COMPANION_TRAIT_BONE_WHELK_SPIDER_CLIMB</set>
+			<set name="actions">ID_XENBUILDER_COMPANION_ACTION_BONE_WHELK_BITE</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+			<stat name="companion:hp:max" value="50" bonus="base" />
+			<stat name="companion:speed" value="15" bonus="base" />
+			<stat name="companion:speed:climb" value="15" bonus="base" />
+		</rules>
+	</element>
+	<element name="Adhesive" type="Companion Trait" source="XENBuilder" id="ID_XENBUILDER_COMPANION_TRAIT_BONE_WHELK_ADHESIVE">
+		<description>
+			<p>The bone whelk can cause Medium or smaller objects to adhere to it. A Medium or smaller creature that touches the bone whelk is grappled by it (escape DC 10).</p>
+		</description>
+		<sheet>
+			<description>The bone whelk can cause Medium or smaller objects to adhere to it. A Medium or smaller creature that touches the bone whelk is grappled by it (escape DC 10).</description>
+		</sheet>
+	</element>
+	<element name="Death Scream" type="Companion Trait" source="XENBuilder" id="ID_XENBUILDER_COMPANION_TRAIT_BONE_WHELK_DEATH_SCREAM">
+		<description>
+			<p>When the bone whelk dies, it emits a blood-curdling shriek than can be heard out to a range of 120 feet. This shriek causes nonmagical, organic material within 10 feet of the bone whelk to rot. Each creature within 10 feet of the bone whelk when it dies takes 9 (2d8) necrotic damage.</p>
+		</description>
+		<sheet>
+			<description>When the bone whelk dies, it emits a blood-curdling shriek than can be heard out to a range of 120 feet. This shriek causes nonmagical, organic material within 10 feet of the bone whelk to rot. Each creature within 10 feet of the bone whelk when it dies takes 9 (2d8) necrotic damage.</description>
+		</sheet>
+	</element>
+	<element name="Spider Climb" type="Companion Trait" source="XENBuilder" id="ID_XENBUILDER_COMPANION_TRAIT_BONE_WHELK_SPIDER_CLIMB">
+		<description>
+			<p>The bone whelk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</p>
+		</description>
+		<sheet>
+			<description>The bone whelk can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="XENBuilder" id="ID_XENBUILDER_COMPANION_ACTION_BONE_WHELK_BITE">
+		<description>
+			<p>Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 4 (1d8) piercing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +2 to hit, reach 5 ft., one creature. Hit: 4 (1d8) piercing damage.</description>
+		</sheet>
+	</element>
+
+	<!-- STEAM MEPHIT -->
+
+	<element name="Steam Mephit" type="Companion" source="XENBuilder" id="ID_XENBUILDER_COMPANION_STEAM_MEPHIT">
+		<supports>Familiar</supports>
+		<description />
+		<setters>
+			<set name="strength">5</set>
+			<set name="dexterity">11</set>
+			<set name="constitution">10</set>
+			<set name="intelligence">11</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">12</set>
+			<set name="ac">10</set>
+			<set name="hp">17 (5d6)</set>
+			<set name="speed">30 ft., fly 30ft.</set>
+			<set name="senses">darkvision 60 ft., passive Perception 10</set>
+			<set name="languages">Primordial (Aquan, Ignan)</set>
+			<set name="skills">Stealth +2</set>
+			<set name="immunities">Fire, Poison; Exhaustion, Poisoned</set>
+			<set name="type">Elemental</set>
+			<set name="size">Small</set>
+			<set name="alignment">Neutral Evil</set>
+			<set name="challenge">1/4</set>
+			<set name="traits">ID_XENBUILDER_COMPANION_TRAIT_STEAM_MEPHIT_BLURRED_FORM,ID_XENBUILDER_COMPANION_TRAIT_STEAM_MEPHIT_DEATH_BURST</set>
+			<set name="actions">ID_XENBUILDER_COMPANION_ACTION_STEAM_MEPHIT_CLAW,ID_XENBUILDER_COMPANION_ACTION_STEAM_MEPHIT_STEAM_BREATH</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="10" />
+			<stat name="companion:hp:max" value="30" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:speed:fly" value="30" bonus="base" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Blurred Form" type="Companion Trait" source="XENBuilder" id="ID_XENBUILDER_COMPANION_TRAIT_STEAM_MEPHIT_BLURRED_FORM">
+		<description>
+			<p>Attack rolls against the mephit are made with Disadvantage unless the mephit has the Incapacitated condition.</p>
+		</description>
+		<sheet>
+			<description>Attack rolls against the mephit are made with Disadvantage unless the mephit has the Incapacitated condition.</description>
+		</sheet>
+	</element>
+	<element name="Death Burst" type="Companion Trait" source="XENBuilder" id="ID_XENBUILDER_COMPANION_TRAIT_STEAM_MEPHIT_DEATH_BURST">
+		<description>
+			<p>The mephit explodes when it dies. Dexterity Saving Throw: DC 10, each creature in a 5-foot Emanation originating from the mephit. Failure: 5 (2d4) Fire damage. Success: Half damage.</p>
+		</description>
+		<sheet>
+			<description>The mephit explodes when it dies. Dexterity Saving Throw: DC 10, each creature in a 5-foot Emanation originating from the mephit. Failure: 5 (2d4) Fire damage. Success: Half damage.</description>
+		</sheet>
+	</element>
+	<element name="Claw" type="Companion Action" source="XENBuilder" id="ID_XENBUILDER_COMPANION_ACTION_STEAM_MEPHIT_CLAW">
+		<description>
+			<p>Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Slashing damage plus 2 (1d4) Fire damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Slashing damage plus 2 (1d4) Fire damage.</description>
+		</sheet>
+	</element>
+	<element name="Steam Breath (Recharge 6)" type="Companion Action" source="XENBuilder" id="ID_XENBUILDER_COMPANION_ACTION_STEAM_MEPHIT_STEAM_BREATH">
+		<description>
+			<p>Constitution Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: 5 (2d4) Fire damage, and the target's Speed decreases by 10 feet until the end of the mephit's next turn. Success: Half damage only. Failure or Success: Being underwater doesn't grant Resistance to this Fire damage.</p>
+		</description>
+		<sheet>
+			<description>Constitution Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: 5 (2d4) Fire damage, and the target's Speed decreases by 10 feet until the end of the mephit's next turn. Success: Half damage only. Failure or Success: Being underwater doesn't grant Resistance to this Fire damage.</description>
+		</sheet>
+	</element>
 </elements>
+
