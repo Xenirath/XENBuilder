@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.1" encoding="utf-8" ?>
 <elements>
 
     <!--UPDATED 2020-12-16-->
@@ -972,6 +972,32 @@
         <rules>
             <stat name="eleazzaar points:points" value="6" />
             <stat name="speed:fly" value="10" />
+        </rules>
+    </element>
+	<element name="+20 ft fly speed" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_20">
+        <supports>Eleazzaar Flight Speed</supports>
+        <requirements>![eleazzaar points:points:19]|ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_20</requirements>
+        <description>
+            <p>12 POINTS</p>
+            <p>Your fly speed increases 20 ft.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="eleazzaar points:points" value="12" />
+            <stat name="speed:fly" value="20" />
+        </rules>
+    </element>
+    <element name="+30 ft fly speed" type="Racial Trait" source="Detect Balance (Eleazzaar)" id="ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_30">
+        <supports>Eleazzaar Flight Speed</supports>
+        <requirements>![eleazzaar points:points:13]|ID_ELEAZZAAR_RACIAL_TRAIT_FLIGHT_30</requirements>
+        <description>
+            <p>18 POINTS</p>
+            <p>Your fly speed increases 30 ft.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="eleazzaar points:points" value="18" />
+            <stat name="speed:fly" value="30" />
         </rules>
     </element>
 
