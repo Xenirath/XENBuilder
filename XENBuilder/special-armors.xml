@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>special armors</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="special-armors.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/special-armors.xml" />
 		</update>
 	</info>
@@ -43,4 +43,25 @@
 			<stat name="ac:calculation" value="ac:stone sorcerer armor" bonus="calculation" />
 		</rules>
 	</element>    
+	
+	<!-- Newer -->
+	
+	<element name="Demonic Armor (Oni-Touched) + Barbarian" type="Magic Item" source="XENBuilder" id="ID_XENBUILDER_MAGIC_ITEM_PROXY_DEMONIC_ARMOR_ONI_BARBARIAN">
+		<description>
+			<p>Mixes the calculations of Demonic Armor Aura from Oni-Touched race and the Unarmored Defense of Barbarians, swapping Dexterity for Charisma.</p>
+		</description>
+		<setters>
+			<set name="keywords">ac,armor,barbarian,Oni-Touched</set>
+			<set name="category">Proxy Effects</set>
+			<set name="type">Proxy Effect</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="ac:demonic armor barbarian" value="10" />
+			<stat name="ac:demonic armor barbarian" value="constitution:modifier" />
+			<stat name="ac:demonic armor barbarian" value="charisma:modifier" />
+			<stat name="ac:calculation" value="ac:demonic armor barbarian" bonus="calculation" />
+		</rules>
+	</element>    
+	
 </elements>
