@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>My Companions</name>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="companions.xml" url="https://raw.githubusercontent.com/Xenirath/XENBuilder/main/XENBuilder/companions.xml" />
 		</update>
 	</info>
@@ -316,7 +316,8 @@
 			<set name="senses">darkvision 60 ft., passive Perception 10</set>
 			<set name="languages">Primordial (Aquan, Ignan)</set>
 			<set name="skills">Stealth +2</set>
-			<set name="immunities">Fire, Poison; Exhaustion, Poisoned</set>
+			<set name="immunities">Fire, Poison</set>
+			<set name="conditionImmunities">Exhaustion, Poisoned</set>
 			<set name="type">Elemental</set>
 			<set name="size">Small</set>
 			<set name="alignment">Neutral Evil</set>
@@ -364,5 +365,58 @@
 			<description>Constitution Saving Throw: DC 10, each creature in a 15-foot Cone. Failure: 5 (2d4) Fire damage, and the target's Speed decreases by 10 feet until the end of the mephit's next turn. Success: Half damage only. Failure or Success: Being underwater doesn't grant Resistance to this Fire damage.</description>
 		</sheet>
 	</element>
+
+	<!-- GIANT KING COBRA -->
+
+	<element name="Giant King Cobra" type="Companion" source="XENBuilder" id="ID_XENBUILDER_COMPANION_GIANT_KING_COBRA">
+		<supports>Familiar</supports>
+		<description />
+		<setters>
+			<set name="strength">14</set>
+			<set name="dexterity">18</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">2</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">3</set>
+			<set name="ac">14</set>
+			<set name="hp">32 (5d10+5)</set>
+			<set name="speed">30 ft., swim 30ft.</set>
+			<set name="senses">blindsight 10 ft., passive Perception 13</set>
+			<set name="languages"> - </set>
+			<set name="skills">Perception +3</set>
+			<set name="immunities">Poison</set>
+			<set name="conditionImmunities">Poisoned</set>
+			<set name="type">Beast</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Unaligned</set>
+			<set name="challenge">2</set>
+			<set name="actions">ID_XENBUILDER_COMPANION_ACTION_GIANT_KING_COBRA_BITE,ID_XENBUILDER_COMPANION_ACTION_GIANT_KING_KOBRA_SPIT_POISON</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="14" />
+			<stat name="companion:hp:max" value="55" bonus="base" />
+			<stat name="companion:speed" value="30" bonus="base" />
+			<stat name="companion:speed:swim" value="30" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Bite" type="Companion Action" source="XENBuilder" id="ID_XENBUILDER_COMPANION_ACTION_GIANT_KING_COBRA_BITE">
+		<description>
+			<p>Melee Attack Attack: +6 to hit, reach 5 ft. Hit: 11 (2d6+4) Piercing damage. The target must then make a DC 11 Constitution Saving Throw, taking 7 (2d6) poison damage on a failed save, or half as much on a successful one.</p>
+		</description>
+		<sheet>
+			<description>Melee Attack Roll: +6, reach 5 ft. Hit: 11 (2d6+4) Piercing damage. The target must then make a DC 11 Constitution Saving Throw, taking 7 (2d6) poison damage on a failed save, or half as much on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="Spit Poison (Recharge 5-6)" type="Companion Action" source="XENBuilder" id="ID_XENBUILDER_COMPANION_ACTION_GIANT_KING_KOBRA_SPIT_POISON">
+		<description>
+			<p>Ranged Weapon Attack: +6 to hit, range 30 ft. Hit: The target must make a DC 11 Constitution Saving Throw, taking 13 (2d12) poison damage on a failed save, or half as much on a successful one. On a fail, the target is also under the poisoned condition.</p>
+		</description>
+		<sheet>
+			<description>Ranged Weapon Attack: +6 to hit, range 30 ft. Hit: The target must make a DC 11 Constitution Saving Throw, taking 13 (2d12) poison damage on a failed save, or half as much on a successful one. On a fail, the target is also under the poisoned condition.</description>
+		</sheet>
+	</element>
+
 </elements>
+
 
